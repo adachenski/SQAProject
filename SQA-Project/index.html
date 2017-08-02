@@ -1,0 +1,113 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SQA Questions</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+</head>
+<style>
+    .red {
+        background-color: red;
+    }
+    
+    .green {
+        background-color: green;
+    }
+</style>
+
+<body>
+
+    <section class="container">
+        <div class="row red">
+            <div class="col-xs-3">null</div>
+            <div class="col-xs-6">
+                <div class="row green">
+                    <!--<div class="col-xs-12">First</div>
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12">answer</div>
+                            <div class="col-xs-12">answer</div>
+                            <div class="col-xs-12">answer</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12">Last</div>-->
+                </div>
+                <div class="col-xs-12">
+                    <input id="next" type="button" value="Next">
+                </div>
+            </div>
+            <div class="col-xs-3">null</div>
+        </div>
+    </section>
+</body>
+<script>
+    var items = [];
+var count =0;
+    $.getJSON("Questions.json", function (data) {
+        //var items = [];
+        $.each(data, function (key, val) {
+            console.log(key);
+            console.log(val.question);
+            var mainDiv = $("<div/>", {
+                "class": "col-xs-12",
+                "text": val.question
+            });
+            var innerDiv = $("<div/>", {
+                "class": "row",
+            }).appendTo(mainDiv);
+
+            var radioWrap = $("<div/>", {
+
+
+            }).appendTo(innerDiv);
+
+            for (var i = 0; i < val.options.length; i += 1) {
+                var span = $("<span/>", {
+
+                }).appendTo(radioWrap);
+                if (val.radio) {
+                    var radio = $("<input/>").attr({
+                        type: 'radio', name: 'colorinput', value: '2', id: 'test'
+                    }).appendTo(span);
+                }
+                else {
+                    var radio = $("<input/>").attr({
+                        type: 'checkbox', name: 'colorinput', value: '2', id: 'test'
+                    }).appendTo(span);
+                }
+                var span = $("<span/>", {
+                    "text": val.options[i]
+                }).appendTo(span);
+
+                var br = $("</br>").appendTo(span);
+            }
+            items.push(mainDiv);
+
+        });
+        console.log(items);
+        $("<div/>", {
+            "class": "col-xs-12",
+            html: items[count]
+        }).appendTo(".green");
+    });
+
+    $("#next").click(function () {
+         count++;
+        $(".green").html('');
+        $("<div/>", {
+            "class": "col-xs-12",
+            html: items[count]
+        }).appendTo(".green");
+       
+    })
+
+</script>
+
+</html>
