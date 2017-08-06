@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SQA Questions</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <style>
+        .red {
+            background-color: red;
+        }
+        
+        .green {
+            background-color: green;
+            padding: 10px;
+            margin: 40px 10px 10px 10px;
+        }
+        
+        .hidden {
+            visibility: hidden;
+        }
+        
+        .lightgreen {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <div class="col-xs-3">null</div>
+            <div class="col-xs-6">
+                <div class="row green">
+
+                </div>
+                <div class="row">
+                    <div id="answer"></div>
+                    <input id="submit" type="button" class="btn btn-primary" value="Submit">
+                    <input id="next" type="button" class="btn btn-primary hidden" value="Next">
+                </div>
+            </div>
+            <div class="col-xs-3">null</div>
+        </div>
+    </section>
+</body>
+<script>
+    var items = [];
+    var count = 0;
+    var plainVal = [];
+    var answersCount = 0;
+    var answersContainer = [];
+    $.getJSON("json/Questions.json", function (data) {
+        $.each(data, function (key, val) {
+            console.log(key);
+            console.log(val);
+            plainVal.push(val);
+            var mainDiv = $("<div/>", {
+                "class": "col-xs-12",
+            });
+            var h3 = $("<h3/>", {
+
+                "text": val.question
+            }).appendTo(mainDiv);
+            var innerDiv = $("<div/>", {
+                "class": "row",
+            }).appendTo(mainDiv);
+
+            for (var i = 0; i < val.options.length; i += 1) {
+                var span = $("<span/>", {
+
+                }).appendTo(innerDiv);
+                if (val.radio) {
+                    var radio = $("<input/>").attr({
+                        type: 'radio', name: 'mydata', class: 'mydata', value: i, id: i
+                    }).appendTo(span);
+                }
+                else {
+                    var radio = $("<input/>").attr({
+                        type: 'checkbox', class: 'mydata', value: i, id: i
+                    }).appendTo(span);
+                }
+                var span = $("<span/>", {
+                    "text": val.options[i]
+                }).appendTo(span);
+
+                var br = $("</br>").appendTo(span);
+            }
+            items.push(mainDiv);
+
+        });
+        console.log(plainVal);
+        //currentId = val.id;
+        $("<div/>", {
+            "class": "col-xs-12",
+            html: items[count]
+        }).appendTo(".green");
+    });
+
+    $("#submit").click(function () {
+
+        checkRightVal(count);
+
+    });
+
+    $("#next").click(function () {
+
+        count++;
+
+        $(".green").html('');
+        // console.log(items);
+        // console.log(count);
+        // console.log(items[count]);
+        $("<div/>", {
+            "class": "col-xs-12",
+            html: items[count]
+        }).appendTo(".green");
+
+        $("#submit").removeClass("hidden");
+        $("#next").addClass("hidden");
+        $("#answer").html("");
+    });
+
+    function checkRightVal(count) {
+        var answers = $(".mydata:checked");
+        // var x = $("input:radio[name=mydata]:checked");
+        console.log(answers);
+
+        if (answers.length === 1) {
+            var value = answers.attr("id");
+            console.log(value);
+            if (plainVal[count].answer == value) {
+                $("#answer").text("corect").addClass("lightgreen").removeClass("red");
+                  answersCount ++;
+            }
+            else {
+                $("#answer").text("Incorect").addClass("red").removeClass('lightgreen');
+            }
+             $("#submit").addClass("hidden");
+             $("#next").removeClass("hidden");
+        }
+        else if( answers.length > 1){
+            var userAnswers = [];
+            for(var i = 0; i < answers.length; i +=1){
+                //console.log(answers[i].id);
+                var checkboxValue = answers[i].id;
+                userAnswers.push(checkboxValue);
+                console.log(userAnswers);
+                console.log(plainVal[count].answer);
+            }
+            var countCheckBoxAnswers = 0;
+            for(var y = 0; y < plainVal[count].answer.length; y+=1){
+                for(var z = 0; z < userAnswers.length; z+=1){
+                    if(plainVal[count].answer[y] == userAnswers[z]){
+                        countCheckBoxAnswers++;
+                    }
+                }
+            }
+            console.log('chexbox answers: '+countCheckBoxAnswers);
+        }
+        else{
+             $("#answer").text("You must enter a value").addClass("red").removeClass('lightgreen');
+        }
+    }
+</script>
+
+</html>
