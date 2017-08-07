@@ -5,12 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "author": "Atanas Dachenski",
   "license": "MIT",
   "dependencies": {
     "ejs": "^2.5.7",
     "express": "^4.15.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "wiredep": "^4.0.0"
   }
 }

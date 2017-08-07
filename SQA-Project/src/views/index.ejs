@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%=title%></h1>
+    <ul>
+        <% for(var i = 0; i < list.length; i+=1){%>
+            <li>Name: <%=list[i].name%> Age: <%=list[i].age%></li>
+        <%}%>
+    </ul>   
+    <div>Hi start here</div>
+
+    <a href="sqa-test">start</a>
+
+    <h3>Questions</h3>
+    <div>
+         <% for(var i = 0; i < questions.length; i+=1){%>
+            <h3><%=questions[i].title%></h3>
+            <div><%=questions[i].content%></div>
+        <%}%>
+    </div>
+</body>
+</html>
