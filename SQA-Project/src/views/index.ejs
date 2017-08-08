@@ -1,27 +1,63 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--bower:css-->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
+    <!--endbower-->
+    <!--bower:js-->
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <!--endbower-->
     <title>Document</title>
 </head>
+
 <body>
-    <h1><%=title%></h1>
+    <h1>
+        <%=title%>
+    </h1>
     <ul>
         <% for(var i = 0; i < list.length; i+=1){%>
-            <li>Name: <%=list[i].name%> Age: <%=list[i].age%></li>
-        <%}%>
-    </ul>   
+            <li>Name:
+                <%=list[i].name%> Age:
+                    <%=list[i].age%>
+            </li>
+            <%}%>
+    </ul>
     <div>Hi start here</div>
 
     <a href="sqa-test">start</a>
 
     <h3>Questions</h3>
-    <div>
-         <% for(var i = 0; i < questions.length; i+=1){%>
-            <h3><%=questions[i].title%></h3>
-            <div><%=questions[i].content%></div>
-        <%}%>
+    <div class="container">
+        <div class="panel-group" id="accordion">
+
+            <% for(var i = 0; i < questions.length; i+=1){%>
+                <% if(questions[i].category== 'qaBasics'){%>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#nas<%=i%>">
+                                    <%=questions[i].title%>
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="nas<%=i%>" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <%=questions[i].content%>
+                                    <a href="books/<%=i%>">here</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <%}%>
+                        <%}%>
+        </div>
+
     </div>
 </body>
+
 </html>
