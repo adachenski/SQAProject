@@ -4,60 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--bower:css-->
+    <link rel="stylesheet" href="css/sqa.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
-    <!--endbower-->
-    <!--bower:js-->
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
-    <!--endbower-->
     <title>Document</title>
 </head>
 
 <body>
-    <h1>
-        <%=title%>
-    </h1>
-    <ul>
-        <% for(var i = 0; i < list.length; i+=1){%>
-            <li>Name:
-                <%=list[i].name%> Age:
-                    <%=list[i].age%>
-            </li>
-            <%}%>
-    </ul>
-    <div>Hi start here</div>
+    <% include ./navigation.ejs %>
 
-    <a href="sqa-test">start</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 first-row">
+                    <h3>SQA Test & Questions</h3>
+                </div>
+            </div>
+            <div class="row">
+                <a href="sqa-test">
+                    <div class="col-xs-6 cell-container">
+                        <div>SQA Test</div>
+                        <img src="../img/test.png" style="width:65%" alt="Test">
+                    </div>
+                </a>
+                <div class="col-xs-6 cell-container">
+                    <div>Add Question</div>
+                    <img src="../img/question.png" style="width:65%" alt="Question">
+                </div>
 
-    <h3>Questions</h3>
-    <div class="container">
-        <div class="panel-group" id="accordion">
+                <div class="col-xs-6 cell-container">
+                    <div>SQA Basics</div>
+                    <img src="../img/qa_icon.png" style="width:65%" alt="SQA_Basics">
+                </div>
+                <div class="col-xs-6 cell-container">
+                    <div>Testing Types</div>
+                    <img src="../img/testing-types.png" style="width:65%" alt="Testing_Types">
+                </div>
 
-            <% for(var i = 0; i < questions.length; i+=1){%>
-                <% if(questions[i].category== 'qaBasics'){%>
+                <div class="col-xs-6 cell-container">
+                    <div>Bugs</div>
+                    <!--<i class="fa fa-lg fa-bug" aria-hidden="true"></i>-->
+                    <img src="../img/bug.png" style="width:65%" alt="bug">
+                </div>
+                <div class="col-xs-6 cell-container">
+                    <div>Documentation</div>
+                    <img src="../img/document.png" style="width:65%" alt="dogumentation">
+                </div>
+
+                <div class="col-xs-6 cell-container">
+                    <div>Mobile</div>
+                    <img src="../img/mobile.png" style="width:65%" alt="Mobile">
+                </div>
+                <div class="col-xs-6 cell-container">
+                    <div>Technical</div>
+                    <img src="../img/technical.png" style="width:65%" alt="Technical">
+                </div>
+            </div>
+        </div>
+        <!--<div class="container">
+            <div class="panel-group" id="accordion">
+
+                <% for(var i = 0; i < questions.length; i+=1){%>
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a data-toggle="collapse" data-parent="#accordion" href="#nas<%=i%>">
-                                    <%=questions[i].title%>
+                                    <div style="color:darkred">
+                                        <%=questions[i].title%>
+                                    </div>
+
                                 </a>
                             </h4>
                         </div>
                         <div id="nas<%=i%>" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <%=questions[i].content%>
-                                    <a href="books/<%=i%>">here</a>
+                                    <div style="color:darkred">More info <a href="books/<%=i%>">here</a>.</div>
                             </div>
                         </div>
                     </div>
 
                     <%}%>
-                        <%}%>
-        </div>
 
-    </div>
+            </div>
+        </div>-->
 </body>
 
 </html>

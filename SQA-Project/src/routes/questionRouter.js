@@ -1,13 +1,13 @@
 var express = require('express');
 
-var bookRouter = express.Router();
+var questionRouter = express.Router();
 
 var router = function (quest) {
 
-    bookRouter.route('/')
+    questionRouter.route('/')
         .get(function (req, res) {
-            res.render('index', {
-                title: "Books",
+            res.render('sqa-basics', {
+                title: "SQA Questions",
                 list: [
                     { name: 'Atanas', age: 31 },
                     { name: 'Rally', age: 21 }
@@ -16,7 +16,7 @@ var router = function (quest) {
             });
         });
 
-    bookRouter.route('/:id')
+    questionRouter.route('/:id')
         .get(function (req, res) {
             var id = req.params.id;
             res.render('book', {
@@ -29,11 +29,11 @@ var router = function (quest) {
             });
         });
 
-    bookRouter.route('/single')
+    questionRouter.route('/single')
         .get(function (req, res) {
             res.send('Hello single books');
         });
 
-    return bookRouter;
+    return questionRouter;
 }
 module.exports = router;

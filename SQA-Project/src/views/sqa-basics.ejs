@@ -1,0 +1,58 @@
+   
+   <html>
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta http-equiv="X-UA-Compatible" content="ie=edge">
+           <link rel="stylesheet" href="css/sqa.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />
+       <title>SQA Basics</title>
+   </head>
+   <body>
+
+   <% include ./navigation.ejs %>
+
+        
+        <h1>
+            <%=title%>
+        </h1>
+
+        <ul>
+            <% for(var i = 0; i < list.length; i+=1){%>
+                <li>Name:
+                    <%=list[i].name%> Age:
+                        <%=list[i].age%>
+                </li>
+                <%}%>
+        </ul>
+        <div class="container">
+            <div class="panel-group" id="accordion">
+
+                <% for(var i = 0; i < questions.length; i+=1){%>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#nas<%=i%>">
+                                    <div style="color:darkred">
+                                        <%=questions[i].title%>
+                                    </div>
+
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="nas<%=i%>" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <%=questions[i].content%>
+                                    <div style="color:darkred">More info <a href="books/<%=i%>">here</a>.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <%}%>
+
+            </div>
+        </div>
+   </body>
+   </html>

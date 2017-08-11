@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="css/demo.css">
+<!-- Pushy CSS -->
+<link rel="stylesheet" href="css/pushy.css">
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+
+<button style="position: fixed;width:40px;height:40px; border-radius:50%; top:11%; right:10px; z-index:100" class="menu-btn">&#9776;</button>
+    <div class="site-overlay"></div>
+<nav class="pushy pushy-left" data-focus="#first-link">
+    <div class="pushy-content">
+        <ul>
+              <li class="pushy-link"><a href="/">HOME</a></li>
+         
+            <li class="pushy-submenu">
+                <button id="first-link">TEST</button>
+                <ul>
+                    <li class="pushy-link"><a href="sqa-test">SQA</a></li>
+                    <li class="pushy-link"><a href="#">Technical</a></li>
+                </ul>
+            </li>
+               <li class="pushy-submenu">
+                <button>SQA Basics</button>
+                <ul>
+                    <li class="pushy-link"><a onclick="getSQAQestions('qaBasics')" href="/">Questions</a></li>
+                    <li class="pushy-link"><a href="#">10 Random</a></li>
+               
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Testing Types</button>
+                <ul>
+                    <li class="pushy-link"><a href="#">Questions</a></li>
+                    <li class="pushy-link"><a href="#">10 Random</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Bugs</button>
+                <ul>
+                    <li class="pushy-link"><a href="#">Questions</a></li>
+                    <li class="pushy-link"><a href="#">10 Random</a></li>
+                </ul>
+            </li>
+            <li class="pushy-submenu">
+                <button>Documentation</button>
+                <ul>
+                    <li class="pushy-link"><a href="#">Questions</a></li>
+                    <li class="pushy-link"><a href="#">10 Random</a></li>
+                </ul>
+            </li>
+            <li class="pushy-link"><a href="#">Mobile</a></li>
+            <li class="pushy-link"><a href="#">Technical</a></li>
+        </ul>
+    </div>
+</nav>
+  <script src="js/pushy.min.js"></script>
+<!-- Site Overlay -->
