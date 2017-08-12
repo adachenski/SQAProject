@@ -62,6 +62,5 @@ function getCategory(val) {
             finalQuestions.push(tempQuestions[i]);
         }
     }
-    console.log(finalQuestions);
     return finalQuestions;
 }

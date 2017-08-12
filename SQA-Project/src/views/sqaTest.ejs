@@ -7,6 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/sqa.css">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/demo.css">
+
+    <link rel="stylesheet" href="css/pushy.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
     <title>Document</title>
@@ -30,24 +36,24 @@
         .lightgreen {
             background-color: lightgreen;
         }
-          .first-row{
         
-        height: 15%;
-        min-height: 70px;
-        background-color: lightblue;
-    }
+        .first-row {
+            height: 15%;
+            min-height: 70px;
+            background-color: lightblue;
+        }
     </style>
 </head>
 
 <body>
     <% include ./navigation.ejs %>
-    <div class="container" style="height:1665px">
-        <div class="row">
-            <div class="col-xs-12 first-row">
-                <h3>Questions</h3>
+        <div class="container" style="height:1665px">
+            <div class="row">
+                <div class="col-xs-12 first-row">
+                    <h3>Questions</h3>
+                </div>
             </div>
-        </div>
-      
+
             <div class="row">
                 <!--<div class="col-xs-3">null</div>-->
                 <div class="col-sm-6 col-xs-12">
@@ -62,8 +68,8 @@
                 </div>
                 <!--<div class="col-xs-3">null</div>-->
             </div>
-       
-</div>
+
+        </div>
         <script>
             var items = [];
             var count = 0;
@@ -205,6 +211,7 @@
                 }
             }
         </script>
+        <script src="js/pushy.min.js"></script>
 </body>
 
 

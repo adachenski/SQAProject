@@ -1,33 +1,33 @@
-   
-   <html>
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-           <link rel="stylesheet" href="css/sqa.css">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/sqa.css">
+
+    <link rel="stylesheet" href="../css/pushy.css">
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />
-       <title>SQA Basics</title>
-   </head>
-   <body>
+    <link rel="stylesheet" href="../css/demo.css">
 
-   <% include ./navigation.ejs %>
+    <script src="../lib/jquery/dist/jquery.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+    <title>SQA Basics</title>
+</head>
 
-        
-        <h1>
-            <%=title%>
-        </h1>
+<body>
 
-        <ul>
-            <% for(var i = 0; i < list.length; i+=1){%>
-                <li>Name:
-                    <%=list[i].name%> Age:
-                        <%=list[i].age%>
-                </li>
-                <%}%>
-        </ul>
+    <% include ./navigation.ejs %>
+<div style="background-color:#5BBC93">
+
+
         <div class="container">
+            <h1 style="color:#464646">
+                <%=title%>
+            </h1>
+         
             <div class="panel-group" id="accordion">
 
                 <% for(var i = 0; i < questions.length; i+=1){%>
@@ -45,14 +45,15 @@
                         <div id="nas<%=i%>" class="panel-collapse collapse">
                             <div class="panel-body">
                                 <%=questions[i].content%>
-                                    <div style="color:darkred">More info <a href="books/<%=i%>">here</a>.</div>
+                                    <div style="color:darkred">More info <a href="<%=testType%>/<%=i%>">here</a>.</div>
                             </div>
                         </div>
                     </div>
-
                     <%}%>
-
             </div>
         </div>
-   </body>
-   </html>
+        </div>
+        <script src="../js/pushy.min.js"></script>
+</body>
+
+</html>
