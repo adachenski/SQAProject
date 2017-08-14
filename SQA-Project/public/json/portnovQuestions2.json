@@ -297,7 +297,7 @@
         "id": 49,
         "title": " Describe a bug? ",
         "content": " Mismatch between actual behavior of a software application and its intended (expected) behavior. We learn about expected behavior from requirements, specifications, and other technical documentations. ",
-        "category": "testingTypes"
+        "category": "bugs"
     },
     {
         "id": 50,

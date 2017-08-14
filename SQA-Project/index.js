@@ -1,12 +1,18 @@
 var express = require('express');
 var app = express();
+ var path = require('path');
 var port = process.env.PORT || 3000;
+var homeRouter = require('./src/routes/homeRouter');
 var sqaQuestions2 = require('./public/json/portnovQuestions2');
 var questionRouter = require('./src/routes/questionRouter')(sqaQuestions2);
 
-//app.set('view engine','html');
-app.use(express.static('public'));
-app.set('views', './src/views');
+var bodyParser = require('body-parser');
+
+var rootPath = path.normalize(__dirname + '/');
+app.use(bodyParser.urlencoded({ extended: false })); 
+
+app.use(express.static(rootPath+'public'));
+app.set('views', path.join(rootPath+'src/views'));
 
 // var fs = require('fs');
 // fs.readFile('./public/json/portnovQuestions2.json', function (err, content) {
@@ -25,22 +31,16 @@ app.set('views', './src/views');
 //     })
 // })
 
-//app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'ejs');
 
-//app.set('views','./src/views');
+app.set('views','./src/views');
 app.get('/', function (req, res) {
-
     res.render('index', {
-        title: "Hello from render",
-        list: [
-            { name: 'Atanas', age: 31 },
-            { name: 'Rally', age: 21 }
-        ],
-        questions: getCategory('qaBasics')
+        title: "Index",
     });
-
 });
+
+//app.use('/',homeRouter);
 
 app.get('/sqa-test', function (req, res) {
     res.render('sqaTest');
@@ -53,14 +53,14 @@ app.listen(port, function (err) {
 });
 
 
-function getCategory(val) {
-    var tempQuestions = sqaQuestions2;
-    var finalQuestions = [];
-    for (var i = 0; i < tempQuestions.length; i += 1) {
+// function getCategory(val) {
+//     var tempQuestions = sqaQuestions2;
+//     var finalQuestions = [];
+//     for (var i = 0; i < tempQuestions.length; i += 1) {
 
-        if (tempQuestions[i].category == val) {
-            finalQuestions.push(tempQuestions[i]);
-        }
-    }
-    return finalQuestions;
-}
+//         if (tempQuestions[i].category == val) {
+//             finalQuestions.push(tempQuestions[i]);
+//         }
+//     }
+//     return finalQuestions;
+// }

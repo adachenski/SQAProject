@@ -1,50 +1,72 @@
-
-
-<button style="position: fixed;width:40px;height:40px; border-radius:50%; top:11%; right:10px; z-index:100" class="menu-btn">&#9776;</button>
-    <div class="site-overlay"></div>
+<div style="width:100%; z-index:100; background-color:#000; color: white; position:fixed">
+    <div class="row" style="padding-top:10px;">
+        <!--<div class="col-xs-1"></div>-->
+        <div style="padding-right: 5px; padding-left: 25px; " class="col-xs-2">
+            <h6>
+                <span style="float:right; font-size:0.7em">powerd</span>
+                <span style="float:right;font-size:0.7em; clear:both">by</span>
+            </h6>
+        </div>
+        <div style="padding-left:5px; border-left:1px solid white;" class="col-xs-8">
+            <h4>Portnov Computer School</h4>
+        </div>
+        <div class="col-xs-2">
+            <button style="margin-top:10px;margin-bottom:20px;margin-right:10px;border: 1px solid white; float:right" class="menu-btn">&#9776;</button>
+        </div>
+    </div>
+</div>
+<!--<button style="position: fixed;width:40px;height:40px; border-radius:50%; top:11%; right:10px; z-index:100" class="menu-btn">&#9776;</button>-->
+<div class="site-overlay"></div>
 <nav class="pushy pushy-left" data-focus="#first-link">
     <div class="pushy-content">
         <ul>
-              <li class="pushy-link"><a href="/">HOME</a></li>
-         
+            <li class="pushy-link"><a href="/">HOME</a></li>
+
             <li class="pushy-submenu">
                 <button id="first-link">TEST</button>
                 <ul>
-                    <li class="pushy-link"><a href="sqa-test">SQA</a></li>
-                    <li class="pushy-link"><a href="#">Technical</a></li>
+                    <li class="pushy-link"><a href="/sqa-test">SQA</a></li>
+                    <li class="pushy-link"><a href="/">Technical</a></li>
                 </ul>
             </li>
-               <li class="pushy-submenu">
+            <li class="pushy-submenu">
                 <button>SQA Basics</button>
                 <ul>
-                    <li class="pushy-link"><a onclick="getSQAQestions('qaBasics')" href="/">Questions</a></li>
-                    <li class="pushy-link"><a href="#">10 Random</a></li>
-               
+                    <li class="pushy-link"><a href="/questions/qaBasics">Questions</a></li>
+                    <li class="pushy-link"><a href="/questions/qaBasics/random">5 Random</a></li>
                 </ul>
             </li>
             <li class="pushy-submenu">
                 <button>Testing Types</button>
                 <ul>
-                    <li class="pushy-link"><a href="#">Questions</a></li>
-                    <li class="pushy-link"><a href="#">10 Random</a></li>
+                    <li class="pushy-link"><a href="/questions/testingTypes">Questions</a></li>
+                    <li class="pushy-link"><a href="/questions/testingTypes/random">5 Random</a></li>
                 </ul>
             </li>
             <li class="pushy-submenu">
                 <button>Bugs</button>
                 <ul>
-                    <li class="pushy-link"><a href="#">Questions</a></li>
-                    <li class="pushy-link"><a href="#">10 Random</a></li>
+                    <li class="pushy-link"><a href="/questions/bugs">Questions</a></li>
+                    <li class="pushy-link"><a href="/questions/bugs/random">5 Random</a></li>
                 </ul>
             </li>
             <li class="pushy-submenu">
                 <button>Documentation</button>
                 <ul>
-                    <li class="pushy-link"><a href="#">Questions</a></li>
-                    <li class="pushy-link"><a href="#">10 Random</a></li>
+                    <li class="pushy-link"><a href="/questions/documentation">Questions</a></li>
+                    <li class="pushy-link"><a href="/questions/documentation/random">5 Random</a></li>
                 </ul>
             </li>
-            <li class="pushy-link"><a href="#">Mobile</a></li>
-            <li class="pushy-link"><a href="#">Technical</a></li>
+              <li class="pushy-submenu">
+                <button>Technical</button>
+                <ul>
+                    <li class="pushy-link"><a href="/questions/technical">Questions</a></li>
+                    <li class="pushy-link"><a href="/questions/technical/random">5 Random</a></li>
+                </ul>
+            </li>
+            
+            <li class="pushy-link"><a href="#">Contact Us</a></li>
+            <li class="pushy-link"><a href="#">Developers</a></li>
         </ul>
     </div>
 </nav>

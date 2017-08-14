@@ -16,14 +16,25 @@
     <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
     <title>Document</title>
 </head>
-
+<style>
+.main-logo{
+position:absolute; top:10px;right:7px;
+}
+</style>
+   
 <body>
     <% include ./navigation.ejs %>
-        <div style="background-color:#464646">
+    <div class="top-gap"></div>
+        <div style="background-color:#464646;">
             <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 first-row">
-                        <h3>SQA Test & Questions</h3>
+                <div class="row first-row">
+                    <div  class="col-xs-9 ">  
+                        <h4>SQA</h4>
+                        <h3> Interview Questions</h3>
+                        <h4>& Tests</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="../img/logo2.png" class="main-logo" alt="QA Logo">
                     </div>
                 </div>
                 <div class="row">
@@ -78,33 +89,7 @@
             </div>
         </div>
         <script src="js/pushy.min.js"></script>
-        <!--<div class="container">
-            <div class="panel-group" id="accordion">
-
-                <% for(var i = 0; i < questions.length; i+=1){%>
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#nas<%=i%>">
-                                    <div style="color:darkred">
-                                        <%=questions[i].title%>
-                                    </div>
-
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="nas<%=i%>" class="panel-collapse collapse">
-                            <div class="panel-body">
-                                <%=questions[i].content%>
-                                    <div style="color:darkred">More info <a href="books/<%=i%>">here</a>.</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <%}%>
-
-            </div>
-        </div>-->
+     
 </body>
 
 </html>
