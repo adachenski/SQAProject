@@ -61,6 +61,14 @@ var router = function (quest) {
 
     var randomQuestions = [];
     var finalQuestions = [];
+    questionRouter.route('/')
+    .get(function(req, res){
+        res.render('questions',{
+            title: 'All Questions',
+            testType: 'qaBasics',
+            questions: sqaQuestions2
+        })
+    })
     questionRouter.route('/qaBasics')
         .get(function (req, res) {
             finalQuestions = getCategory("testingTypes").finalQuestions;
