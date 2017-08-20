@@ -1,36 +1,133 @@
 [
     {
         "id": 1,
+        "category": "qaBasics",
         "radio": true,
-        "question": "What is Software Quality",
+        "question": "What is Software Quality?",
         "options": [
-            "Bug free software",
-            "How close is the actual software to the expected product",
-            "Software that run on any platform"
+            "Bug free software.",
+            "How close is the actual software to the expected product.",
+            "Software that run on any platform."
         ],
         "answer": 1
     },
     {
         "id": 2,
+        "category": "qaBasics",
         "radio": true,
-        "question": "What is Software Testing",
+        "question": "What is Software Testing?",
         "options": [
-            "Proces of finding bugs and watch for errors",
-            "How close is the actual software to the expected product",
-            "Proces of analyzing the softwate in order to find differences between existing and reqired conditions"
+            "Proces of finding bugs and watch for errors.",
+            "How close is the actual software to the expected product.",
+            "Proces of analyzing the softwate in order to find differences between existing and reqired conditions."
         ],
         "answer": 2
-    },  
+    },
     {
         "id": 3,
+        "category": "qaBasics",
         "radio": false,
-        "question": "Purpouse of software testing",
+        "question": "Purpouse of Software Testing?",
         "options": [
-            "Verification (Check actual result against the reqirements)",
-            "Remove all the bugs trom the tested product",
-            "Erorr detection",
-            "Validation (Check that our system is what the user acualy wants)"
+            "Verification (Check actual result against the reqirements).",
+            "Remove all the bugs trom the tested product.",
+            "Erorr detection.",
+            "Validation (Check that our system is what the user acualy wants)."
         ],
-        "answer": [0,2,3]
+        "answer": [
+            0,
+            2,
+            3
+        ]
+    },
+    {
+        "id": 4,
+        "category": "qaBasics",
+        "radio": true,
+        "question": "How to test if there are no reqirement?",
+        "options": [
+            "Use exploratory testing; Create you own requirements; Find critical errors.",
+            "If there are on requrement aways use regresson testing.",
+            "Use common sense; Compare to similar applications; Try exploratory testing."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 5,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Functional testing?",
+        "options": [
+            "Functional testing is conducted to verify that that software is functioning at subnormal ranges.",
+            "Functional testing is conducted to verify that functions of a system are working as specified.",
+            "Functional testing is conducted to verify that a software handles exceptions properly (invalid actions, inputs, settings.)."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 6,
+        "category": "testingTypes",
+        "radio": false,
+        "question": "What is System testing?",
+        "options": [
+            "System testing is conducted to verify that the system is working as specified.",
+            "System testing is conducted on complete system to evaluate it's compliance with the requirements.",
+            "System testing is a black box testing. You need to know the design or logic."
+        ],
+        "answer": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": 7,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Ad hoc testing?",
+        "options": [
+            "Simplified form of Test Automation where test Planning, Executing and Learning are happening at the same time.",
+            "Testing performed to determine how a system performs in terms of responsiveness and stability under a particular workload.",
+            "Simplified form of Exploratory Testing where test Planning, Executing and Learning are happening at the same time."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 8,
+        "category": "testingTypes",
+        "radio": false,
+        "question": "What is Unit testing?",
+        "options": [
+            "Testing of individual software components or modules.",
+            "Unit testing is conducted on complete system to evaluate it's compliance with the requirements.",
+            "Unit tests are usually run by developers (or whitebox testers) during development process to ensure that code meets its design."
+        ],
+        "answer": [
+            0,
+            2
+        ]
+    },
+    {
+        "id": 9,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Integration testing?",
+        "options": [
+            "Integration testing is conducted to verify that functions of a system are working as specified.",
+            "Integratopn testing is integrating a software product with the development environment.",
+            "Integration testing is a phase in software testing in which individual software modules are combined and tested as a group."
+        ],
+        "answer": 2
+    } ,
+    {
+        "id": 10,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Smoke testing?",
+        "options": [
+            "Smoke testing is conducted to test attributes of a component or system that do not relate to functionality, reliability; efficiency, etc..",
+            "Smoke testing is run to identify simple failures severe enough to reject software release.",
+            "Smoke testing is using structural, design, and environment information to enhance testing productivity by using appropriate methods and tools."
+        ],
+        "answer": 1
     }
 ]

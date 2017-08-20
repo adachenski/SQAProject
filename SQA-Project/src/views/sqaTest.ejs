@@ -21,12 +21,24 @@
     <style>
         .red {
             background-color: red;
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
         }
         
         .green {
-            background-color: green;
-            padding: 10px;
-            margin: 40px 10px 10px 10px;
+            /*background: -webkit-linear-gradient(#E6E6FA, #5F9EA0);*/
+            padding: 5px 10px 20px 30px;
+            margin: 30px 10px;
+            font-size: 1.1em;
+        }
+        
+        .question-container {
+            background-color: lightgreen;
         }
         
         .hidden {
@@ -34,40 +46,59 @@
         }
         
         .lightgreen {
-            background-color: lightgreen;
+            background-color: #32CD32;
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
         }
         
         .first-row {
-            height: 15%;
+            /*height: 15%;
             min-height: 70px;
-            background-color: lightblue;
+            background-color: lightblue;*/
+        }
+        
+        .radio-gap {
+            /*text-shadow: 1px 1px 1px white;*/
+            position: absolute;
+            left: -15px;
+        }
+        
+        .center {
+            text-align: center;
         }
     </style>
 </head>
 
 <body>
     <% include ./navigation.ejs %>
-      <div class="top-gap"></div>
-        <div class="container" style="height:1665px">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-12 first-row">
-                    <h3>Questions</h3>
+                    <h3 class="center">SQA Test</h3>
                 </div>
             </div>
 
             <div class="row">
-                <!--<div class="col-xs-3">null</div>-->
-                <div class="col-sm-6 col-xs-12">
-                    <div class="row green">
+                <div class="col-sm-3 col-lg-4"></div>
 
+                <div class="col-xs-12 col-sm-6  col-lg-4">
+                    <div id="answer"></div>
+                    <div class="row green">
                     </div>
+
                     <div class="row">
-                        <div id="answer"></div>
-                        <input id="submit" type="button" class="btn btn-primary" value="Submit">
-                        <input id="next" type="button" class="btn btn-primary hidden" value="Next">
+                        <div class="col-xs-12 center"><span id="progress">1 of 10</span></div>
+                        <div class="col-xs-12">
+                            <input id="submit" type="button" class="btn btn-success" value="Submit">
+                            <input id="next" type="button" class="btn btn-primary hidden" value="Next">
+                        </div>
                     </div>
                 </div>
-                <!--<div class="col-xs-3">null</div>-->
+                <div class="col-sm-3 col-lg-4"></div>
             </div>
 
         </div>
@@ -80,16 +111,17 @@
             $.getJSON("json/Questions.json", function (data) {
                 $.each(data, function (key, val) {
                     plainVal.push(val);
+
                     var mainDiv = $("<div/>", {
                         "class": "col-xs-12",
                     });
-                    var h3 = $("<h3/>", {
-
-                        "text": val.question
-                    }).appendTo(mainDiv);
                     var innerDiv = $("<div/>", {
                         "class": "row",
                     }).appendTo(mainDiv);
+
+                    var h3 = $("<h3/>", {
+                        "text": val.question
+                    }).appendTo(innerDiv);
 
                     for (var i = 0; i < val.options.length; i += 1) {
                         var span = $("<span/>", {
@@ -97,16 +129,16 @@
                         }).appendTo(innerDiv);
                         if (val.radio) {
                             var radio = $("<input/>").attr({
-                                type: 'radio', name: 'mydata', class: 'mydata', value: i, id: i
+                                type: 'radio', name: 'mydata', class: 'mydata radio-gap', value: i, id: i
                             }).appendTo(span);
                         }
                         else {
                             var radio = $("<input/>").attr({
-                                type: 'checkbox', class: 'mydata', value: i, id: i
+                                type: 'checkbox', class: 'mydata radio-gap', value: i, id: i
                             }).appendTo(span);
                         }
                         var span = $("<span/>", {
-                            "text": val.options[i]
+                            "text": val.options[i], class: ''
                         }).appendTo(span);
 
                         var br = $("</br>").appendTo(span);
@@ -116,7 +148,7 @@
                 });
 
                 $("<div/>", {
-                    "class": "col-xs-12",
+
                     html: items[count]
                 }).appendTo(".green");
             });
@@ -130,10 +162,9 @@
             $("#next").click(function () {
 
                 count++;
-
+                $("#progress").html(count + 1 + " of 10");
                 $(".green").html('');
                 $("<div/>", {
-                    "class": "col-xs-12",
                     html: items[count]
                 }).appendTo(".green");
 
@@ -150,7 +181,7 @@
                     // $(".green").addClass("hidden");
                     $("#answer").addClass("hidden");
                     alert(answersCount);
-
+                    $("#progress").html("You need 70% to pass the test.</br> Your Score is" + answersCount + " of 10");
                     if (answersCount >= finalResult) {
                         $("<div/>", {
                             "class": "col-xs-12",
@@ -166,17 +197,36 @@
                 }
             });
 
+            jQuery.fn.extend({
+                animateAnswer: function () {
+                    this
+                        .fadeIn(500).animate({
+                            left: '5%',
+                            opacity: '0.7'
+                        }).animate({
+                            left: '25%',
+                            opacity: '1'
+                        }).fadeOut(2300);
+
+                    return this;
+                }
+            });
+
             function checkRightVal(count) {
                 var answers = $(".mydata:checked");
                 // var x = $("input:radio[name=mydata]:checked");
                 if (answers.length === 1) {
                     var value = answers.attr("id");
                     if (plainVal[count].answer == value) {
-                        $("#answer").text("corect").addClass("lightgreen").removeClass("red");
+                        $("#answer").text("Success").addClass("lightgreen")
+                            .animateAnswer()
+                            .removeClass("red");
                         answersCount++;
                     }
                     else {
-                        $("#answer").text("Incorect").addClass("red").removeClass('lightgreen');
+                        $("#answer").text("Incorect").addClass("red")
+                            .animateAnswer()
+                            .removeClass('lightgreen');
                     }
                     $("#submit").addClass("hidden");
                     $("#next").removeClass("hidden");
@@ -197,18 +247,25 @@
                         }
                     }
                     if (plainVal[count].answer.length == countCheckBoxAnswers) {
-                        $("#answer").text("corect").addClass("lightgreen").removeClass("red");
+                        $("#answer").text("Success").addClass("lightgreen")
+                            .animateAnswer()
+                            .removeClass("red");
                         answersCount++;
                     }
                     else {
-                        $("#answer").text("Incorect").addClass("red").removeClass('lightgreen');
+                        $("#answer").text("Incorect").addClass("red")
+                            .animateAnswer()
+                            .removeClass('lightgreen');
                     }
                     // console.log('chexbox answers: ' + countCheckBoxAnswers);
                     $("#submit").addClass("hidden");
                     $("#next").removeClass("hidden");
                 }
                 else {
-                    $("#answer").text("You must enter a value").addClass("red").removeClass('lightgreen');
+                    $("#answer").text("You must enter a value!").addClass("red")
+                        .fadeIn(500)
+                        .fadeOut(2300)
+                        .removeClass('lightgreen');
                 }
             }
         </script>
