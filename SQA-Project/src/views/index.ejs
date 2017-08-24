@@ -7,6 +7,7 @@
     <meta name="Software Quality Ashurance Interview Questions" content="Software Quality Ashurance Interview Questions">
     <meta name="Atanas Dachenski" content="Software Quality Ashurance Interview Questions">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link rel="stylesheet" href="css/sqa.css">
     <link rel="stylesheet" href="css/normalize.css">
 
@@ -57,55 +58,84 @@
                 </div>
                 <div class="row">
                     <a href="sqa-test">
-                        <div class="col-xs-6 cell-container">
+                        <div class="col-xs-6 cell-container main-background">
                             <div>SQA Test</div>
                             <img src="../img/test.png" style="width:65%" alt="Test">
                         </div>
                     </a>
-                    <div class="col-xs-6 cell-container">
-                        <div>Add Question</div>
-                        <img src="../img/question.png" style="width:65%" alt="Question">
+                    <a href="questions/technical">
+                        <div class="col-xs-6 cell-container main-background">
+                            <div>Technical Test</div>
+                            <img src="../img/technical3.png" style="width:65%" alt="Technical Test">
+                        </div>
+                    </a>
+                    <a href="questions">
+                        <div class="col-xs-6 cell-container main-background">
+                            <div>Questions</div>
+                            <img src="../img/technical.png" style="width:65%" alt="Questions">
+                        </div>
+                    </a>
+                    <a href="questions">
+                        <div class="col-xs-6 cell-container main-background">
+                            <div>Add Question</div>
+                            <img src="../img/team-icon.gif" style="width:65%" alt="Question">
+                        </div>
+                    </a>
+                    <style>
+                        .main-headers {
+                            padding: 0px 0px 10px 0px;
+                            color: white;
+                        }
+                    </style>
+                    <div class="col-xs-12 main-headers">
+                        <h3 class="center">Types of Testing</h3>
                     </div>
-                    <a href="questions/qaBasics">
-                        <div class="col-xs-6 cell-container">
-                            <div>SQA Basics</div>
-                            <img src="../img/qa_icon.png" style="width:65%" alt="SQA_Basics">
+                    <a href="questions">
+                        <div class="col-xs-6 cell-container main-background">
+                            <div>Functional</div>
+                            <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
                         </div>
                     </a>
-                    <a href="questions/testingTypes">
-                        <div class="col-xs-6 cell-container">
-                            <div>Testing Types</div>
-                            <img src="../img/testing-types.png" style="width:65%" alt="Testing_Types">
+                    <a href="questions">
+                        <div class="col-xs-6 cell-container main-background">
+                            <div>Non Functional</div>
+                            <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
                         </div>
                     </a>
-                    <a href="questions/bugs">
-                        <div class="col-xs-6 cell-container">
-                            <div>Bugs</div>
-                            <!--<i class="fa fa-lg fa-bug" aria-hidden="true"></i>-->
-                            <img src="../img/bug.png" style="width:65%" alt="bug">
-                        </div>
-                    </a>
-                    <a href="questions/documentation">
-                        <div class="col-xs-6 cell-container">
-                            <div>Documentation</div>
-                            <img src="../img/document.png" style="width:65%" alt="dogumentation">
-                        </div>
-                    </a>
-                    <a href="questions/mobile">
-                        <div class="col-xs-6 cell-container">
-                            <div>Mobile</div>
-                            <img src="../img/mobile.png" style="width:65%" alt="Mobile">
-                        </div>
-                        <a>
-                            <a href="questions/technical">
-                                <div class="col-xs-6 cell-container">
-                                    <div>Technical</div>
-                                    <img src="../img/technical.png" style="width:65%" alt="Technical">
-                                </div>
-                            </a>
+                    <div class="col-xs-12 main-headers">
+                        <h3 class="center">Documentation</h3>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            $(window).on('load', function () {
+                var allQuestions = [];
+                $.getJSON('json/fullQuestions.json', function (data) {
+
+                    allQuestions = data;
+                    var testingTypes = getDetailCategory(allQuestions, 'testingTypes');
+                    console.log(testingTypes);
+                    console.log('nasko')
+
+                });
+
+                function getDetailCategory(allQuestions, category) {
+                    var tempArr = [];
+                    for (var i = 0; i < allQuestions.length; i += 1) {
+                        if (allQuestions[i].category == category) {
+                            tempArr.push(allQuestions[i])
+                        }
+                    }
+                    return tempArr
+
+                };
+
+
+
+            });
+        </script>
 
         <!-- second view -->
         <div class="container hidden-xs">

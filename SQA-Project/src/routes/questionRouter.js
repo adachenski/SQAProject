@@ -1,6 +1,7 @@
 var express = require('express');
 var questionRouter = express.Router();
 var sqaQuestions2 = require('../../public/json/portnovQuestions2');
+var detailQuestions = require('../../public/json/fullQuestions');
 
 function getCategory(val) {
 
@@ -57,18 +58,20 @@ function getCategory(val) {
     }
 }
 
+
 var router = function (quest) {
 
     var randomQuestions = [];
     var finalQuestions = [];
+
     questionRouter.route('/')
-    .get(function(req, res){
-        res.render('questions',{
-            title: 'All Questions',
-            testType: 'qaBasics',
-            questions: sqaQuestions2
+        .get(function (req, res) {
+            res.render('questions', {
+                title: 'All Questions',
+                testType: 'qaBasics',
+                questions: sqaQuestions2
+            })
         })
-    })
     questionRouter.route('/qaBasics')
         .get(function (req, res) {
             finalQuestions = getCategory("testingTypes").finalQuestions;
@@ -78,7 +81,7 @@ var router = function (quest) {
                 questions: finalQuestions
             });
         });
-         questionRouter.route('/qaBasics/random')
+    questionRouter.route('/qaBasics/random')
         .get(function (req, res) {
             randomQuestions = getCategory("qaBasics").randomQuestions;
             res.render('sqa-questions-random', {
@@ -133,13 +136,14 @@ var router = function (quest) {
         })
     questionRouter.route('/documentation')
         .get(function (req, res) {
+            finalQuestions = getCategory("documentation").finalQuestions;
             res.render('sqa-questions', {
                 title: 'Documentation',
                 testType: 'documentation',
-                questions: getCategory('documentation').finalQuestions
+                questions: finalQuestions
             })
         })
-         questionRouter.route('/documentation/random')
+    questionRouter.route('/documentation/random')
         .get(function (req, res) {
             randomQuestions = getCategory("documentation").randomQuestions;
             res.render('sqa-questions-random', {
@@ -150,13 +154,14 @@ var router = function (quest) {
         })
     questionRouter.route('/technical')
         .get(function (req, res) {
+            finalQuestions = getCategory("technical").finalQuestions;
             res.render('sqa-questions', {
                 title: 'Technical',
                 testType: 'technical',
-                questions: getCategory('technical').finalQuestions
+                questions: finalQuestions
             })
         })
-         questionRouter.route('/technical/random')
+    questionRouter.route('/technical/random')
         .get(function (req, res) {
             randomQuestions = getCategory("technical").randomQuestions;
             res.render('sqa-questions-random', {
@@ -167,10 +172,11 @@ var router = function (quest) {
         })
     questionRouter.route('/mobile')
         .get(function (req, res) {
+            finalQuestions = getCategory("mobile").finalQuestions;
             res.render('sqa-questions', {
                 title: 'Mobile',
                 testType: 'mobile',
-                questions: getCategory('mobile').finalQuestions
+                questions: finalQuestions
             })
         })
     questionRouter.route('/mobile/random')
@@ -180,6 +186,33 @@ var router = function (quest) {
                 title: "mobile",
                 testType: 'mobile',
                 randQuestions: randomQuestions
+            })
+        })
+
+    function detailSelection(detailQuestions, id) {
+        var singleTopic = {
+            "title": "No extra info for this subject",
+            "content": "You can aways add some"
+        };
+
+        for (var i = 0; i < detailQuestions.length; i += 1) {
+            console.log(detailQuestions[i]['referToId']);
+            if (id == detailQuestions[i].referToId) {
+                singleTopic = detailQuestions[i];
+            }
+        }
+
+        return singleTopic;
+    }
+
+    questionRouter.route('/:id')
+        .get(function (req, res) {
+            var id = req.params.id;
+            var referToId = id;
+            res.render('single-question', {
+                title: 'all',
+                questions: sqaQuestions2[id],
+                details: detailSelection(detailQuestions, id)
             })
         })
     questionRouter.route('/:qaQuestion/:id')
@@ -192,11 +225,11 @@ var router = function (quest) {
             });
         });
 
- questionRouter.route('/:qaQuestion/random/:id')
+    questionRouter.route('/:qaQuestion/random/:id')
         .get(function (req, res) {
             var sqBasics = req.params.qaQuestion;
             var id = req.params.id;
-             //var rand = req.params.random;
+            //var rand = req.params.random;
             res.render('single-random', {
                 title: sqBasics,
                 randQuestions: randomQuestions[id]

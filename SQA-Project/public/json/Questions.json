@@ -117,7 +117,7 @@
             "Integration testing is a phase in software testing in which individual software modules are combined and tested as a group."
         ],
         "answer": 2
-    } ,
+    },
     {
         "id": 10,
         "category": "testingTypes",
@@ -129,5 +129,261 @@
             "Smoke testing is using structural, design, and environment information to enhance testing productivity by using appropriate methods and tools."
         ],
         "answer": 1
+    },
+    {
+        "id": 11,
+        "category": "testingTypes",
+        "radio": false,
+        "question": "What is Sanity Check testing?",
+        "options": [
+            "Sanity testing is a basic test to quickly evaluate if the calculation result can be true.",
+            "It's not to catch all mistakes, but to identify areas with obviously false results.",
+            "Test a complete application in closest to production environment (interacting with a database, using network communications, etc)."
+        ],
+        "answer": [
+            0,
+            1
+        ]
+    },
+    {
+        "id": 12,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Regression testing?",
+        "options": [
+            "Partial retesting of a modified program to make shure that all errors are cached and reported.",
+            "Partial retesting of a modified program to make sure that no new errors were introduced while making changes to the code (developing new or fixing existing one).",
+            "Test a complete application in closest to production environment (interacting with a database, using network communications, etc)."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 13,
+        "category": "testingTypes",
+        "radio": false,
+        "question": "What is Alpha testing?",
+        "options": [
+            "Alpha testing involves testing of the operational system by internal staff, before it is released to external customers.",
+            "Alpha testing takes place at developers sites.",
+            "Alpha testing takes place at customers sites, and involves testing by a group of customers who use the system at their own locations and provide feedback."
+        ],
+        "answer": [
+            0,
+            1
+        ]
+    },
+    {
+        "id": 14,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Beta testing?",
+        "options": [
+            "Beta testing takes place at customers' sites, and involves testing by a group of customers who use the system at their own locations and provide feedback, before the system is released to other customers.",
+            "Beta testing takes place at developers' sites, and involves testing of the operational system by internal staff, before it is released to external customers."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 15,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Performance testing?",
+        "options": [
+            "Testing performed to determine how a system performs in terms of responsiveness and stability under a particular workload.",
+            "Performance testing is conducted to understand the behavior of the system under a specific expected load. Simplest form of load testing.",
+            "Performance testing measures how easy it is to use specific object or set of objects."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 16,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Stress testing?",
+        "options": [
+            "Testing performed to determine how a system performs in terms of responsiveness and stability under a particular workload.",
+            "Stree testing is conducted to understand the behavior of the system under a specific expected load. Simplest form of load testing.",
+            "Stress testing is conducted to understand the behavior of the system under an extreme load."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 17,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Recoverability testing?",
+        "options": [
+            "Recoverability testing is performed to determine how a system performs in terms of responsiveness and stability under a particular workload.",
+            "Recoverability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How it will recover directly affected data?"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 18,
+        "category": "testingTypes",
+        "radio": false,
+        "question": "What is Usability testing?",
+        "options": [
+            "Usability testing is used to evaluate product by testing it on users.",
+            "Recoverability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How it will recover directly affected data?",
+            "Usability testing measures how easy it is to use specific object or set of objects."
+        ],
+        "answer": [
+            0,
+            2
+        ]
+    },
+    {
+        "id": 19,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is the most frequently executed type of testing?",
+        "options": [
+            "Regression.",
+            "Stress.",
+            "Release/build acceptance.",
+            "Browser compatibility.",
+            "Smoke."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 20,
+        "category": "bugs",
+        "radio": true,
+        "question": "Describe a bug?",
+        "options": [
+            "Release/build acceptance.",
+            "Mismatch between actual result of a software application and its intended result.",
+            "Unexpected software behavior.",
+            "Mismatch between actual behavior of a software application and its intended behavior."
+        ],
+        "answer": 3
+    },
+    {
+        "id": 21,
+        "category": "bugs",
+        "radio": false,
+        "question": "Describe WWW rule",
+        "options": [
+            "What heppend?",
+            "Where it heppend?",
+            "Why it happend?",
+            "Under Which surcumstances?"
+        ],
+        "answer": [
+            0,
+            1,
+            3
+        ]
+    },
+    {
+        "id": 22,
+        "category": "bugs",
+        "radio": true,
+        "question": "Most important components of Bug Report",
+        "options": [
+            "Title, Steps to reproduce, Severity, Priority, Status",
+            "Title, Steps to execute, Expected Result, Actual Result, "
+        ],
+        "answer": 0
+    },
+    {
+        "id": 23,
+        "category": "bugs",
+        "radio": true,
+        "question": "When should you write a Bug Report",
+        "options": [
+            "Only in certain days of the week.",
+            "Right after executing your test cases.",
+            "Immediately upon finding the bug."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 24,
+        "category": "bugs",
+        "radio": true,
+        "question": " Who can assign/change severity or priority in a bug report?",
+        "options": [
+            "Tester assigns severity; Development Manager assigns Priority.",
+            "Tester assigns Prority; Development Manager assigns severity.",
+            "Developer assigns severity; Tester assigns Priority."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 25,
+        "category": "bugs",
+        "radio": false,
+        "question": "Statuses of a bug?",
+        "options": [
+            "Open.",
+            "Pending.",
+            "Fix/Resolved.",
+            "Critical",
+            "Closed",
+            "Can't Reproduce",
+            "Deferred"
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            4,
+            5,
+            6
+        ]
+    },
+    {
+        "id": 26,
+        "category": "documentation",
+        "radio": false,
+        "question": "What is a Use Case?",
+        "options": [
+            "Use cases are used by Business Analysts as a sequence of actions for the execution of multiple test cases.",
+            "Use cases are used by Business Analysts as a format for specifying system requirements",
+            "Document that describes the objectives, scope, approach, and focus of a software testing effort.",
+            "Each use case represents completed business operation performed by user."
+        ],
+        "answer": [
+            1,
+            3
+        ]
+    },
+    {
+        "id": 27,
+        "category": "documentation",
+        "radio": true,
+        "question": "What is a Test Case?",
+        "options": [
+            "Document that describes the objectives, scope, approach, and focus of a software testing effort.",
+            "Set of conditions and/or variables under which a tester will determine if a requirement upon an application is satisfied."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 29,
+        "category": "documentation",
+        "radio": true,
+        "question": "What is a Test Plan?",
+        "options": [
+            "Document that describes the objectives, scope, approach, and focus of a software testing effort.",
+            "A document specifying a sequence of actions for the execution of multiple test cases.",
+            "Document that represents completed business operation performed by user."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 30,
+        "category": "documentation",
+        "radio": false,
+        "question": "What is a Test Matrix?",
+        "options": [
+            "Document that describes the objectives, scope, approach, and focus of a software testing effort.",
+            "It provides a structure for testing the effect of combining two or more variables, circumstances, types of hardware, or events.",
+            "Data collection mechanism."
+        ],
+        "answer": [1,2]
     }
 ]

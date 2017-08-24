@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "category": "testingTypes",
+        "referToId": 19,
+        "title": "What is Functional testing?",
+        "content": "<div> Functional testing is a type of testing which verifies that each function of the software application operates in conformance with the requirement specification. This testing mainly involves black box testing and it is not concerned about the source code of the application. Each and every functionality of the system is tested by providing appropriate input, verifying the output and comparing the actual results with the expected results. This testing involves checking of User Interface, APIs, Database, security, client/ server applications and functionality of the Application Under Test. The testing can be done either manually or using automation </div><h3> What do you test in Functional Testing? </h3> <div> The prime objective of Functional testing is checking the functionalities of the software system. It mainly concentrates on </div><div><b>Mainline functions</b>: Testing the main functions of an application</div><div><b>Basic Usability</b>: It involves basic usability testing of the system. It checks whether an user can freely</div>navigate through the screens without any difficulties.</div><div><b>Accessibility</b>: Checks the accessibility of the system for the user</div><div><b>Error Conditions</b>: Usage of testing techniques to check for error conditions. It checks whether suitable error messages are displayed.</div><div> <ul> <h3>Types of Functional testing</h3> <li>Unit Testing</li><li>Integration Testing</li><li>Smoke/Sanity</li><li>User Acceptance</li><li>Localization</li><li>Globalization</li><li>Interoperability</li><li>So on..</li></ul> </div>"
+    },
+    {
+        "id": 2,
+        "category": "testingTypes",
+        "referToId": 20,
+        "title": "What is Non-functional testing?",
+        "content": " <div> <div> Non-functional testing is the testing of a software application or system for its non-functional requirements: the way a system operates, rather than specific behaviours of that system. Like functional testing, there are non-functional requirements like performance, usability, load factor that are also important. Many times you have come across to long load time messages while accessing an application. To address this issue, performance testing is carried out to check & fine tune system response times. The goal of performance testing is to reduce response time to an acceptable level. Likewise, you might have seen the message like 'Server Busy'. Hence, load testing is carried out to check systems performance at different loads i.e. number of users accessing the system. </div><div> <ul> <h4>Types on Non-functional testing</h4> <li>Performance</li><li>Endurance</li><li>Load</li><li>Volume</li><li>Scalability</li><li>Usability</li><li>So on..</li></ul> </div></div>"
+    },
+    {
+        "id": 3,
+        "category": "testingTypes",
+        "referToId": 25,
+        "title": "What is Ad-hoc testing?",
+        "content": " <div> <div> Adhoc testing is an informal testing type with an aim to break the system. This testing is usually an unplanned activity. It does not follow any test design techniques to create test cases. In fact is does not create test cases altogether! This testing is primarily performed if the knowledge of testers in the system under test is very high. Testers randomly test the application without any test cases or any business requirement document. Ad hoc Testing does not follow any structured way of testing and it is randomly done on any part of application. Main aim of this testing is to find defects by random checking. Adhoc testing can be achieved with the testing technique called Error Guessing. Error guessing can be done by the people having enough experience on the system to 'guess' the most likely source of errors. This testing requires no documentation/ planning /process to be followed. Since this testing aims at finding defects through random approach, without any documentation, defects will not be mapped to test cases. Hence, sometimes, it is very difficult to reproduce the defects as there are no test steps or requirements mapped to it. </div><h3>When execute Adhoc Testing?</h3> <div>Ad hoc testing can be performed when there is limited time to do elaborative testing. Usually adhoc testing is performed after the formal test execution. And if time permits, ad hoc testing can be done on the system). Ad hoc testing will be effective only if the tester is knowledgeable of the System Under Test.</div><h3>Types of adhoc testing</h3> <dl> <dt><b>Buddy Testing </b></dt> <dd>Two buddies mutually work on identifying defects in the same module. Mostly one buddy will be from development team and another person will be from testing team. Buddy testing helps the testers develop better test cases and development team can also make design changes early. This testing usually happens after unit testing completion. </dd> <dt><b>Pair testing </b></dt> <dd>Two testers are assigned modules, share ideas and work on the same machines to find defects. One person can execute the tests and another person can take notes on the findings. Roles of the persons can be a tester and scriber during testing.</dd> <dt><b>Monkey Testing </b></dt> <dd>Randomly test the product or application without test cases with a goal to break the system.</dd> </dl> </div>"
+    },
+    {
+        "id": 4,
+        "category": "testingTypes",
+        "referToId": 35,
+        "title": "What is Smoke testing?",
+        "content": "<div>Smoke Testing is a kind of Software Testing performed after software build to ascertain that the critical functionalities of the program is working fine. It is executed 'before' any detailed functional or regression tests are executed on the software build. The purpose is to reject a badly broken application, so that the QA team does not waste time installing and testing the software application.In Smoke Testing, the test cases chosen cover the most important functionality or component of the system. The objective is not to perform exhaustive testing, but to verify that the critical functionalities of the system is working fine.For Example a typical smoke test would be - Verify that the application launches successfully, Check that the GUI is responsive ... etc.</div>"
+    },
+    {
+        "id": 5,
+        "category": "testingTypes",
+        "referToId": 36,
+        "title": "What is Sanity testing?",
+        "content": "<div>Sanity testing is a kind of Software Testing performed after receiving a software build, with minor changes in code, or functionality, to ascertain that the bugs have been fixed and no further issues are introduced due to these changes. The goal is to determine that the proposed functionality works roughly as expected. If sanity test fails, the build is rejected to save the time and costs involved in a more rigorous testing.The objective is 'not' to verify thoroughly the new functionality, but to determine that the developer has applied some rationality (sanity) while producing the software. For instance, if your scientific calculator gives the result of 2 + 2=5! Then, there is no point testing the advanced functionalities like sin 30 + cos 50.</div>"
+    }
+]

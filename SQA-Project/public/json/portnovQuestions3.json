@@ -2,13 +2,13 @@
     {
         "id": 0,
         "title": "What is Quality?",
-        "content": "Customer's satisfaction; </br> Product being under requirements. BUT! Each type of customer will have their own view on quality. Meeting the requirements doesn't guarantee customer's popularity.",
+        "content": "Customer's satisfaction;</br> Product being under requirements. BUT! Each type of customer will have their own view on quality. Meeting the requirements doesn't guarantee customer's popularity.",
         "category": "qaBasics"
     },
     {
         "id": 1,
         "title": " What is Software Quality? ",
-        "content": " Software Quality is how close the actual software product is to the expected (intended) product. Quality Software: Bug-free; Meets requirements and expectations; Delivered on time. ",
+        "content": " Software Quality is how close the actual software product is to the expected (intended) product. Quality Software: Bug-free;</br> Meets requirements and expectations;</br> Delivered on time. ",
         "category": "qaBasics"
     },
     {
@@ -26,7 +26,7 @@
     {
         "id": 4,
         "title": " Purpose of Software Testing? ",
-        "content": " Verification (Check the actual results against the requirements); Validation (Check that our system is what the user actually wanted); Error detection. ",
+        "content": " Verification (Check the actual results against the requirements);</br> Validation (Check that our system is what the user actually wanted);</br> Error detection. ",
         "category": "qaBasics"
     },
     {
@@ -44,7 +44,7 @@
     {
         "id": 7,
         "title": " Main phases of the Software Development Life Cycle? ",
-        "content": " Planning (Concept development & Planning); Analysis (Requirements gathering & Analysis); Design (Architecture & Specifications); Development (Development; Test; Implementation); Maintenance. ",
+        "content": " <b>Planning </b>(Concept development & Planning);</br>  <b>Analysis</b> (Requirements gathering & Analysis);</br>  <b>Design</b> (Architecture & Specifications);</br><b>Development</b> (Development, Test, Implementation);</br><b>Maintenance</b>. ",
         "category": "qaBasics"
     },
     {
@@ -80,7 +80,7 @@
     {
         "id": 13,
         "title": " How to test if there are no requirements? ",
-        "content": " Use common sense; Compare to similar applications; Try exploratory testing. ",
+        "content": " Use common sense;</br> Compare to similar applications;</br> Try exploratory testing. ",
         "category": "qaBasics"
     },
     {
@@ -116,13 +116,13 @@
     {
         "id": 19,
         "title": " What is Functional Testing? ",
-        "content": " Functional testing is conducted to verify that functions of a system are working as specified. Typically functions are described in work products (requirements, specifications, etc), but can be undocumented; ",
+        "content": " Functional testing is conducted to verify that functions of a system are working as specified. Typically functions are described in work products (requirements, specifications, etc), but can be undocumented;</br> ",
         "category": "testingTypes"
     },
     {
         "id": 20,
         "title": " What is Non-Functional Testing? ",
-        "content": " Non-Functional testing is conducted to test attributes of a component or system that do not relate to functionality: Reliability; Efficiency; Usability; Maintainability; Compatibility, etc. ",
+        "content": " Non-Functional testing is conducted to test attributes of a component or system that do not relate to functionality: </br>Reliability;</br> Efficiency;</br> Usability;</br> Maintainability;</br> Compatibility, etc. ",
         "category": "testingTypes"
     },
     {
@@ -272,13 +272,13 @@
     {
         "id": 45,
         "title": " What is Accessibility Testing? ",
-        "content": " Accessibility testing is conducted to test the compliance with standards. Examples: World Web Consortium (W3C) - GUI; Americans with Disabilities Act of 1990; Wikipedia Accessibility; etc. ",
+        "content": " Accessibility testing is conducted to test the compliance with standards. Examples:</br> World Web Consortium (W3C) - GUI;</br> Americans with Disabilities Act of 1990;</br> Wikipedia Accessibility; etc. ",
         "category": "testingTypes"
     },
     {
         "id": 46,
         "title": " What is Security Testing? ",
-        "content": " Security testing is conducted to test that: System data is protected; How system prevents the intrusion by hackers. ",
+        "content": " Security testing is conducted to test that: </br>System data is protected;</br> How system prevents the intrusion by hackers. ",
         "category": "testingTypes"
     },
     {
@@ -308,13 +308,13 @@
     {
         "id": 51,
         "title": " Most important components of Bug Report? ",
-        "content": " Short Description (Title); Steps to reproduce; Severity; Priority; Status. ",
+        "content": " Short Description (Title);</br> Steps to reproduce;</br> Severity;</br> Priority;</br> Status. ",
         "category": "bugs"
     },
     {
         "id": 52,
         "title": " Describe bug life cycle? ",
-        "content": " Bug found and reported; Development Manager set assigned to  and priority; Developer fixes the bug; Tester validated that bug was fixed (if not bug going back to developer) and closes the bug. ",
+        "content": " Bug found and reported;</br> Development Manager set assigned to  and priority;</br> Developer fixes the bug;</br> Tester validated that bug was fixed (if not bug going back to developer) and closes the bug. ",
         "category": "bugs"
     },
     {
@@ -332,67 +332,67 @@
     {
         "id": 55,
         "title": " What makes a good bug report? ",
-        "content": " Follow WWW rule; How to reproduce the bug; Analyze the problem to minimize number of steps to reproduce it; Complete, easy to understand, non-conflicting. ",
+        "content": " Follow WWW rule;</br> How to reproduce the bug;</br> Analyze the problem to minimize number of steps to reproduce it;</br> Complete, easy to understand, non-conflicting. ",
         "category": "bugs"
     },
     {
         "id": 56,
         "title": " Who can assign/change severity or priority in a bug report? ",
-        "content": " Tester assigns severity; Development Manager assigns Priority. ",
+        "content": " Tester assigns severity;</br> Development Manager assigns Priority. ",
         "category": "bugs"
     },
     {
         "id": 57,
         "title": " Name levels of the seriousness of the Problem (Severity)? ",
-        "content": " Critical/Fatal (crash, data corruption, security, hang); Serious (workaround); Minor; Suggestion/Enhancement. ",
+        "content": "  <b>Critical/Fatal</b> (crash, data corruption, security, hang);</br><b>Serious</b> (workaround);</br> <b>Minor</b>;</br> <b>Suggestion/Enhancement</b>.",
         "category": "bugs"
     },
     {
         "id": 58,
         "title": " Name 3 levels of bug priority? ",
-        "content": " High; Medium; Low. ",
+        "content": " High;</br> Medium;</br> Low. ",
         "category": "bugs"
     },
     {
         "id": 59,
-        "title": " Which type of testing results in highest number of bugs found? ",
-        "content": " Negative testing (versus Positive testing of same type). ",
+        "title": " Which type of testing results in highest number of bugs found?",
+        "content": " Negative testing (versus Positive testing of same type).",
         "category": "bugs"
     },
     {
         "id": 60,
         "title": " Which Bug tracking system do you know? ",
-        "content": " Jira; Bugzilla; Elementool; Mantis; Trac. ",
+        "content": "Jira;</br> Bugzilla;</br> Elementool;</br> Mantis;</br> Trac.",
         "category": "bugs"
     },
     {
         "id": 61,
-        "title": " Statuses of bugs? ",
-        "content": " Open; Pending; Fixed/Resolved; Closed; Can't Reproduce; Deferred; ",
+        "title": "Statuses of bugs? ",
+        "content": " Open;</br> Pending;</br> Fixed/Resolved;</br> Closed;</br> Can't Reproduce;</br> Deferred;</br> ",
         "category": "bugs"
     },
     {
         "id": 62,
-        "title": " If Developer can't reproduce a defect? ",
-        "content": " Reproduce on your computer; Then reproduce on 1-3 other computers. If you can reproduce the defect: Compare developer�s and your working environment; Ask developer to debug on QA environment with his/her tools. ",
+        "title": "If Developer can't reproduce a defect? ",
+        "content": "Reproduce on your computer;</br> Then reproduce on 1-3 other computers. If you can reproduce the defect: <br>Compare developer's and your working environment;</br> Ask developer to debug on QA environment with his/her tools. ",
         "category": "bugs"
     },
     {
         "id": 63,
         "title": " If Developer marked your defect As Designed ? ",
-        "content": " Verify the requirements; If no specific requirement exists, compare to same feature implemented in quality applications or talk to your manager and/or developer; Close the bug. ",
+        "content": " Verify the requirements;</br> If no specific requirement exists, compare to same feature implemented in quality applications or talk to your manager and/or developer;</br> Close the bug. ",
         "category": "bugs"
     },
     {
         "id": 64,
         "title": " Bug Tracking system is a software application, designed to? ",
-        "content": " Report bugs; Track (update) bugs; Close (fix, defer, move to another system); To run the statistical analysis, monitor, and summarize the results; Work on quality improvements. ",
+        "content": " Report bugs;</br> Track (update) bugs;</br> Close (fix, defer, move to another system);</br> To run the statistical analysis, monitor, and summarize the results;</br> Work on quality improvements. ",
         "category": "bugs"
     },
     {
         "id": 65,
         "title": " Why do we need Bug Tracking Database? ",
-        "content": " Accountability; Communication tool (inter-personal and inter-departmental); Organization of the information; Monitoring individual performance; ",
+        "content": " Accountability;</br> Communication tool (inter-personal and inter-departmental);</br> Organization of the information;</br> Monitoring individual performance;</br> ",
         "category": "bugs"
     },
     {
@@ -422,13 +422,13 @@
     {
         "id": 70,
         "title": " Most Important Components of Test Cases? ",
-        "content": " Test case ID; Title / Purpose; Instructions; Expected result; Actual result; Pass/Fail. ",
+        "content": " Test case ID;</br> Title / Purpose;</br> Instructions;</br> Expected result;</br> Actual result;</br> Pass/Fail. ",
         "category": "documentation"
     },
     {
         "id": 71,
         "title": " Why we use Test Cases? ",
-        "content": " Better testing coverage; Re-usable; Reviewable; Traceable - know what is tested; Tracking test results; Creates a deliverable. ",
+        "content": " Better testing coverage;</br> Re-usable;</br> Reviewable;</br> Traceable - know what is tested;</br> Tracking test results;</br> Creates a deliverable. ",
         "category": "documentation"
     },
     {
@@ -470,7 +470,7 @@
     {
         "id": 78,
         "title": " Which documents would you refer to when creating Test Cases? ",
-        "content": " To all business and technical documentation available: PRD - Product Requirements Document; BRD - Business Requirements Document; Functional Specifications; Manuals and Help; Use Cases; Test Design. ",
+        "content": " To all business and technical documentation available: <br>PRD - Product Requirements Document;</br> BRD - Business Requirements Document;</br> Functional Specifications;</br> Manuals and Help;</br> Use Cases;</br> Test Design. ",
         "category": "documentation"
     },
     {
@@ -512,13 +512,13 @@
     {
         "id": 85,
         "title": " Where can you add JS code to HTML page? ",
-        "content": " JavaScript can be put into: section of an HTML page; section of an HTML page; External file, which we reference. ",
+        "content": " JavaScript can be put into: section of an HTML page;</br> section of an HTML page;</br> External file, which we reference. ",
         "category": "technical"
     },
     {
         "id": 86,
         "title": " What is JavaScript function? How is it executed? Why do we need to execute it? ",
-        "content": " JavaScript Function is a block of code; It is executed by an event only: Clicking a button; Call within your script; Call within another function; etc. ",
+        "content": " JavaScript Function is a block of code;</br> It is executed by an event only: Clicking a button;</br> Call within your script;</br> Call within another function;</br> etc. ",
         "category": "technical"
     },
     {
@@ -536,7 +536,7 @@
     {
         "id": 89,
         "title": " What is Database? ",
-        "content": " Database (dB) is a storage space for content / information (data); It is an organized collection of data. ",
+        "content": " Database (dB) is a storage space for content / information (data);</br> It is an organized collection of data. ",
         "category": "technical"
     },
     {
@@ -560,25 +560,25 @@
     {
         "id": 93,
         "title": " What is Foreign Key? ",
-        "content": " FK is a column (or combination of columns) that is used to establish a relationship between the tables; Foreign key is usually not unique (one-to-many relation) and shall always point to a primary key. ",
+        "content": " FK is a column (or combination of columns) that is used to establish a relationship between the tables;</br> Foreign key is usually not unique (one-to-many relation) and shall always point to a primary key. ",
         "category": "technical"
     },
     {
         "id": 94,
         "title": " Popular Databases? ",
-        "content": " ORACLE; Sybase; MySQL; DB2; etc. ",
+        "content": " ORACLE;</br> Sybase;</br> MySQL;</br> DB2;</br> etc. ",
         "category": "technical"
     },
     {
         "id": 95,
         "title": " What is XML? ",
-        "content": " XML stands for EXtensible Markup Language; XML was designed to carry data, not to display data; XML tags are not predefined. You must define your own tags. ",
+        "content": " XML stands for EXtensible Markup Language;</br> XML was designed to carry data, not to display data;</br> XML tags are not predefined. You must define your own tags. ",
         "category": "technical"
     },
     {
         "id": 96,
         "title": " What is CSS? ",
-        "content": " CSS stands for Cascading Style Sheets; CSS define how to display HTML elements. ",
+        "content": " CSS stands for Cascading Style Sheets;</br> CSS define how to display HTML elements. ",
         "category": "technical"
     },
     {
@@ -662,19 +662,19 @@
     {
         "id": 110,
         "title": " Name all Android versions? ",
-        "content": " Cupcake (04-2009); Donut (09-2009); Eclair (11-2009); Froyo (05-2010); Gingerbread (12-2010); Honeycomb (02-2011); Ice Cream Sandwich (10-2011); Jelly Bean (07-2012; 11-2012; 07-2013); KitKat; ",
+        "content": " Cupcake (04-2009);</br> Donut (09-2009);</br> Eclair (11-2009);</br> Froyo (05-2010);</br> Gingerbread (12-2010);</br> Honeycomb (02-2011);</br> Ice Cream Sandwich (10-2011);</br> Jelly Bean (07-2012;</br> 11-2012;</br> 07-2013);</br> KitKat;</br> ",
         "category": "mobile"
     },
     {
         "id": 111,
         "title": " Android file formats? ",
-        "content": " Android application package file (APK) is the file format used to distribute and install application software and middleware onto Google's Android operating system; very similar to .exe in Windows. ",
+        "content": " Android application package file (APK) is the file format used to distribute and install application software and middleware onto Google's Android operating system;</br> very similar to .exe in Windows. ",
         "category": "mobile"
     },
     {
         "id": 112,
         "title": " Most common Android Version? ",
-        "content": " 2.3.3 - 2.3.7 Gingerbread (release date: 02-2011) - 33.0%; 4.1 - 4.2 Jelly Bean (release date: 07-2012/11-2012) - 45.0% ",
+        "content": " 2.3.3 - 2.3.7 Gingerbread (release date: 02-2011) - 33.0%;</br> 4.1 - 4.2 Jelly Bean (release date: 07-2012/11-2012) - 45.0% ",
         "category": "mobile"
     },
     {
@@ -764,19 +764,19 @@
     {
         "id": 127,
         "title": " How to kill process on Android? ",
-        "content": " Tap and Hold Home Button � Task Manager window appears; Tap Active Application � View Active Applications  � Exit / End  it individually or Exit / End all. ",
+        "content": " Tap and Hold Home Button � Task Manager window appears;</br> Tap Active Application � View Active Applications  � Exit / End  it individually or Exit / End all. ",
         "category": "mobile"
     },
     {
         "id": 128,
         "title": " How to kill process on iOS? ",
-        "content": " Double tap the home button to bring up the multi-tasking view; Swipe the app upwards to close. ",
+        "content": " Double tap the home button to bring up the multi-tasking view;</br> Swipe the app upwards to close. ",
         "category": "mobile"
     },
     {
         "id": 129,
         "title": " What is the difference between Mobile Testing and Mobile Application Testing? ",
-        "content": " TestingMobile Testing means the complete testing of mobile in System level + Application level; Mobile Application testing deals with only the features and multimedia part. ",
+        "content": " TestingMobile Testing means the complete testing of mobile in System level + Application level;</br> Mobile Application testing deals with only the features and multimedia part. ",
         "category": "mobile"
     }
 ]

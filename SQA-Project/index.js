@@ -30,11 +30,24 @@ app.set('views', path.join(rootPath+'src/views'));
 //         if (err) throw err;
 //     })
 // })
+var detailQuestions = require('./public/json/fullQuestions');
+function getDetailCategory(allQuestions, category) {
+    var tempArr = [];
+    for (var i = 0; i < allQuestions.length; i += 1) {
+        if (allQuestions[i].category == category) {
+            tempArr.push(allQuestions[i])
+        }
+    }
+    return tempArr
 
+};
 app.set('view engine', 'ejs');
 
 app.set('views','./src/views');
 app.get('/', function (req, res) {
+       var allQuestions = detailQuestions;
+            var testingTypes = getDetailCategory(allQuestions, 'testingTypes');
+            console.log(testingTypes);
     res.render('index', {
         title: "Index",
     });
