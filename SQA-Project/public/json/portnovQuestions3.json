@@ -662,7 +662,7 @@
     {
         "id": 110,
         "title": " Name all Android versions? ",
-        "content": " Cupcake (04-2009);</br> Donut (09-2009);</br> Eclair (11-2009);</br> Froyo (05-2010);</br> Gingerbread (12-2010);</br> Honeycomb (02-2011);</br> Ice Cream Sandwich (10-2011);</br> Jelly Bean (07-2012;</br> 11-2012;</br> 07-2013);</br> KitKat;</br> ",
+        "content": " Cupcake (v.1.5);</br> Donut (v.1.6);</br> Eclair (v.2.0 - 2.1);</br> Froyo (v.2.2 - 2.2.3);</br> Gingerbread (v.2.3 - 2.3.7);</br> Honeycomb (v.3.0 - 3.2.6);</br> Ice Cream Sandwich (v.4.0 - 4.0.4);</br> Jelly Bean (v.4.1 - 4.3.1);</br> KitKat (v.4.4 - 4.4.4);</br> Lollipop (v.5.0 - 5.1.1);</br>Mashmallow (v.6.0 - 6.0.1);</br>Nougat (v.7.0 - 7.1.2);</br>Oreo (8.0);</br>",
         "category": "mobile"
     },
     {

@@ -225,7 +225,7 @@
         "question": "What is Usability testing?",
         "options": [
             "Usability testing is used to evaluate product by testing it on users.",
-            "Recoverability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How it will recover directly affected data?",
+            "Usability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How it will recover directly affected data?",
             "Usability testing measures how easy it is to use specific object or set of objects."
         ],
         "answer": [
