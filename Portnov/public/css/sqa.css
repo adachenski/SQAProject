@@ -1,0 +1,164 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+        .card-img-top {
+                width: 100%;
+            }
+            
+            .img-fluid {
+                width: 100%;
+            }
+        .main-logo {
+            position: absolute;
+            top: 10px;
+            right: 7px;
+        }
+        
+        .main-headers {
+            padding: 0px 0px 10px 0px;
+            background-color: darkslategrey;
+            color: white;
+            letter-spacing: 1.5px;
+            color: #2AAA3D;
+            text-shadow: 1px 1px 1px white;
+        }
+.playfair{
+        font-family: 'Playfair Display', serif !important;
+        /*-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;*/
+}
+.top-gap{
+    padding-top:50px;
+}
+.first-row{
+ background-color:darkslategrey;
+color: white;
+   height: 100px;
+   letter-spacing: 1.5px;
+   color: #2AAA3D;
+    text-shadow: 1px 1px 1px white;
+
+}
+.first-row h4:first-child{
+ position: absolute;
+ top:10px;
+ transform: rotate(12deg);
+}
+.first-row h3{
+  
+ position: absolute;
+   top:20px;
+
+}
+.first-row h4:last-child{
+        position: absolute;
+    left: 70px;
+    top: 55px;
+    transform: rotate(-9deg)
+}
+ .questions-background{
+     background:-webkit-linear-gradient(#E6E6FA,#87CEEB,#4682B4);
+      background:linear-gradient(#E6E6FA,#87CEEB,#4682B4);
+      background:-moz-linear-gradient(#E6E6FA,#87CEEB,#4682B4);
+      background:-o-linear-gradient(#E6E6FA,#87CEEB,#4682B4);
+         /*background:-webkit-linear-gradient(#5BBC93,#2E8B57); 
+        background:linear-gradient(#5BBC93,#2E8B57); 
+        background:-o-linear-gradient(#5BBC93,#2E8B57); 
+        background:-moz-linear-gradient(#5BBC93,#2E8B57); */
+     height:100%;
+ }
+ .center{
+     text-align: center;
+ }
+.main-background{
+    background-color:darkcyan;
+    /*background:-webkit-linear-gradient(#5BBC93,#2E8B57); 
+        background:linear-gradient(#5BBC93,#2E8B57); 
+        background:-o-linear-gradient(#5BBC93,#2E8B57); 
+        background:-moz-linear-gradient(#5BBC93,#2E8B57); */
+}
+        .cell-container{
+        min-height: 140px !important;
+        max-width: 200px;
+        height: 20%;
+    
+        margin-top: 5px;
+        width: 48% !important;
+        text-align: center;
+        color: darkslategrey;
+        letter-spacing: 1px;
+        /*text-shadow: 2px 2px white;*/
+        font-weight: 100;
+        margin: 1%;
+
+       
+        
+    }
+    /*.cell-container:first-child{
+        margin-right: 1%;
+    }*/
+    .cell-container div{
+        position: absolute;
+            padding: 3px;
+    font-weight: 100;
+    color: white;
+    text-shadow: 2px 2px black;
+    font-size: 1.1em;
+  
+        
+    }
+    .cell-container img{
+         padding-top: 20px;
+         width: 65%;
+    }
+    .getFive{
+        margin-top:5px; 
+        margin-bottom:20px;
+    }
+
+    .red {
+            background-color: red;
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+        }
+        
+        .green {
+            /*background: -webkit-linear-gradient(#E6E6FA, #5F9EA0);*/
+            padding: 5px 10px 20px 30px;
+            margin: 30px 10px;
+            font-size: 1.1em;
+        }
+        
+        .question-container {
+            background-color: lightgreen;
+        }
+        
+        .hidden {
+            visibility: hidden;
+        }
+        
+        .lightgreen {
+            background-color: #32CD32;
+            position: absolute;
+            width: 50%;
+            left: 25%;
+            padding: 10px;
+            text-align: center;
+            font-weight: 600;
+        }
+        
+        .radio-gap {
+            position: absolute;
+            left: -15px;
+        }
+        
+        .center {
+            text-align: center;
+        }
+        .sqa-btn{
+            margin-bottom: 30px;
+        }

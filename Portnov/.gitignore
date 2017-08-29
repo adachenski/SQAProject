@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+node_modules
+views/forTest.ejs
+src/routes/homeRouter.js
+public/lib

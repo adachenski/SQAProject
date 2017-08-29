@@ -1,0 +1,211 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="../css/sqa.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
+    <link rel="stylesheet" href="../css/demo.css">
+
+    <link rel="stylesheet" href="../css/pushy.css">
+
+    <!--<link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />-->
+     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/modern-business.css">
+    <!--<script src="lib/jquery/dist/jquery.js"></script>-->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <!--<script src="js/popper.min.js"></script>-->
+    <!--<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>--> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">    </script>
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body class="questions-background">
+    <script>
+        function populateAcordeon(val, count) {
+
+            var panelDiv = $("<div/>", {
+                "class": "panel panel-default"
+            });
+            var panelHeadingDiv = $("<div/>", {
+
+                "class": "panel-heading"
+            }).appendTo(panelDiv);
+
+            var panelTitleH4 = $("<h4/>", {
+                "class": "panel-title"
+            }).appendTo(panelHeadingDiv);
+
+            var anchor = $("<a/>", {
+                "data-toggle": "collapse",
+                "data-parent": "#accordion",
+                "href": "#nas" + count
+            }).appendTo(panelTitleH4);
+
+            var divContent = $("<div/>", {
+                "text": val.title
+            }).appendTo(anchor);
+
+            var panelCollapse = $('<div/>', {
+                "id": "nas" + count,
+                "class": "panel-collapse collapse"
+            }).appendTo(panelDiv);
+
+            var panelBody = $('<div/>', {
+                "class": "panel-body",
+                "html": val.content + "<div><b>More info <b><a href='/questions/" + count + "'>here</a>.</div>"
+            }).appendTo(panelCollapse);
+
+            panelDiv.appendTo("#accordion");
+        }
+
+        function populateHtml(items) {
+
+            var currentCategory = $("#category").val();
+            var categoryText = $("#category  option:selected").text();
+            var currentRandom = $("#random").val();
+            $("#headerTitle").html(categoryText);
+            if (currentRandom > 0) {
+                $("#subTitle").html(currentRandom + " random questions");
+            }
+
+
+
+            var randomTarget = $("#random").val();
+
+            var finalQuestions = (function () {
+                var count = 0;
+                var tempCategoryArr = [];
+                $.each(items, function (key, val) {
+
+                    if (currentCategory == val.category) {
+                        tempCategoryArr.push(val);
+                        populateAcordeon(val, count);
+                    }
+                    count++;
+                });
+                console.log(tempCategoryArr);
+                return tempCategoryArr;
+            })();
+
+            var randomQuestions = (function () {
+                var randomArr = [];
+                if (randomTarget != 0) {
+                    for (var y = 0; y < randomTarget; y += 1) {
+                        var randNumber = Math.floor(Math.random() * finalQuestions.length);
+                        var randQuestion = finalQuestions[randNumber];
+                        var found = false;
+                        if (y == 0) {
+                            randomArr.push(randQuestion);
+                            continue;
+                        }
+
+                        for (var z = 0; z < randomArr.length; z += 1) {
+                            if (randQuestion.id === randomArr[z].id) {
+                                found = true;
+                                y--;
+                            }
+                        }
+                        if (!found) {
+                            randomArr.push(randQuestion);
+                            found = false;
+                        }
+
+                    }
+                }
+                if(randomTarget==0){
+                    randomArr = finalQuestions;
+                }
+                return randomArr;
+            })();
+
+            return {
+                allCategory: finalQuestions,
+                randomQuestions: randomQuestions
+            }
+        }
+        $(window).on('load', function () {
+
+            var items = [];
+
+            $.getJSON("json/portnovQuestions3.json", function (data) {
+                items = data;
+                populateHtml(items).allCategory;
+            });
+
+            $('#category').on('change', function () {
+
+                $("#accordion").html("");
+                $("#random").val(0);
+                $("#subTitle").html("All questions");
+                populateHtml(items).allCategory;
+            });
+
+            $("#random").on('change', function () {
+                var x = populateHtml(items).randomQuestions;
+                $("#accordion").html("");
+                var count = 0;
+                $.each(x, function (key, val) {
+                    populateAcordeon(val, count)
+                    count++;
+                });
+            })
+        });
+    </script>
+
+    <% include ./navigation.ejs %>
+        <div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 col-lg-4"></div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <h2 class="playfair" id="headerTitle" style="color:#464646">
+                            <%=title%>
+                        </h2>
+                        <h4 class="playfair" id="subTitle">All questions</h4>
+                        <h4>
+                            <select class="input-sm" name="category" id="category">
+                            <option value="qaBasics">SQA Basics</option>
+                            <option value="testingTypes">Testing Types</option>
+                            <option value="bugs">Bugs</option>
+                            <option value="documentation">Documentation</option>
+                            <option value="technical">Technical</option>
+                            <option value="mobile">Mobile</option>
+                        </select>
+                            <select class="input-sm" name="random" id="random">
+                            <option value="0">All</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                        </select>
+                        </h4>
+                    </div>
+                    <div class="col-sm-3 col-lg-4"></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3 col-lg-4"></div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                        <div class="panel-group" id="accordion">
+                        </div>
+                    </div>
+                    <div class="col-sm-3 col-lg-4"></div>
+                </div>
+            </div>
+        </div>
+        <script src="../js/pushy.min.js"></script>
+</body>
+
+</html>

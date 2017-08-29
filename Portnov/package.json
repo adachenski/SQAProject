@@ -1,0 +1,24 @@
+{
+  "name": "sqatest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "author": "Atanas Dachenski",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.3"
+  },
+  "engines": {
+    "node": "^6.10.2",
+    "npm":"^3.10.10"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "wiredep": "^4.0.0"
+  }
+}
