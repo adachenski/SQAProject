@@ -1,236 +1,299 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="Software Quality Ashurance Interview Questions" content="Software Quality Ashurance Interview Questions">
-        <meta name="Atanas Dachenski" content="Software Quality Ashurance Interview Questions">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+    <meta charset="UTF-8">
 
-        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-        <link rel="stylesheet" href="/css/sqa.css">
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link rel="stylesheet" href="/css/demo.css">
-        <link rel="stylesheet" href="/css/pushy.css">
-        <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="/css/modern-business.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Software Quality Ashurance Interview Questions" content="Software Quality Ashurance Interview Questions">
+    <meta name="Atanas Dachenski" content="Software Quality Ashurance Interview Questions">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <script src="/lib/jquery/dist/jquery.js"></script>
-        <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
-        <title> <%=title%></title>
-    </head>
-    <body>
-        <% include ./navigation.ejs %>
-            <!--<div class="top-gap"></div>-->
-            <div class="visible-xs" style="background-color:#464646;">
-                <div class="container">
-                    <div class="row first-row">
-                        <div class="col-xs-9 playfair">
-                            <h4>SQA</h4>
-                            <h3 style="font-size:1.5em"> Interview Questions</h3>
-                            <h4>& Tests</h4>
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="/css/sqa.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/demo.css">
+    <link rel="stylesheet" href="/css/pushy.css">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/modern-business.css">
+
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body>
+    <% include ./navigation.ejs %>
+        <!--<div class="top-gap"></div>-->
+        <div class="visible-xs" style="background-color:#464646;">
+            <div class="container">
+                <div class="row first-row">
+                    <div class="col-xs-9 playfair">
+                        <h4>SQA</h4>
+                        <h3 style="font-size:1.5em"> Interview Questions</h3>
+                        <h4>& Tests</h4>
+                    </div>
+                    <div class="col-xs-3">
+                        <img src="../img/Logo2.png" class="main-logo" alt="QA Logo">
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="sqa-test">
+                        <div class="col-xs-6 cell-container main-background">
+
+                            <img src="../img/test.png" style="width:65%" alt="Test">
+                            <div class="mobile-text">SQA Test</div>
                         </div>
-                        <div class="col-xs-3">
-                            <img src="../img/Logo2.png" class="main-logo" alt="QA Logo">
+                    </a>
+                    <a href="#">
+                        <div class="col-xs-6 cell-container main-background">
+
+                            <img src="../img/technical3.png" style="width:65%" alt="Technical Test">
+                            <div class="mobile-text">Technical Test</div>
+                        </div>
+                    </a>
+                    <a href="questions">
+                        <div class="col-xs-6 cell-container main-background">
+
+                            <img src="../img/technical.png" style="width:65%" alt="Questions">
+                            <div class="mobile-text">Questions</div>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="col-xs-6 cell-container main-background">
+
+                            <img src="../img/Questions.png" style="width:65%" alt="Question">
+                            <div class="mobile-text">Add Question</div>
+                        </div>
+                    </a>
+                    <div class="col-xs-12 main-headers">
+                        <h3 class="center playfair ">Types of Testing</h3>
+                    </div>
+                    <style>
+                        .mobile-text {
+                            top: 110px;
+                            left: 0;
+                            width: 100%;
+                            height: 30px;
+                            background: black;
+                            opacity: 0.5;
+                            position: relative;
+                            clear: both;
+                            display: inline-block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                        }
+                        
+                        .animated {
+                            -webkit-animation: mymove 7s;
+                            /*-webkit-animation-timing-function: ease-in;*/
+                            /* Safari 4.0 - 8.0 */
+                            -webkit-animation-iteration-count: 2;
+                            /* Safari 4.0 - 8.0 */
+                            animation: mymove 7s;
+                            animation-iteration-count: 2;
+                            animation-delay: 2s;
+                        }
+                        /* Safari 4.0 - 8.0 */
+                        
+                        @-webkit-keyframes mymove {
+                            0% {
+                                top: 110px;
+                                height: 30px;
+                            }
+                            50% {
+                                top: 0px;
+                                height: 100%;
+                            }
+                            100% {
+                                top: 110px;
+                            }
+                        }
+                        
+                        @keyframes mymove {
+                            0% {
+                                top: 110px;
+                                height: 30px;
+                            }
+                            50% {
+                                top: 0px;
+                                height: 100%;
+                            }
+                            100% {
+                                top: 110px
+                            }
+                        }
+                    </style>
+                    <% for(var i = 0; i < 2; i+=1){%>
+                        <a href="questions/<%=testingTypes[i].referToId%>">
+                            <div class="col-xs-6 cell-container main-background">
+                                <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
+                                <div class="animated mobile-text">
+                                    <%=testingTypes[i].title%>
+                                </div>
+                            </div>
+                        </a>
+                        <%}%>
+                            <div class="col-xs-12 main-headers">
+                                <h3 class="center playfair">Documentation</h3>
+                            </div>
+                            <% for(var i = 0; i < 2; i+=1){%>
+                                <a href="questions/<%=documentation[i].referToId%>">
+                                    <div class="col-xs-6 cell-container main-background">
+
+                                        <img src="../img/document.png" style="width:65%" alt="Functional_testing">
+                                        <div class="mobile-text">
+                                            <%=documentation[i].title%>
+                                        </div>
+                                    </div>
+                                </a>
+                                <%}%>
+                </div>
+            </div>
+        </div>
+
+        <!-- second view -->
+        <div class="container hidden-xs">
+
+            <h1 class="my-4">SQA Interview Questions and Test</h1>
+
+            <!-- Marketing Icons Section -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <h4 class="card-header">Questions Jquery</h4>
+                        <div class="card-block">
+                            <p class="card-text">Here you can play with all the questions fast and reliable without to have reloading the page
+                                every time.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="/questions" class="btn btn-primary">Start</a>
                         </div>
                     </div>
-                    <div class="row">
-                        <a href="sqa-test">
-                            <div class="col-xs-6 cell-container main-background">
-                                <div>SQA Test</div>
-                                <img src="../img/test.png" style="width:65%" alt="Test">
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="col-xs-6 cell-container main-background">
-                                <div>Technical Test</div>
-                                <img src="../img/technical3.png" style="width:65%" alt="Technical Test">
-                            </div>
-                        </a>
-                        <a href="questions">
-                            <div class="col-xs-6 cell-container main-background">
-                                <div>Questions</div>
-                                <img src="../img/technical.png" style="width:65%" alt="Questions">
-                            </div>
-                        </a>
-                        <a href="#">
-                            <div class="col-xs-6 cell-container main-background">
-                                <div>Add Question</div>
-                                <img src="../img/Questions.png" style="width:65%" alt="Question">
-                            </div>
-                        </a>
-                        <div class="col-xs-12 main-headers">
-                            <h3 class="center playfair ">Types of Testing</h3>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Test</h4>
+                        <div class="card-body">
+                            <p class="card-text">
+                                You can take a Software Quality Ashurance test to check if you are redy for real interview. So far we have over 100 test
+                                question from witch you will randomly pick-up 10 every time you take in the test.</p>
                         </div>
-                        <% for(var i = 0; i < 2; i+=1){%>
-                            <a href="questions/<%=testingTypes[i].referToId%>">
-                                <div class="col-xs-6 cell-container main-background">
-                                    <div>
-                                        <%=testingTypes[i].title%>
-                                    </div>
-                                    <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
-                                </div>
-                            </a>
-                            <%}%>
-
-                                <div class="col-xs-12 main-headers">
-                                    <h3 class="center playfair">Documentation</h3>
-                                </div>
-                                <% for(var i = 0; i < 2; i+=1){%>
-                                    <a href="questions/<%=documentation[i].referToId%>">
-                                        <div class="col-xs-6 cell-container main-background">
-                                            <div>
-                                                <%=documentation[i].title%>
-                                            </div>
-                                            <img src="../img/document.png" style="width:65%" alt="Functional_testing">
-                                        </div>
-                                    </a>
-                                    <%}%>
+                        <div class="card-footer">
+                            <a href="sqa-test" class="btn btn-primary">Start</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Submit Question</h4>
+                        <div class="card-body">
+                            <p class="card-text">You can help us make the site better like you submit you real interview question.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary">Start</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <!-- second view -->
-            <div class="container hidden-xs">
-
-                <h1 class="my-4">SQA Interview Questions and Test</h1>
- 
-                <!-- Marketing Icons Section -->
-                <div class="row">
-                    <div class="col-lg-4">
+            <!-- /.row -->
+            <style>
+                .card-body {
+                    height: 100px;
+                    word-break: keep-all;
+                    overflow: hidden;
+                }
+            </style>
+            <!-- Portfolio Section -->
+            <h2>Today's learning</h2>
+            <h3>Types of testing</h3>
+            <div class="row">
+                <% for(var i = 0; i < testingTypes.length; i+=1){%>
+                    <div class="col-lg-4 col-sm-6">
                         <div class="card">
-                            <h4 class="card-header">Questions Jquery</h4>
-                            <div class="card-block">
-                                <p class="card-text">Here you can play with all the questions fast and reliable without to have reloading the page
-                                    every time.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="/questions" class="btn btn-primary">Start</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="card h-100">
-                            <h4 class="card-header">Test</h4>
+                            <a href="/questions/<%=testingTypes[i].referToId%>">
+                                <img class="card-img-top" src="../img/software-testing2.png" alt="">
+                            </a>
                             <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="/questions/<%=testingTypes[i].referToId%>">
+                                        <%= testingTypes[i].title%>
+                                    </a>
+                                </h4>
                                 <p class="card-text">
-                                    You can take a Software Quality Ashurance test to check if you are redy for real interview. So far we have over 100 test
-                                    question from witch you will randomly pick-up 10 every time you take in the test.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="sqa-test" class="btn btn-primary">Start</a>
+                                    <%-testingTypes[i].content%>
+                                </p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-4">
-                        <div class="card h-100">
-                            <h4 class="card-header">Submit Question</h4>
-                            <div class="card-body">
-                                <p class="card-text">You can help us make the site better like you submit you real interview question.</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Start</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-                <style>
-                    .card-body {
-                        height: 100px;
-                        word-break: keep-all;
-                        overflow: hidden;
-                    }
-                </style>
-                <!-- Portfolio Section -->
-                <h2>Today's learning</h2>
-                <h3>Types of testing</h3>
-                <div class="row">
-                    <% for(var i = 0; i < testingTypes.length; i+=1){%>
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="card">
-                                <a href="/questions/<%=testingTypes[i].referToId%>">
-                                    <img class="card-img-top" src="../img/software-testing2.png" alt="">
-                                </a>
-                                <div class="card-body">
-                                    <h4 class="card-title">
-                                        <a href="/questions/<%=testingTypes[i].referToId%>">
-                                            <%= testingTypes[i].title%>
-                                        </a>
-                                    </h4>
-                                    <p class="card-text">
-                                        <%-testingTypes[i].content%>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <%}%>
+                    <%}%>
 
-                            <div class="col-xs-12">
-                                <h3>Documentation</h3>
-                            </div>
-                            <% for(var i = 0; i < documentation.length; i+=1){%>
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="card">
-                                        <a href="/questions/<%=documentation[i].referToId%>" "><img class="card-img-top " src="../img/documents.jpg " alt=" "></a>
+                        <div class="col-xs-12">
+                            <h3>Documentation</h3>
+                        </div>
+                        <% for(var i = 0; i < documentation.length; i+=1){%>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="card">
+                                    <a href="/questions/<%=documentation[i].referToId%>" "><img class="card-img-top " src="../img/documents.jpg " alt=" "></a>
                                         <div class="card-body ">
                                             <h4 class="card-title ">
                                                 <a href="/questions/<%=documentation[i].referToId%>">
-                                        <%= documentation[i].title%>
-                                            </a>
-                                            </h4>
-                                            <p class="card-text">
-                                                <%-documentation[i].content%>
-                                            </p>
-                                    </div>
+                                    <%= documentation[i].title%>
+                                        </a>
+                                        </h4>
+                                        <p class="card-text">
+                                            <%-documentation[i].content%>
+                                        </p>
                                 </div>
-                </div>
-                <%}%>
-
+                            </div>
             </div>
-            <!-- /.row -->
+            <%}%>
 
-            <!-- Features Section -->
-            <div class="row">
-                <div class="col-lg-6">
-                    <h2>Modern Business Features</h2>
-                    <p>The Modern Business template by Start Bootstrap includes:</p>
-                    <ul>
-                        <li><strong>Bootstrap v4</strong>
-                        </li>
-                        <li>jQuery</li>
-                        <li>Font Awesome</li>
-                        <li>Working contact form with validation</li>
-                        <li>Unstyled page elements for easy customization</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit,
-                        quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus
-                        unde.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid rounded" src="../img/testing-mobile-app.png" alt="">
-                </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Modern Business Features</h2>
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Bootstrap v4</strong>
+                    </li>
+                    <li>jQuery</li>
+                    <li>Font Awesome</li>
+                    <li>Working contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit,
+                    quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus
+                    unde.
+                </p>
             </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Call to Action Section -->
-            <div class="row mb-4">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti
-                        beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-secondary btn-block" href="#">Back to Top</a>
-                </div>
+            <div class="col-lg-6">
+                <img class="img-fluid rounded" src="../img/testing-mobile-app.png" alt="">
             </div>
+        </div>
+        <!-- /.row -->
 
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti
+                    beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
             </div>
-            <script src="../js/pushy.min.js"></script>
-    </body>
+            <div class="col-md-4">
+                <a class="btn btn-lg btn-secondary btn-block" href="#">Back to Top</a>
+            </div>
+        </div>
+
+        </div>
+        <script src="../js/pushy.min.js"></script>
+</body>
 
 </html>
