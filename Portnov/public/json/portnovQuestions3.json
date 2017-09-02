@@ -739,44 +739,116 @@
     },
     {
         "id": 123,
-        "title": " How to make screenshot on iPhone (iOS device)? ",
-        "content": " Press the Home and Sleep buttons at the same time. ",
+        "title": "How to make screenshot on iPhone (iOS device)?",
+        "content": "Press the Home and Sleep buttons at the same time.",
         "category": "mobile"
     },
     {
         "id": 124,
-        "title": " How to make screenshot on Android? ",
-        "content": " Press and hold the Volume Down and Power buttons at the same time (for Android 4.0 or later). ",
+        "title": "How to make screenshot on Android?",
+        "content": "Press and hold the Volume Down and Power buttons at the same time (for Android 4.0 or later).",
         "category": "mobile"
     },
     {
         "id": 125,
-        "title": " How to find crash logs for iOS? ",
-        "content": " Sync your iOS device with iTunes. For Windows 7,8: ",
+        "title": "How to find crash logs for iOS?",
+        "content": "Sync your iOS device with iTunes. For Windows 7,8:",
         "category": "mobile"
     },
     {
         "id": 126,
-        "title": " How to find crash logs for Android? ",
-        "content": " Run Eclipse, go to Window -> Show View ? Other , then select LogCat. ",
+        "title": "How to find crash logs for Android?",
+        "content": "Run Eclipse, go to Window -> Show View ? Other , then select LogCat.",
         "category": "mobile"
     },
     {
         "id": 127,
-        "title": " How to kill process on Android? ",
-        "content": " Tap and Hold Home Button � Task Manager window appears;</br> Tap Active Application � View Active Applications  � Exit / End  it individually or Exit / End all. ",
+        "title": "How to kill process on Android? ",
+        "content": "Tap and Hold Home Button</br>Task Manager window appears;</br> Tap Active Application  View Active Applications  Exit / End  it individually or Exit / End all. ",
         "category": "mobile"
     },
     {
         "id": 128,
-        "title": " How to kill process on iOS? ",
-        "content": " Double tap the home button to bring up the multi-tasking view;</br> Swipe the app upwards to close. ",
+        "title": "How to kill process on iOS? ",
+        "content": "Double tap the home button to bring up the multi-tasking view;</br> Swipe the app upwards to close. ",
         "category": "mobile"
     },
     {
         "id": 129,
-        "title": " What is the difference between Mobile Testing and Mobile Application Testing? ",
-        "content": " TestingMobile Testing means the complete testing of mobile in System level + Application level;</br> Mobile Application testing deals with only the features and multimedia part. ",
+        "title": "What is the difference between Mobile Testing and Mobile Application Testing? ",
+        "content": "TestingMobile Testing means the complete testing of mobile in System level + Application level;</br> Mobile Application testing deals with only the features and multimedia part. ",
+        "category": "mobile"
+    },
+    {
+        "id": 130,
+        "title": "What is a Cell?",
+        "content": "A base station (transmitter) having a number of RF channels is called a cell. Each cell covers a limited number of mobile subscribers within the cell boundaries (Coverage area).",
+        "category": "mobile"
+    },
+    {
+        "id": 131,
+        "title": "What is a Base Transceiver Station (BTS)?",
+        "content": "It is actually the antenna that you see installed on top of the tower. The BTS is the Mobile Phone’s access point to the network. It is responsible for carrying out radio communications between the network and the Mobile Phone.",
+        "category": "mobile"
+    },
+    {
+        "id": 132,
+        "title": "What is a Base Station Controller (BSC)?",
+        "content": "A base station controller (BSC) is a critical mobile network component that controls one or more base transceiver stations (BTS), also known as base stations or cell sites. Key BSC functions include radio network management (such as radio frequency control), BTS handover management and call setup.",
+        "category": "mobile"
+    },
+    {
+        "id": 133,
+        "title": "What is a Mobile Switching Center?",
+        "content": "The MSC is the heart of the GSM network. It handles call routing, call setup, and basic switching functions. An MSC handles multiple BSCs and also interfaces with other MSC's and registers.",
+        "category": "mobile"
+    },
+    {
+        "id": 134,
+        "title": "What is GSM Standard?",
+        "content": "GSM (Global System for Mobile communication) digitizes and compresses data, then sends it down a channel with two other streams of user data, each in its own time slot. It operates at either the 900 MHz or 1800 MHz frequency band. Key features of GSM is the Subscriber Identity Module, commonly known as a SIM card.",
+        "category": "mobile"
+    },
+    {
+        "id": 135,
+        "title": "What is SIM card?",
+        "content": "The SIM(Subscriber Identity Module) is a detachable smart card containing the user's subscription information and phone book. This allows the user to retain his or herinformation after switching handsets.SIM card identify the user on the network and could be used as a storage.",
+        "category": "mobile"
+    },
+    {
+        "id": 136,
+        "title": "What is CDMA Standard?",
+        "content": "CDMA(Code Division Multiple Access)Five times up of GSM capacity. More secure –used by the military.CDMA phones are locked to a carrier and cannot roam internationally as extensively as GSM phones nor can they transmit voice and data at the same time like GSM handsets.",
+        "category": "mobile"
+    },
+    {
+        "id": 137,
+        "title": "What is LTE",
+        "content": "LTE(Long Term Evolution) is a 4G wireless communications standard developed by the 3rd Generation Partnership Project (3GPP) that's designed to provide up to 10x the speeds of 3G networks for mobile devices such as SmartPhones, Tablets, NetBooks, Notebooks and Wireless Hotspots.",
+        "category": "mobile"
+    },
+    {
+        "id": 138,
+        "title": "What is satellite navigation?",
+        "content": "Satellite navigation (satnav) means using a portable radio receiver to pick up speed-of-light signals from orbiting satellites so you can figure out your position, speed, and local time.",
+        "category": "mobile"
+    },
+    {
+        "id": 139,
+        "title": "What is satellite navigation?",
+        "content": "Satellite navigation (satnav) means using a portable radio receiver to pick up speed-of-light signals from orbiting satellites so you can figure out your position, speed, and local time.",
+        "category": "mobile"
+    },
+    {
+        "id": 140,
+        "title": "What is GPS?",
+        "content": "The best-known satnav system, the Navstar Global Positioning System(GPS), uses about 24 active satellites (including backups). Day and night, 365 days a year, they whiz round Earth once every 12 hours on orbital planes inclined at 55 degrees to the equator.",
+        "category": "mobile"
+    },
+    {
+        "id": 141,
+        "title": "What is MOBILE BROADBAND?",
+        "content": "MOBILE BROADBAND is the marketing term for wireless Internet access through a portable modem, mobile phone, USB wireless modem, tablet or other mobile devices.",
         "category": "mobile"
     }
 ]

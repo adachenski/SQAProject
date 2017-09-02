@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/css/demo.css">
     <link rel="stylesheet" href="/css/pushy.css">
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
+    <!--<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />-->
     <link rel="stylesheet" href="/css/modern-business.css">
 
     <script src="/lib/jquery/dist/jquery.js"></script>
@@ -62,7 +62,7 @@
                             <div class="mobile-text">Questions</div>
                         </div>
                     </a>
-                    <a href="#">
+                    <a id="add-question" href="#">
                         <div class="col-xs-6 cell-container main-background">
 
                             <img src="../img/Questions.png" style="width:65%" alt="Question">
@@ -72,63 +72,8 @@
                     <div class="col-xs-12 main-headers">
                         <h3 class="center playfair ">Types of Testing</h3>
                     </div>
-                    <style>
-                        .mobile-text {
-                            top: 110px;
-                            left: 0;
-                            width: 100%;
-                            height: 30px;
-                            background: black;
-                            opacity: 0.5;
-                            position: relative;
-                            clear: both;
-                            display: inline-block;
-                            overflow: hidden;
-                            white-space: nowrap;
-                        }
-                        
-                        .animated {
-                            -webkit-animation: mymove 7s;
-                            /*-webkit-animation-timing-function: ease-in;*/
-                            /* Safari 4.0 - 8.0 */
-                            -webkit-animation-iteration-count: 2;
-                            /* Safari 4.0 - 8.0 */
-                            animation: mymove 7s;
-                            animation-iteration-count: 2;
-                            animation-delay: 2s;
-                        }
-                        /* Safari 4.0 - 8.0 */
-                        
-                        @-webkit-keyframes mymove {
-                            0% {
-                                top: 110px;
-                                height: 30px;
-                            }
-                            50% {
-                                top: 0px;
-                                height: 100%;
-                            }
-                            100% {
-                                top: 110px;
-                            }
-                        }
-                        
-                        @keyframes mymove {
-                            0% {
-                                top: 110px;
-                                height: 30px;
-                            }
-                            50% {
-                                top: 0px;
-                                height: 100%;
-                            }
-                            100% {
-                                top: 110px
-                            }
-                        }
-                    </style>
-                    <% for(var i = 0; i < 2; i+=1){%>
-                        <a href="questions/<%=testingTypes[i].referToId%>">
+                    <% for(var i = 0; i < documentation.length; i+=1){%>
+                        <a id="test-types-<%=i%>" href="questions/<%=testingTypes[i].referToId%>">
                             <div class="col-xs-6 cell-container main-background">
                                 <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
                                 <div class="animated mobile-text">
@@ -140,8 +85,8 @@
                             <div class="col-xs-12 main-headers">
                                 <h3 class="center playfair">Documentation</h3>
                             </div>
-                            <% for(var i = 0; i < 2; i+=1){%>
-                                <a href="questions/<%=documentation[i].referToId%>">
+                            <% for(var i = 0; i < documentation.length; i+=1){%>
+                                <a id="documentation-<%=i%>" href="questions/<%=documentation[i].referToId%>">
                                     <div class="col-xs-6 cell-container main-background">
 
                                         <img src="../img/document.png" style="width:65%" alt="Functional_testing">
