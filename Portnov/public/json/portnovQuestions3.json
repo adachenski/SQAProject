@@ -835,8 +835,8 @@
     },
     {
         "id": 139,
-        "title": "What is satellite navigation?",
-        "content": "Satellite navigation (satnav) means using a portable radio receiver to pick up speed-of-light signals from orbiting satellites so you can figure out your position, speed, and local time.",
+        "title": "What is Rooting?",
+        "content": "<b>Rooting</b> is a term that applies to <b>android</b> mobile devices.It means giving yourself root permissions on your phone. It’s similar running programs as administrators in Windows, or running a command with sudo in Linux. With a rooted phone, you can run apps that require access to certain system settings, as well as flash custom ROMs to your phone, which add all sorts of extra features.",
         "category": "mobile"
     },
     {
@@ -850,5 +850,71 @@
         "title": "What is MOBILE BROADBAND?",
         "content": "MOBILE BROADBAND is the marketing term for wireless Internet access through a portable modem, mobile phone, USB wireless modem, tablet or other mobile devices.",
         "category": "mobile"
+    },
+    {
+        "id": 142,
+        "title": "Define Android Arhitecture components?",
+        "content": "Linux kernel,</br>Libraries,</br>Android Runtime,</br>Application Framework,</br>Applications",
+        "category": "mobile"
+    },
+    {
+        "id": 143,
+        "title": "Define IOS Arhitecture components?",
+        "content": "Coca Touch Layer,</br>Media Layer,</br>Core Sevice Layer,</br>Core OS Layer,</br>iPhone Hardware",
+        "category": "mobile"
+    },
+    {
+        "id": 144,
+        "title": "What is Tethering?",
+        "content": "Refers to connecting one device, such as a smartphone or a tablet, to another, such as a laptop, to be able to share the internet connection (3G/4G data connection) of the former with the latter, when a WiFi connection is unavailable. Types of tethering: USB, Bluetooth, WiFI.",
+        "category": "mobile"
+    },
+    {
+        "id": 145,
+        "title": "What is Mobile OS?",
+        "content": "A mobile operating system, also called a mobile OS, is an operating system that is specifically designed to run on mobile devices such as mobile phones, smartphones, PDAs, tablet computers and other handheld devices.",
+        "category": "mobile"
+    },
+    {
+        "id": 146,
+        "title": "What is ADB in Android Studio?",
+        "content": "Android Debug Bridge (adb) is a versatile command line tool that lets you communicate with an emulator instance or connected Android-powered device.",
+        "category": "mobile"
+    },
+    {
+        "id": 147,
+        "title": "What is ADB Logcats?",
+        "content": "Logcat is a command-line tool that dumps a log of system messages, including stack traces when the device throws an error and messages that you have written from your app with the Log class.",
+        "category": "mobile"
+    },
+    {
+        "id": 148,
+        "title": "What is Test Fairy?",
+        "content": "Test Fairy is an app that is extremely easy to operate. To get started, you just need to upload your app to the platform. Then, by incorporating the essential hooks, Test Fairy packages the app and share it with beta testers as a native app, web app or via an email.",
+        "category": "mobile"
+    },
+    {
+        "id": 149,
+        "title": "What is Mobile device fragmentation?",
+        "content": "Mobile device fragmentation is a phenomenon that occurs when some mobile users are running older versions of an operating system, while other users are running newer versions.",
+        "category": "mobile"
+    },
+    {
+        "id": 150,
+        "title": "What are the challenges in Mobile Device Testing?",
+        "content": "Screen Size,</br>Connection Types,</br>Different OS versions,</br>Power Consumption and battery life,<br>Usability,<br>Internationalisation",
+        "category": "mobile"
+    },
+    {
+        "id": 151,
+        "title": "Types of Mobile App Testing?",
+        "content": "Functional Testing,</br>Performance Testing,</br>Memory Leakage Testing,</br>Interrupt Testing,</br>Usability Testing,</br>Installation Testing,</br>Operational Testing,</br>Security Testing",
+        "category": "mobile"
+    },
+    {
+        "id": 152,
+        "title": "Smoke VS Sanity Testing?",
+        "content": "<b>Smoke Testing</b> is performed to ascertain that the critical functionalities of the program is working fine.<b>Sanity Testing</b> is done to check the new functionality / bugs have been fixed",
+        "category": "testingTypes"
     }
 ]

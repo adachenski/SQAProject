@@ -1,6 +1,6 @@
 var express = require('express');
 var questionRouter = express.Router();
-var sqaQuestions2 = require('../../public/json/portnovQuestions2');
+var sqaQuestions2 = require('../../public/json/portnovQuestions3');
 var detailQuestions = require('../../public/json/fullQuestions');
 
 function getCategory(val) {
@@ -95,7 +95,7 @@ var router = function (quest) {
             var id = req.params.id;
             var referToId = id;
             res.render('single-question', {
-                title: 'all',
+                // title: 'Single ',
                 questions: sqaQuestions2[id],
                 details: detailSelection(detailQuestions, id)
             })

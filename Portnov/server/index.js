@@ -3,7 +3,7 @@ var app = express();
 var path = require('path');
 var port = process.env.PORT || 8000;
 var homeRouter = require('../src/routes/homeRouter');
-var sqaQuestions2 = require('../public/json/portnovQuestions2');
+var sqaQuestions2 = require('../public/json/portnovQuestions3');
 var questionRouter = require('../src/routes/questionRouter')(sqaQuestions2);
 var bodyParser = require('body-parser');
 
