@@ -2,14 +2,16 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var port = process.env.PORT || 8000;
-var homeRouter = require('../src/routes/homeRouter');
+
 var sqaQuestions2 = require('../public/json/portnovQuestions3');
-var questionRouter = require('../src/routes/questionRouter')(sqaQuestions2);
+var questionRouter = require('./routes/questionRouter')(sqaQuestions2);
 var bodyParser = require('body-parser');
+var favicon = require('serve-favicon')
 
 var rootPath = path.normalize(__dirname+'/../');
-app.use(express.static(path.join( rootPath,'public')));
 
+app.use(express.static(path.join( rootPath,'public')));
+app.use(favicon(path.join(rootPath,'public','img','favicon.ico')));
 app.set('views', rootPath+ '/src/views');
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -87,6 +89,12 @@ app.get('/sqa-test', function (req, res) {
         title:'SQA Test'
     });
 });
+
+app.get('/bash-test',function(req, res){
+    res.render('bashTest',{
+        title:'Comman Line Test'
+    })
+})
 
 app.use('/Questions', questionRouter);
 

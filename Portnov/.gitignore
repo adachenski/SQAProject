@@ -1,6 +1,9 @@
 # Created by .ignore support plugin (hsz.mobi)
+# add font awesom to public/lib when push to heroku
 .idea
 node_modules
 views/forTest.ejs
-src/routes/homeRouter.js
+server/routes/homeRouter.js
 public/lib
+npm-debug.log
+.git
