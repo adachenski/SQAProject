@@ -384,6 +384,137 @@
             "It provides a structure for testing the effect of combining two or more variables, circumstances, types of hardware, or events.",
             "Data collection mechanism."
         ],
-        "answer": [1,2]
+        "answer": [
+            1,
+            2
+        ]
+    },
+    {
+        "id": 31,
+        "category": "documentation",
+        "radio": true,
+        "question": "What is Risk Analysis?",
+        "options": [
+            "RISK ANALYSIS is a sequence of steps that can negatively affect all stages of the software development life cycle and the system under test can fail with catastrophic consequences.",
+            "RISK ANALYSIS means the actions taken to avoid things going wrong on a software development project, things that might negatively impact the scope, quality, timeliness, or cost of a project."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 32,
+        "category": "documentation",
+        "radio": true,
+        "question": "Describe Load Testing?",
+        "options": [
+            "Load testing is conducted to understand the behavior of the system under a specific expected load. Simplest form of performance testing.",
+            "Load testing is performed to determine how a system performs in terms of responsiveness, usability and stability under a particular workload.",
+            "Load testing is conducted to understand the behavior of the system under an extreme load. Simplest form of performance testing."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 33,
+        "category": "bugs",
+        "radio": true,
+        "question": "What is a bug tracking system ",
+        "options": [
+            "A bug tracking system is a software as a service platform that is obligated to help programmers to keep track of all the software bugs in their application. Bugs can be managed and organized with Unix command line interface.",
+            "A bug tracking system is a software application that is designed to help quality assurance and programmers keep track of reported software bugs in their work. It may be regarded as a type of issue tracking system."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 34,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "Define Regression Testing?",
+        "options": [
+            "Making sure that software error (bug) was fixed while making changes to the code.",
+            "Retesting fixed bug reports by executing steps-to-reproduce.",
+            "Making sure that no new errors were introduced while making changes to the code."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 35,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Ad hoc testing?",
+        "options": [
+            "Superficial form of User Acceptance Testing",
+            "Monkey testing - random use of software functionality.",
+            "Simultaneously executing tests and learning the application."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 36,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Gray Box Testing?",
+        "options": [
+            "Expand Black box testing, enhance testing productivity by using appropriate methods and tools.",
+            "Expand Black box testing, enhance testing productivity like combining black and white box testing approaches.",
+            "Simultaneously executing tests and learning the application."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 37,
+        "category": "testingTypes",
+        "radio": true,
+        "question": "What is Test Automation?",
+        "options": [
+            "A process of enhancing testing productivity like combining black and white box testing methodologies and approaches.",
+            "A process of writing a computer program to do testing that would otherwise need to be done manually.",
+            "Simultaneously executing tests and learning the application."
+        ],
+        "answer": 1
+    },
+    {
+        "id": 38,
+        "category": "bugs",
+        "radio": false,
+        "question": "Describe bug life cycle?",
+        "options": [
+            "Bug found and reported.",
+            "Development Manager assign priority.",
+            "Bug is fixed.",
+            "Bug is send to the project owner.",
+            "Tester validated that bug was fixed.",
+            "Bug is categorized.",
+            "Bug is closed."
+        ],
+        "answer": [
+            0,
+            1,
+            2,
+            4,
+            6
+        ]
+    },
+    {
+        "id": 39,
+        "category": "bugs",
+        "radio": true,
+        "question": "Who is a better tester?",
+        "options": [
+            "The one that finds the most bugs.",
+            "The one that writes the most completed bug report.",
+            "The one that has the most bugs fixed by the developer."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 40,
+        "category": "bugs",
+        "radio": true,
+        "question": "What is Business Requirements Document (BRD)?",
+        "options": [
+            "It details the business solution for a project including the documentation of customer needs and expectations",
+            "It provides a structure for testing the effect of combining two or more variables, circumstances, types of hardware, or events.",
+            "Document that describes the objectives, scope, approach, and focus of a software testing effort."
+        ],
+        "answer": 0
     }
 ]
