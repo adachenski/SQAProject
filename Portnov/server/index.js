@@ -94,7 +94,13 @@ app.get('/bash-test',function(req, res){
     res.render('bashTest',{
         title:'Comman Line Test'
     })
-})
+});
+
+app.get('/sql-test',function(req, res){
+    res.render('sqlTest',{
+        title:'SQL Test'
+    })
+});
 
 app.use('/Questions', questionRouter);
 

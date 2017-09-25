@@ -14,7 +14,7 @@
     {
         "id": 2,
         "title": " What is Software Quality Assurance? ",
-        "content": " Software QA is the process of monitoring and improving all activities associated with software development, from requirements gathering, design and reviews to coding, testing and implementation. ",
+        "content": " Software QA is the process of monitoring and improving all activities associated with software development, from requirements gathering, design, and reviews to coding, testing and implementation. ",
         "category": "qaBasics"
     },
     {
@@ -128,13 +128,13 @@
     {
         "id": 21,
         "title": " What is Positive Testing? ",
-        "content": " Aimed at showing that software handles properly situations in which user acts as expected (verification). Positive testing runs to verify that a software works as expected when user conducts a correct actions. ",
+        "content": " Aimed at showing that software handles properly situations in which user acts as expected (verification). Positive testing runs to verify that a software works as expected when the user conducts correct actions. ",
         "category": "testingTypes"
     },
     {
         "id": 22,
         "title": " What is Negative Testing? ",
-        "content": " Aimed at showing that software handles properly situations in which user acts not as user is supposed to act. Negative testing runs to verify that a software handles exceptions properly (invalid actions, inputs, settings.) ",
+        "content": " Aimed at showing that software handles properly situations in which user acts not as a user is supposed to act. Negative testing runs to verify that a software handles exceptions properly (invalid actions, inputs, settings.) ",
         "category": "testingTypes"
     },
     {
@@ -146,7 +146,7 @@
     {
         "id": 24,
         "title": " What is Exploratory Testing? ",
-        "content": " Exploratory testing is when the tester explores  an application. No requirements. Tester, based on experience and creativity, learns things and generates new tests to run. Black box testing. Manual testing. ",
+        "content": " Exploratory testing is when the tester explores an application. No requirements. Tester, based on experience and creativity, learns things and generates new tests to run. Black box testing. Manual testing. ",
         "category": "testingTypes"
     },
     {
@@ -170,7 +170,7 @@
     {
         "id": 28,
         "title": " What is System Testing? ",
-        "content": " System testing is conducted on complete system to evaluate it's compliance with the requirements. System testing is a black box testing. You need to know the design or logic. ",
+        "content": " System testing is conducted on a complete system to evaluate its compliance with the requirements. System testing is a black box testing. You need to know the design or logic. ",
         "category": "testingTypes"
     },
     {
@@ -188,7 +188,7 @@
     {
         "id": 31,
         "title": " What is Release/Build Acceptance Testing? ",
-        "content": " When Release Engineer (developer) says that new release is done, QA should make sure it's good enough to be accepted for testing, so the QA team can move from previous release to the new one. ",
+        "content": " When Release Engineer (developer) says that new release is done, QA should make sure it's good enough to be accepted for testing, so the QA team can move from the previous release to the new one. ",
         "category": "testingTypes"
     },
     {
@@ -236,7 +236,7 @@
     {
         "id": 39,
         "title": " What is Beta Testing? ",
-        "content": " Beta testing takes place at customers' sites, and involves testing by a group of customers who use the system at their own locations and provide feedback, before the system is released to other customers. ",
+        "content": " Beta testing takes place at customers' sites, and involves testing by a group of customers who use the system at their own locations and provide feedback before the system is released to other customers. ",
         "category": "testingTypes"
     },
     {
@@ -260,7 +260,7 @@
     {
         "id": 43,
         "title": " What is Recoverability Testing? ",
-        "content": " Recoverability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How it will recover directly affected data? ",
+        "content": " Recoverability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How will it recover directly affected data? ",
         "category": "testingTypes"
     },
     {
@@ -464,7 +464,7 @@
     {
         "id": 77,
         "title": " When have you done enough testing? ",
-        "content": " When testing process comes to the point at which additional tests will not significantly change quality of the software. ",
+        "content": " When testing process comes to the point at which additional tests will not significantly change the quality of the software. ",
         "category": "documentation"
     },
     {
@@ -733,8 +733,8 @@
     },
     {
         "id": 122,
-        "title": " What is Native app? ",
-        "content": " Native app is the one that is specifically designed to run on a device�s operating system and machine firmware, and typically needs to be adapted for different devices. ",
+        "title": " What is a Native app? ",
+        "content": " Native app is the one that is specifically designed to run on a device's operating system and machine firmware, and typically needs to be adapted for different devices. ",
         "category": "mobile"
     },
     {
@@ -812,7 +812,7 @@
     {
         "id": 135,
         "title": "What is SIM card?",
-        "content": "The SIM(Subscriber Identity Module) is a detachable smart card containing the user's subscription information and phone book. This allows the user to retain his or herinformation after switching handsets.SIM card identify the user on the network and could be used as a storage.",
+        "content": "The SIM(Subscriber Identity Module) is a detachable smart card containing the user's subscription information and phone book. This allows the user to retain his or her information after switching handsets.SIM card identifies the user on the network and could be used as a storage.",
         "category": "mobile"
     },
     {
@@ -824,7 +824,7 @@
     {
         "id": 137,
         "title": "What is LTE",
-        "content": "LTE(Long Term Evolution) is a 4G wireless communications standard developed by the 3rd Generation Partnership Project (3GPP) that's designed to provide up to 10x the speeds of 3G networks for mobile devices such as SmartPhones, Tablets, NetBooks, Notebooks and Wireless Hotspots.",
+        "content": "LTE(Long Term Evolution) is a 4G wireless communications standard developed by the 3rd Generation Partnership Project (3GPP) that are designed to provide up to 10x the speeds of 3G networks for mobile devices such as SmartPhones, Tablets, NetBooks, Notebooks and Wireless Hotspots.",
         "category": "mobile"
     },
     {
@@ -836,13 +836,13 @@
     {
         "id": 139,
         "title": "What is Rooting?",
-        "content": "<b>Rooting</b> is a term that applies to <b>android</b> mobile devices.It means giving yourself root permissions on your phone. It’s similar running programs as administrators in Windows, or running a command with sudo in Linux. With a rooted phone, you can run apps that require access to certain system settings, as well as flash custom ROMs to your phone, which add all sorts of extra features.",
+        "content": "<b>Rooting</b> is a term that applies to <b>android</b> mobile devices.It means giving yourself root permissions on your phone. It’s similar running programs as administrators in Windows or running a command with sudo in Linux. With a rooted phone, you can run apps that require access to certain system settings, as well as flash custom ROMs to your phone, which add all sorts of extra features.",
         "category": "mobile"
     },
     {
         "id": 140,
         "title": "What is GPS?",
-        "content": "The best-known satnav system, the Navstar Global Positioning System(GPS), uses about 24 active satellites (including backups). Day and night, 365 days a year, they whiz round Earth once every 12 hours on orbital planes inclined at 55 degrees to the equator.",
+        "content": "The best-known satnav system, the Navstar Global Positioning System(GPS), uses about 24 active satellites (including backups). Day and night, 365 days a year, they travel around Earth once every 12 hours on orbital planes inclined at 55 degrees to the equator.",
         "category": "mobile"
     },
     {

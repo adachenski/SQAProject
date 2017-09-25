@@ -66,7 +66,7 @@
         "id": 5,
         "category": "unix",
         "radio": true,
-        "question": "You are in the folder <b>demo</b>. How to coppy files <b>cat.jpg</b> ans <b>dog.jpg</b> to <b>demo/animals</b>?",
+        "question": "You are in the folder <b>demo</b>. How to coppy files <b>cat.jpg</b> and <b>dog.jpg</b> to <b>demo/animals</b>?",
         "options": [
             "cp cat.jpg dog.jpg animals",
             "cp cat.jpg, dog.jpg animals",
@@ -439,8 +439,237 @@
         "question": "Describe the command <b>ls | sort</b>?",
         "options": [
             "Sort and list all files from the current folder.",
-            "Sort files that contains | from the current folder"
+            "Sort files that contain | from the current folder"
 
+        ],
+        "answer": 0
+    },
+    {
+        "id": 33,
+        "category": "unix",
+        "radio": true,
+        "question": "How to get the number of files in directory <b>home</b>?",
+        "options": [
+            "ls -b home",
+            "ls -n home",
+            "ls | home wc -l"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 34,
+        "category": "unix",
+        "radio": true,
+        "question": "How to rename file <b>animals.txt</b> to <b>cats.txt</b>",
+        "options": [
+            "mv animals.txt cats.txt",
+            "rm animals.txt cats.txt",
+            "cat animals.txt > cats.txt"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 35,
+        "category": "unix",
+        "radio": true,
+        "question": "Get all the lines that contain <b>sammy</b> from <b>cat.txt</b> and <b>dogs.txt</b> and write the result to file <b>sammyName.txt</b>",
+        "options": [
+            "grep sammy cat.txt dog.txt -n sammyName.txt",
+            "cat sammy cat.txt dog.txt > sammyName.txt",
+            "grep sammy cat.txt dog.txt > sammyName.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 36,
+        "category": "unix",
+        "radio": true,
+        "question": "How to Move files <b>cats</b> and <b>dogs</b> to directory <b>Animals</b>",
+        "options": [
+            "mv cats dogs Animals",
+            "rm cats dogs Animals",
+            "ls cats dogs Animals"
+        ],
+        "answer": 0 
+    },
+    {
+        "id": 37,
+        "category": "unix",
+        "radio": true,
+        "question": "How to  <b>cats</b> and <b>dogs</b> to directory <b>Animals</b>",
+        "options": [
+            "mv cats dogs Animals",
+            "rm cats dogs Animals",
+            "ls cats dogs Animals"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 38,
+        "category": "unix",
+        "radio": false,
+        "question": "How to clear the screen?",
+        "options": [
+            "clear",
+            "cls",
+            "Ctrl+L",
+            "Ctrl+C"
+
+        ],
+        "answer": [0,2]
+    },
+    {
+        "id": 39,
+        "category": "unix",
+        "radio": true,
+        "question": "How exit file?",
+        "options": [
+            "clear",
+            "Ctrl+D",
+            "Ctrl+L",
+            "Ctrl+C"
+
+        ],
+        "answer": 1
+    },
+    {
+        "id": 40,
+        "category": "unix",
+        "radio": true,
+        "question": "How end process?",
+        "options": [
+            "clear",
+            "Ctrl+D",
+            "Ctrl+L",
+            "Ctrl+E",
+            "Ctrl+C"
+
+        ],
+        "answer": 4
+    },
+    {
+        "id": 41,
+        "category": "unix",
+        "radio": true,
+        "question": "How to delete rest of a line?",
+        "options": [
+            "clear",
+            "Ctrl+D",
+            "Ctrl+K",
+            "Ctrl+E"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 42,
+        "category": "unix",
+        "radio": true,
+        "question": "Print every line of the document <b>cars</b> that contains <b>Honda</b>",
+        "options": [
+            "ls Honda cars",
+            "cat Honda cars",
+            "grep -i honda cars"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 43,
+        "category": "unix",
+        "radio": true,
+        "question": "Print number of lines that contains <b>Saab</b> in the document <b>cars</b>",
+        "options": [
+            "grep -i Saab cars",
+            "grep -ci saab cars",
+            "grep -v Saab cars"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 44,
+        "category": "unix",
+        "radio": true,
+        "question": "How to get help for command <b>grep</b>",
+        "options": [
+            "man grep",
+            "cmd grep",
+            "men grep",
+            "help grep"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 45,
+        "category": "unix",
+        "radio": false,
+        "question": "Remove all the group permissions for file <b>cats.txt</b>",
+        "options": [
+            "chmod g-rwx cats.txt",
+            "chmod o-x cats.txt",
+            "chmod 010 cats,txt",
+            "chmod 707 cats.txt"
+        ],
+        "answer": [0,3]
+    },
+    {
+        "id": 46,
+        "category": "unix",
+        "radio": false,
+        "question": "Allow all the group permissions for file <b>cats.txt</b>",
+        "options": [
+            "chmod g+rwx cats.txt",
+            "chmod g-rmx cats.txt",
+            "chmod 070 cats,txt",
+            "chmod 707 cats.txt"
+        ],
+        "answer": [0,2]
+    },
+    {
+        "id": 47,
+        "category": "unix",
+        "radio": false,
+        "question": "Allow all the owner permissions for file <b>nasko.txt</b>",
+        "options": [
+            "chmod 017 nasko.txt",
+            "chmod 710 nasko.txt",
+            "chmod 717 nasko.txt",
+            "chmod 177 nasko.txt"
+        ],
+        "answer": [1,2]
+    },
+    {
+        "id": 48,
+        "category": "unix",
+        "radio": true,
+        "question": "Allow read owner permissions for file <b>nasko.txt</b>",
+        "options": [
+            "chown o+r nasko.txt",
+            "chown g+r nasko.txt",
+            "chmod o+r nasko.txt",
+            "chmod g+r nasko.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 49,
+        "category": "unix",
+        "radio": true,
+        "question": "Change owner of the file <b>nasko.txt</b> from <b>jhon to sammy</b>",
+        "options": [
+            "chown jhon sammy nasko.txt",
+            "chown sammy nasko.txt",
+            "change o+rwx nasko.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 50,
+        "category": "unix",
+        "radio": true,
+        "question": "List the <b>number of all lines</b> that contain the full word oscar from movies",
+        "options": [
+            "grep -ciw Oscar movies",
+            "grep -nw oscar movies",
+            "grep -cwn Oscar movies"
         ],
         "answer": 0
     }
