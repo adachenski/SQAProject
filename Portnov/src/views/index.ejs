@@ -24,9 +24,9 @@
         <%=title%>
     </title>
     <style>
-    .col-xs-6{
-        width: 48vw;
-    }
+        .col-xs-6 {
+            width: 48vw;
+        }
     </style>
 </head>
 
@@ -55,7 +55,7 @@
                     </a>
                     <a href="bash-test">
                         <div class="col-xs-6 cell-container cell-dementions main-background">
-                            <img src="../img/technical3.png" style="width:65%" alt="Technical Test">
+                            <img src="../img/terminal.png" style="width:65%" alt="Technical Test">
                             <div class="mobile-text">Linux/Unix Test</div>
                         </div>
                     </a>
@@ -66,24 +66,35 @@
                             <div class="mobile-text">Questions</div>
                         </div>
                     </a>
-                    <a id="add-question" href="#">
+                    <a id="add-question" href="/sql-test">
                         <div class="col-xs-6 cell-container main-background">
-                            <div >New</div>
-                            <img class="shake"  src="../img/sql1.png" style="width:65%" alt="Question">
+                            <div>New</div>
+                            <img class="shake" src="../img/sql1.png" style="width:65%" alt="Question">
                             <div class="mobile-text">SQL Test</div>
                         </div>
                     </a>
                     <div class="col-xs-12 main-headers">
                         <h3 class="center playfair ">Types of Testing</h3>
                     </div>
+   
                     <% for(var i = 0; i < documentation.length; i+=1){%>
                         <a id="test-types-<%=i%>" href="questions/<%=testingTypes[i].referToId%>">
                             <div class="col-xs-6 cell-container main-background">
                                 <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
                                 <div class="animated mobile-text">
                                     <%=testingTypes[i].title%>
+
+                                        <div>
+                                            <img src="../img/tTypes.png" alt="testing types">
+                                        </div>
+                                        
                                 </div>
+                                <div class="tTypes-text animated2">
+                                        <%=testingTypes[i].title%>
+                                    </div>
+
                             </div>
+                            
                         </a>
                         <%}%>
                             <div class="col-xs-12 main-headers">

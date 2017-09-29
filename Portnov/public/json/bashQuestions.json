@@ -288,12 +288,12 @@
         "id": 22,
         "category": "unix",
         "radio": true,
-        "question": "How to display the full path from the current directory?",
+        "question": "How to display the last 15 lines from file rally?",
         "options": [
-            "ls -p",
-            "wc -pwd",
-            "pdw",
-            "ls *"
+            "grep rally -15 tail",
+            "cat rally -15 tail",
+            "tail -15 rally",
+            "-15 tai rally"
         ],
         "answer": 2
     },

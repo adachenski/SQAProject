@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/modern-business.css">
+    <link rel="stylesheet" href="css/sqa.css">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/demo.css">
+
+    <link rel="stylesheet" href="css/pushy.css">
+    <script src="lib/jquery/dist/jquery.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" /> -->
+    <title>
+        <%=title%>
+    </title>
+</head>
+
+<body>
+    <% include ./navigation.ejs %>
+        <div class="container-fluid">
+            <div style="margin-top:-5px;" class="row">
+                <div style="padding-top:5px" class="col-xs-12 first-row">
+                    <h1 class="center playfair">SQL Test</h1>
+                </div>
+            </div>
+            <!-- <div>
+                download test <a target="_blank" href="documents/cheatsheet.pdf">here</a>
+            </div> -->
+            <div class="row">
+                <div class="col-sm-3 col-lg-4"></div>
+
+                <div class="col-xs-12 col-sm-6  col-lg-4">
+                    <div id="answer"></div>
+                    <div class="row green">
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12 center"><span id="progress">1 of 10</span></div>
+                        <div class="col-xs-12">
+                            <input id="submit" type="button" class="btn btn-success" value="Submit">
+                            <input id="next" type="button" class="btn btn-primary hidden" value="Next">
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 col-lg-4"></div>
+                <div class="col-xs-12"> 
+                    <div class="center sqa-btn">
+                        Oracle SQL commands
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/pushy.min.js"></script>
+        <script src="js/testQuestions.js"></script>
+        <script>
+            $(window).on('load', function () {
+                InitialLoad("json/sqlQuestions.json");
+            });
+        </script>
+</body>
+
+
+</html>

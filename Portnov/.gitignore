@@ -4,6 +4,6 @@
 node_modules
 views/forTest.ejs
 server/routes/homeRouter.js
-public/lib/font-awesome
+public/lib
 npm-debug.log
 .git

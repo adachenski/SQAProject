@@ -38,16 +38,7 @@
     white-space: nowrap;
 }
 
-.animated {
-    -webkit-animation: mymove 7s;
-    /*-webkit-animation-timing-function: ease-in;*/
-    /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: 2;
-    /* Safari 4.0 - 8.0 */
-    animation: mymove 7s;
-    animation-iteration-count: 1;
-    animation-delay: 2.5s;
-}
+
 .shake {
     -webkit-animation: bzz 2s;
     /*-webkit-animation-timing-function: ease-in;*/
@@ -76,37 +67,190 @@
         transform: translate3d(4px, 0, 0);
       }
 }
+.animated {
+    -webkit-animation: mymove 17s;
+    /*-webkit-animation-timing-function: ease-in;*/
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 17s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2.5s; */
+}
 
 /* Safari 4.0 - 8.0 */
 
 @-webkit-keyframes mymove {
-    0% {
-        top: 100%;
+    8% {
+        top: 82%;
         height: 30px;
+        opacity: 0.5;
     }
-    50% {
-        top: 0px;
+    10%{
+        top: 0;
         height: 100%;
+        opacity: 1;
     }
-    100% {
-        top: 100%;
+    35%{
+        top: 0;
+        height: 100%;
+        opacity: 1;
     }
-}
+    40% {
+        top: 0;
+        height: 0;
+        opacity: 1;
+    }
+    41%{
+        opacity: 0;
+    }
+    60%{
+        top: 0;
+        height: 0;
+        opacity: 0;
+    }
+    65%{
+        top: 0;
+        height: 100%;
+        opacity: 1;
+    }
+    77% {
+        top: 82%;
+        height: 30px;
+       
+    }
+    82% {
+        top: 82%;
+        height: 30px;
+        
+    }
 
+}
 @keyframes mymove {
-    0% {
+    8% {
         top: 82%;
         height: 30px;
+        opacity: 0.5;
     }
-    50% {
-        top: 0px;
+    10%{
+        top: 0;
         height: 100%;
+        opacity: 1;
+    }
+    35%{
+        top: 0;
+        height: 100%;
+        opacity: 1;
+    }
+    40% {
+        top: 0;
+        height: 0;
+        opacity: 1;
+    }
+    41%{
+        opacity: 0;
+    }
+    60%{
+        top: 0;
+        height: 0;
+        opacity: 0;
+    }
+    65%{
+        top: 0;
+        height: 100%;
+        opacity: 1;
+    }
+    77% {
+        top: 82%;
+        height: 30px;
+       
+    }
+    82% {
+        top: 82%;
+        height: 30px;
+        
+    }
+
+}
+.animated2 {
+    -webkit-animation: mymove2 17s;
+    /*-webkit-animation-timing-function: ease-in;*/
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove2 17s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2.5s; */
+}
+
+/* Safari 4.0 - 8.0 */
+
+@-webkit-keyframes mymove2 {
+    0% {
+       opacity: 0
+    }
+    35% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0.5
+    }
+   
+    45%{
+        opacity: 1
+    }
+    65%{
+        
+        opacity: 0.9;
+    }
+    68%{
+        opacity: 0;
     }
     100% {
-        top: 82%;
+        opacity: 0;
     }
 }
 
+@keyframes mymove2 {
+    0% {
+       opacity: 0
+    }
+    35% {
+        opacity: 0
+    }
+    40% {
+        opacity: 0.5
+    }
+   
+    45%{
+        opacity: 1
+    }
+    65%{
+        
+        opacity: 0.9;
+    }
+    68%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.tTypes-text {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: #803F3F;
+    
+    position: relative;
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+ 
+}
 
 .card-img-top {
         width: 100%;
@@ -159,7 +303,7 @@ color: white;
 
 }
 .first-row h4:last-child{
-        position: absolute;
+    position: absolute;
     left: 70px;
     top: 55px;
     transform: rotate(-9deg)

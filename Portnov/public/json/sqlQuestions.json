@@ -144,10 +144,11 @@
         "id": 11,
         "category": "sql",
         "radio": true,
-        "question": "What is Database Normalization?",
+        "question": "How to get the unique first names of people?",
         "options": [
-            "Is a combination of columns that are used to establish a relationship between the tables",
-            "Process of dividing large tables into smaller tables and defining relationships between them"
+            "SELECT DIST FIRST_NAME FROM PEOPLE",
+            "SELECT UNIQUE FIRST_NAME FROM PEOPLE",
+            "SELECT SINGLE FIRST_NAME FROM PEOPLE"
          
         ],
         "answer": 1
@@ -168,7 +169,7 @@
         "radio": true,
         "question": "Commands to populate data in tables!",
         "options": [
-            "GREATE, ALTER, DROP, DESC",
+            "CREATE, ALTER, DROP, DESC",
             "INSERT, DELETE, UPDATE, TRUNCATE"
          
         ],
@@ -228,11 +229,11 @@
         "id": 18,
         "category": "sql",
         "radio": true,
-        "question": "How to add <b>Jhon as first name</b> to table <b>PEOPLE</b> with id 2?",
+        "question": "How to change the zip code to <b>95112</b> for city <b>San Jose</b> from table People?",
         "options": [
-            "UPDATE PEOPLE SET FIRST_NAME = 'Jhon' WHERE ID = 2",
-            "MODIFY PEOPLE SET FIRST_NAME = 'Jhon' WHERE ID = 2",
-            "ALTER TABLE REOPLE MODIFY FIRST_NAME ='Jhon' WHERE ID = 2"
+            "ALTER TABLE PEOPLE UPDATE ZIP = 95112 WHERE CITY = 'San Jose'",
+            "MODIFY PEOPLE SET ZIP = 95112 WHERE CITY = 'San Jose'",
+            "UPDATE PEOPLE SET ZIP = 95112 WHERE CITY = 'San Jose'"
          
         ],
         "answer": 0
@@ -244,7 +245,7 @@
         "options": [
             "UPDATE PEOPLE SET FIRST_NAME = 'Jhon' WHERE ID = 2",
             "MODIFY PEOPLE SET FIRST_NAME = 'Jhon' WHERE ID = 2",
-            "ALTER TABLE REOPLE MODIFY FIRST_NAME ='Jhon' WHERE ID = 2"
+            "ALTER TABLE PEOPLE MODIFY FIRST_NAME ='Jhon' WHERE ID = 2"
          
         ],
         "answer": 0
@@ -265,14 +266,14 @@
         "id": 21,
         "category": "sql",
         "radio": true,
-        "question": "Create Table <b>Person</b> with Property <b>first name<b>",
+        "question": "How to add column Age to table Person?",
         "options": [
-            "CREATE TABLE PERSON FIRST_NAME VARCHAR(25)",
-            "CREATE TABLE PERSON(FIRST_NAME VARCHAR(25))",
-            "CREATE TABLE PERSON(FIRST_NAME = 'Json')"
+            "ALTER TABLE PERSON ADD COLUMN AGE INT",
+            "ALTER TABLE PERSON ADD AGE",
+            "ALTER TABLE PERSON ADD AGE INT"
          
         ],
-        "answer": 1
+        "answer": 2
     },{
         "id": 22,
         "category": "sql",
@@ -509,14 +510,14 @@
     {
         "id": 41,
         "category": "sql",
-        "radio": true,
-        "question": "Show all the people with the same last name",
+        "radio": false,
+        "question": "Show all the people from department 20 with first name John",
         "options": [
-            "SELECT * FROM PEOPLE WHERE LAST_NAME",
-            "SELECT DEPARTMENT_ID, MAX(SALARY) FROM PEOPLES GROUP BY DEPARTMENT_ID WHERE MAX(SALARY) > 10000",
-            "SELECT DEPARTMENT_ID, MAX(SALARY) FROM PEOPLES GROUP BY DEPARTMENT_ID HAVING MAX(SALARY) > 10000"
+            "SELECT * FROM PEOPLE WHERE DEPARTMENT_ID = 20 AND FIRST_NAME LIKE 'John'",
+            "SELECT * FROM PEOPLE WHERE DEPARTMENT_ID = 20 AND FIRST_NAME = 'John'",
+            "SELECT * FROM PEOPLE WHERE DEPARTMENT_ID = 20 AND FIRST_NAME IS 'John'"
         ],
-        "answer": 2
+        "answer": [0,1]
     },
     {
         "id": 42,
