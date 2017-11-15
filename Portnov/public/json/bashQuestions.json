@@ -51,22 +51,10 @@
         "answer": 0
     },
     {
-        "id": 4,
-        "category": "unix",
-        "radio": true,
-        "question": "You are in the folder <b>demo</b>. How to coppy file <b>alex.txt</b> from <b>demo/books/alex.txt</b> to folder <b>demo</b>?",
-        "options": [
-            "cp alex.txt to demo",
-            "cp demo/books/alex.txt .",
-            "cp books/alex.txt ."
-        ],
-        "answer": 2
-    },
-    {
         "id": 5,
         "category": "unix",
         "radio": true,
-        "question": "You are in the folder <b>demo</b>. How to coppy files <b>cat.jpg</b> and <b>dog.jpg</b> to <b>demo/animals</b>?",
+        "question": "You are in folder <b>demo</b>. How to copy files <b>cat.jpg</b> and <b>dog.jpg</b> to <b>demo/animals</b>?",
         "options": [
             "cp cat.jpg dog.jpg animals",
             "cp cat.jpg, dog.jpg animals",
@@ -78,7 +66,7 @@
         "id": 6,
         "category": "unix",
         "radio": false,
-        "question": "How to show hiddent deirectories",
+        "question": "How to show hidden directories?",
         "options": [
             "ls -all",
             "ls -a",
@@ -91,7 +79,7 @@
         "id": 7,
         "category": "unix",
         "radio": false,
-        "question": "How to coppy everything from dir1 to dir2",
+        "question": "How to copy everything from dir1 to dir2?",
         "options": [
             "cp -a dir1 dir2",
             "cp -all dir1 dir2",
@@ -104,7 +92,7 @@
         "id": 8,
         "category": "unix",
         "radio": true,
-        "question": "How to move everything from current dir1 to dir2",
+        "question": "How to move everything from current dir1 to dir2?",
         "options": [
             "mv * dir2",
             "mv -all dir2",
@@ -205,7 +193,7 @@
         "id": 16,
         "category": "unix",
         "radio": true,
-        "question": "How to remove all pictures from pic7.jpg to pic27.jpg?",
+        "question": "How to remove all pictures <b>from pic7.jpg to pic27.jpg</b>?",
         "options": [
             "rm pic7 pic27 -a",
             "rm from pic1.jpg to pic27.jpg",
@@ -288,7 +276,7 @@
         "id": 22,
         "category": "unix",
         "radio": true,
-        "question": "How to display the last 15 lines from file rally?",
+        "question": "How to display the last 15 lines from file <b>rally</b>?",
         "options": [
             "grep rally -15 tail",
             "cat rally -15 tail",
@@ -301,7 +289,7 @@
         "id": 23,
         "category": "unix",
         "radio": false,
-        "question": "How to change current directory to Home directory?",
+        "question": "How to change current directory to Home?",
         "options": [
             "ls -h",
             "cd",
@@ -323,40 +311,16 @@
         "answer": 2
     },
     {
-        "id": 24,
-        "category": "unix",
-        "radio": true,
-        "question": "Describe the command <b>ls -al</b>?",
-        "options": [
-            "list with long format and show hidden files",
-            "list all files with lower case names",
-            "list all the files that start with al"
-        ],
-        "answer": 0
-    },
-    {
         "id": 25,
         "category": "unix",
         "radio": true,
-        "question": "How to show all the lines from file <b>alice.txt</b> with the coresponding line number?",
+        "question": "How to show all the lines from file <b>alice.txt</b> with the corresponding line number?",
         "options": [
             "ls alice.txt *",
             "ls alice.txt -a",
             "ls alice.txt -b"
         ],
         "answer": 2
-    },
-    {
-        "id": 25,
-        "category": "unix",
-        "radio": true,
-        "question": "How to list only the first 10 lines from file <b>alice.txt</b>?",
-        "options": [
-            "ls alice.txt -10",
-            "head -10 alice.txt",
-            "alice.txt limit 10"
-        ],
-        "answer": 1
     },
     {
         "id": 26,
@@ -427,7 +391,7 @@
             "grep 1984 movies.txt",
             "find 1984 movies.txt",
             "cat 1984 movies.txt",
-            "touch carrots >> veggies.txt"
+            "touch movies.txt 1984"
 
         ],
         "answer": 0
@@ -484,7 +448,7 @@
         "id": 36,
         "category": "unix",
         "radio": true,
-        "question": "How to Move files <b>cats</b> and <b>dogs</b> to directory <b>Animals</b>",
+        "question": "How to move files <b>cats</b> and <b>dogs</b> to directory <b>Animals</b>",
         "options": [
             "mv cats dogs Animals",
             "rm cats dogs Animals",
@@ -496,13 +460,12 @@
         "id": 37,
         "category": "unix",
         "radio": true,
-        "question": "How to  <b>cats</b> and <b>dogs</b> to directory <b>Animals</b>",
+        "question": "The <b>kernel</b> is the heart of the operating system. It is a set of computer programs that allocate the system resources and coordinate all the details of the computer's internals.",
         "options": [
-            "mv cats dogs Animals",
-            "rm cats dogs Animals",
-            "ls cats dogs Animals"
+            "true",
+            "false"
         ],
-        "answer": 2
+        "answer": 0
     },
     {
         "id": 38,
@@ -538,7 +501,7 @@
         "radio": true,
         "question": "How end process?",
         "options": [
-            "clear",
+            "Ctrl+P",
             "Ctrl+D",
             "Ctrl+L",
             "Ctrl+E",
@@ -564,7 +527,7 @@
         "id": 42,
         "category": "unix",
         "radio": true,
-        "question": "Print every line of the document <b>cars</b> that contains <b>Honda</b>",
+        "question": "Print every line of the document <b>cars</b> that contains <b>Honda</b>.",
         "options": [
             "ls Honda cars",
             "cat Honda cars",
@@ -576,7 +539,7 @@
         "id": 43,
         "category": "unix",
         "radio": true,
-        "question": "Print number of lines that contains <b>Saab</b> in the document <b>cars</b>",
+        "question": "Print number of lines that contains <b>Saab</b> in the document <b>cars</b>.",
         "options": [
             "grep -i Saab cars",
             "grep -ci saab cars",
@@ -588,7 +551,7 @@
         "id": 44,
         "category": "unix",
         "radio": true,
-        "question": "How to get help for command <b>grep</b>",
+        "question": "How to get help for command <b>grep</b>?",
         "options": [
             "man grep",
             "cmd grep",
@@ -653,7 +616,7 @@
         "id": 49,
         "category": "unix",
         "radio": true,
-        "question": "Change owner of the file <b>nasko.txt</b> from <b>jhon to sammy</b>",
+        "question": "Change owner of the file <b>nasko.txt</b> from <b>jhon to sammy</b>.",
         "options": [
             "chown jhon sammy nasko.txt",
             "chown sammy nasko.txt",
@@ -665,12 +628,130 @@
         "id": 50,
         "category": "unix",
         "radio": true,
-        "question": "List the <b>number of all lines</b> that contain the full word oscar from movies",
+        "question": "List the <b>number of all lines</b> that contain the word oscar from movies.",
         "options": [
             "grep -ciw Oscar movies",
             "grep -nw oscar movies",
             "grep -cwn Oscar movies"
         ],
         "answer": 0
+    },
+    {
+      "id": 51,
+      "category": "unix",
+      "radio": true,
+      "question": "You are in the folder <b>demo</b>. How to copy file <b>alex.txt</b> from <b>demo/books/alex.txt</b> to folder <b>demo</b>?",
+      "options": [
+        "cp alex.txt to demo",
+        "cp demo/books/alex.txt .",
+        "cp books/alex.txt ."
+      ],
+      "answer": 2
+    },
+    {
+      "id": 52,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe the command <b>ls -al</b>?",
+      "options": [
+        "list with long format and show hidden files",
+        "list all files with lower case names",
+        "list all the files that start with al"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 53,
+      "category": "unix",
+      "radio": true,
+      "question": "How to list only the first 10 lines from file <b>alice.txt</b>?",
+      "options": [
+        "ls alice.txt -10",
+        "head -10 alice.txt",
+        "alice.txt limit 10"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 54,
+      "category": "unix",
+      "radio": true,
+      "question": "<b>The Shell</b>",
+      "options": [
+        "It is a set of computer programs that allocate the system resources and coordinate all the details of the computer's internals.",
+        "Translates commands entered by the user and converts them into a language that is understood by the kernel."
+      ],
+      "answer": 1
+    },
+    {
+      "id": 55,
+      "category": "unix",
+      "radio": true,
+      "question": "In <b>UNIX</b> all the files must have extensions.",
+      "options": [
+        "true",
+        "false"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 56,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe <b>ls -t</b>",
+      "options": [
+        "sorted list by time & date",
+        "list all subdirectories",
+        "list with long format"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 57,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe <b>ls *</b>",
+      "options": [
+        "sorted list by time & date",
+        "list all subdirectories",
+        "list with long format"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 58,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe command <b>cat</b>?",
+      "options": [
+        "edit the content  of a file",
+        "list the content  of a file",
+        "display the content  of a file"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 59,
+      "category": "unix",
+      "radio": true,
+      "question": "How to copy <b>file1</b> and call it <b>file2</b>?",
+      "options": [
+        "touch file1 file2",
+        "mv file1 file2",
+        "cp file1 file2"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 60,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe <b>grep -w</b>?",
+      "options": [
+        "Checking for full words, not for sub-strings",
+        "Checking for sub-strings, not for full words",
+        "Case insensitive search"
+      ],
+      "answer": 0
     }
 ]

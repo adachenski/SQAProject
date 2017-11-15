@@ -344,7 +344,7 @@
         "options": [
             "ALTER TABLE PERSON DROP COLUMN AGE",
             "ALTER TABLE PERSON DROP AGE",
-            "ALTER TABLR PRTSON DELETE COLUMN AGE"
+            "ALTER TABLE PERSON DELETE COLUMN AGE"
          
         ],
         "answer": 0
@@ -357,7 +357,7 @@
         "options": [
             "ALTER TABLE PERSON WHERE CITY_NAME = 'San Jose'",
             "DELETE FROM PERSON WHERE CITY_NAME = 'San Jose'",
-            "DROP FROM PRTSON WHERE CITY_NAME = 'San Jose'"
+            "DROP FROM PERSON WHERE CITY_NAME = 'San Jose'"
          
         ],
         "answer": 1
@@ -465,7 +465,7 @@
         "radio": true,
         "question": "Order people by last name.",
         "options": [
-            "SELECT * FROM PEOPLES SORTH BY LAST_NAME",
+            "SELECT * FROM PEOPLES SORT BY LAST_NAME",
             "SELECT * FROM PEOPLES ORDER BY LAST_NAME DESC",
             "SELECT * FROM PEOPLES ORDER BY LAST_NAME ASC"
         ],
@@ -538,7 +538,7 @@
         "question": "Describe CREATE",
         "options": [
             "Creates a table (index, view) in a database.",
-            "Creates a table (rowes, columns) in a database.",
+            "Creates a table (rows, columns) in a database.",
             "Create new instances of a database."
         ],
         "answer": 0

@@ -17,9 +17,9 @@
         "radio": true,
         "question": "What is Software Testing?",
         "options": [
-            "Proces of finding bugs and watch for errors.",
+            "Process  of finding bugs and watch for errors.",
             "How close is the actual software to the expected product.",
-            "Proces of analyzing the softwate in order to find differences between existing and reqired conditions."
+            "Process of analyzing the software in order to find differences between existing and required conditions."
         ],
         "answer": 2
     },
@@ -27,12 +27,12 @@
         "id": 3,
         "category": "qaBasics",
         "radio": false,
-        "question": "Purpouse of Software Testing?",
+        "question": "Purpose of Software Testing?",
         "options": [
-            "Verification (Check actual result against the reqirements).",
-            "Remove all the bugs trom the tested product.",
-            "Erorr detection.",
-            "Validation (Check that our system is what the user acualy wants)."
+            "Verification (Check actual result against the requirements).",
+            "Remove all the bugs from the tested product.",
+            "Error detection.",
+            "Validation (Check that our system is what the user actual wants)."
         ],
         "answer": [
             0,
@@ -44,10 +44,10 @@
         "id": 4,
         "category": "qaBasics",
         "radio": true,
-        "question": "How to test if there are no reqirement?",
+        "question": "How to test if there are no requirements?",
         "options": [
             "Use exploratory testing; Create you own requirements; Find critical errors.",
-            "If there are on requrement aways use regresson testing.",
+            "If there are on requirements aways use regression testing.",
             "Use common sense; Compare to similar applications; Try exploratory testing."
         ],
         "answer": 2
@@ -85,7 +85,7 @@
         "radio": true,
         "question": "What is Ad hoc testing?",
         "options": [
-            "Simplified form of Test Automation where test Planning, Executing and Learning are happening at the same time.",
+            "Combination between Exploratory and Monkey testing where everything is happening at the same time.",
             "Testing performed to determine how a system performs in terms of responsiveness and stability under a particular workload.",
             "Simplified form of Exploratory Testing where test Planning, Executing and Learning are happening at the same time."
         ],
@@ -99,7 +99,7 @@
         "options": [
             "Testing of individual software components or modules.",
             "Unit testing is conducted on complete system to evaluate it's compliance with the requirements.",
-            "Unit tests are usually run by developers (or whitebox testers) during development process to ensure that code meets its design."
+            "Unit tests are usually run by developers (or white-box testers) during development process to ensure that code meets its design."
         ],
         "answer": [
             0,
@@ -113,7 +113,7 @@
         "question": "What is Integration testing?",
         "options": [
             "Integration testing is conducted to verify that functions of a system are working as specified.",
-            "Integratopn testing is integrating a software product with the development environment.",
+            "Integration testing is integrating a software product with the development environment.",
             "Integration testing is a phase in software testing in which individual software modules are combined and tested as a group."
         ],
         "answer": 2
@@ -138,7 +138,7 @@
         "options": [
             "Sanity testing is a basic test to quickly evaluate if the calculation result can be true.",
             "It's not to catch all mistakes, but to identify areas with obviously false results.",
-            "Test a complete application in closest to production environment (interacting with a database, using network communications, etc)."
+            "Sanity testing is run to identify simple failures severe enough to reject software release."
         ],
         "answer": [
             0,
@@ -151,7 +151,7 @@
         "radio": true,
         "question": "What is Regression testing?",
         "options": [
-            "Partial retesting of a modified program to make shure that all errors are cached and reported.",
+            "Partial retesting of a modified program to make sure that all errors are cached and reported.",
             "Partial retesting of a modified program to make sure that no new errors were introduced while making changes to the code (developing new or fixing existing one).",
             "Test a complete application in closest to production environment (interacting with a database, using network communications, etc)."
         ],
@@ -202,7 +202,7 @@
         "question": "What is Stress testing?",
         "options": [
             "Testing performed to determine how a system performs in terms of responsiveness and stability under a particular workload.",
-            "Stree testing is conducted to understand the behavior of the system under a specific expected load. Simplest form of load testing.",
+            "Stress testing is conducted to understand the behavior of the system under a specific expected load. Simplest form of load testing.",
             "Stress testing is conducted to understand the behavior of the system under an extreme load."
         ],
         "answer": 2
@@ -225,7 +225,7 @@
         "question": "What is Usability testing?",
         "options": [
             "Usability testing is used to evaluate product by testing it on users.",
-            "Usability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How it will recover directly affected data?",
+            "Usability testing is performed to determine if the product is ready to be released.",
             "Usability testing measures how easy it is to use specific object or set of objects."
         ],
         "answer": [
@@ -253,8 +253,8 @@
         "radio": true,
         "question": "Describe a bug?",
         "options": [
-            "Release/build acceptance.",
-            "Mismatch between actual result of a software application and its intended result.",
+            "A small insect.",
+            "Peace of code that fails every time when tested.",
             "Unexpected software behavior.",
             "Mismatch between actual behavior of a software application and its intended behavior."
         ],
@@ -266,10 +266,10 @@
         "radio": false,
         "question": "Describe WWW rule",
         "options": [
-            "What heppend?",
-            "Where it heppend?",
-            "Why it happend?",
-            "Under Which surcumstances?"
+            "What happened?",
+            "Where it happened?",
+            "Why it happened?",
+            "Under Which circumstances?"
         ],
         "answer": [
             0,
@@ -283,8 +283,8 @@
         "radio": true,
         "question": "Most important components of Bug Report",
         "options": [
-            "Title, Steps to reproduce, Severity, Priority, Status",
-            "Title, Steps to execute, Expected Result, Actual Result, "
+            "Title, Description, Severity, Priority, Status, Attachments",
+            "Summary, Steps, Expected Result, Actual Result, ID"
         ],
         "answer": 0
     },
@@ -294,7 +294,7 @@
         "radio": true,
         "question": "When should you write a Bug Report",
         "options": [
-            "Only in certain days of the week.",
+            "Only on certain days of the week.",
             "Right after executing your test cases.",
             "Immediately upon finding the bug."
         ],
@@ -306,11 +306,11 @@
         "radio": true,
         "question": " Who can assign/change severity or priority in a bug report?",
         "options": [
+            "Tester assigns Priority; Development Manager assigns severity.",
             "Tester assigns severity; Development Manager assigns Priority.",
-            "Tester assigns Prority; Development Manager assigns severity.",
             "Developer assigns severity; Tester assigns Priority."
         ],
-        "answer": 0
+        "answer": 1
     },
     {
         "id": 25,
@@ -418,8 +418,8 @@
         "radio": true,
         "question": "What is a bug tracking system ",
         "options": [
-            "A bug tracking system is a software as a service platform that is obligated to help programmers to keep track of all the software bugs in their application. Bugs can be managed and organized with Unix command line interface.",
-            "A bug tracking system is a software application that is designed to help quality assurance and programmers keep track of reported software bugs in their work. It may be regarded as a type of issue tracking system."
+            "Test management tools used to store information on how testing is to be done, plan testing activities and report the status of quality assurance activities. ",
+            "Software application that is designed to help quality assurance and programmers keep track of reported software bugs in their work."
         ],
         "answer": 1
     },
