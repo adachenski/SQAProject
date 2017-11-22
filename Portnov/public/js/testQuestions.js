@@ -26,10 +26,10 @@ function InitialLoad(string) {
 function populateHtml(val) {
 
     var mainDiv = $("<div/>", {
-        "class": "col-xs-12",
+        "class": "col-xs-12"
     });
     var innerDiv = $("<div/>", {
-        "class": "row",
+        "class": "row"
     }).appendTo(mainDiv);
 
     var h3 = $("<h3/>", {
@@ -38,22 +38,22 @@ function populateHtml(val) {
     }).appendTo(innerDiv);
 
     for (var i = 0; i < val.options.length; i += 1) {
-        var span = $("<span/>", {
+        var optionDiv = $("<div/>", {
 
         }).appendTo(innerDiv);
         if (val.radio) {
             var radio = $("<input/>").attr({
                 type: 'radio', name: 'mydata', class: 'mydata radio-gap', value: i, id: i
-            }).appendTo(span);
+            }).appendTo(optionDiv);
         }
         else {
             var radio = $("<input/>").attr({
                 type: 'checkbox', class: 'mydata radio-gap', value: i, id: i
-            }).appendTo(span);
+            }).appendTo(optionDiv);
         }
-        var span = $("<span/>", {
-            "html": val.options[i], class: ''
-        }).appendTo(span);
+        var span = $("<div/>", {
+            "html": val.options[i], class: 'answer-options'
+        }).appendTo(optionDiv);
 
         var br = $("</br>").appendTo(span);
     }
@@ -88,7 +88,7 @@ function getRandomQuestions(randomTarget, data) {
 
         }
     }
-    console.log(randomArr);
+   // console.log(randomArr);
     return randomArr;
 };
 
@@ -112,24 +112,29 @@ $("#next").click(function () {
     if (items.length === count) {
         var passResult = 0.7; //this is 70%
         var finalResult = passResult * items.length;
-        console.log(finalResult);
+
         $("#submit").addClass("hidden");
         $("#next").html("hidden");
         // $(".green").addClass("hidden");
         $("#answer").addClass("hidden");
         // alert(answersCount);
-        $("#progress").html("You need 70% to pass the test.</br> Your Score is " + answersCount + " of " + randomTarget);
+        $("#progress").html("<h4>You need 70% to pass the test.</h4> <h4>Your Score is " + answersCount + " of " + randomTarget+"</h4>");
         if (answersCount >= finalResult) {
-            $("<div/>", {
-                "class": "col-xs-12 lightgreen",
-                html: "You have passed"
-            }).appendTo(".green");
+            //$("<div/>", {
+            //    "class": "col-xs-12 lightgreen",
+            //    html: "You have passed",
+            //    style:""
+            //}).appendTo(".green");
+            $(".green").html("<h2>Congratulations!<h2><h3>You have passed.</h3>")
+                .css({"background-color":"green","text-align":"center","color":"white"});
         }
         else {
-            $("<div/>", {
-                "class": "col-xs-12 red",
-                html: "You have NOT passed"
-            }).appendTo(".green");
+            $(".green").html("<h2>YOU HAVE FAILED!<h2>")
+                .css({"background-color":"red","text-align":"center"});
+            //$("<div/>", {
+            //    "class": "col-xs-12 red",
+            //    html: "You have NOT passed"
+            //}).appendTo(".green");
         }
     }
 });
@@ -152,52 +157,100 @@ jQuery.fn.extend({
 function checkRightVal(count) {
     var answers = $(".mydata:checked");
     // var x = $("input:radio[name=mydata]:checked");
-    if (answers.length === 1) {
-        var value = answers.attr("id");
-        if (plainVal[count].answer == value) {
+    if (plainVal[count].radio && (answers.length === 1)) {
+
+        var myAnswer = parseInt(answers.attr("id"));
+        var defaultAnswer = plainVal[count].answer;
+
+
+        if (defaultAnswer === myAnswer) {
             $("#answer").text("Success").addClass("lightgreen")
                 .animateAnswer()
                 .removeClass("red");
+            $(".answer-options:eq("+myAnswer+")").css("border","3px solid green");
             answersCount++;
         }
         else {
             $("#answer").text("Incorect").addClass("red")
                 .animateAnswer()
                 .removeClass('lightgreen');
+            $(".answer-options:eq("+myAnswer+")").css("border","3px solid red");
+            $(".answer-options:eq("+defaultAnswer+")").css("background-color","lightgreen");
         }
         $("#submit").addClass("hidden");
         $("#next").removeClass("hidden");
+        $(".radio-gap").attr("disabled",true);
 
     }
-    else if (answers.length > 1) {
+    else if (!plainVal[count].radio  && (answers.length > 1)) {
+
         var userAnswers = [];
+        var countCheckBoxAnswers = 0;
+        var defaultAnswer = plainVal[count].answer;
+
+        var defaultAnswerLength = plainVal[count].answer.length;
+
         for (var i = 0; i < answers.length; i += 1) {
             var checkboxValue = answers[i].id;
             userAnswers.push(checkboxValue);
         }
-        var countCheckBoxAnswers = 0;
-        for (var y = 0; y < plainVal[count].answer.length; y += 1) {
-            for (var z = 0; z < userAnswers.length; z += 1) {
-                if (plainVal[count].answer[y] == userAnswers[z]) {
+
+        for(var t = 0; t < defaultAnswerLength; t+=1){
+
+            if(defaultAnswerLength == userAnswers.length){
+
+                if(defaultAnswer[t] == userAnswers[t]){
                     countCheckBoxAnswers++;
+                    if(countCheckBoxAnswers == defaultAnswerLength){
+
+                        $("#answer").text("Success").addClass("lightgreen")
+                                .animateAnswer()
+                                .removeClass("red");
+                            for(var m = 0; m < userAnswers.length; m++){
+                                $(".answer-options:eq("+userAnswers[m]+")").css("border","3px solid green");
+                            }
+                        answersCount++;
+                    }
+                }
+                else{
+
+                    for(var j = 0; j < plainVal.length; j++){
+                        $(".answer-options:eq("+j+")").css("background-color","red");
+                    }
+                    for(var j = 0; j < userAnswers.length; j++){
+                        $(".answer-options:eq("+defaultAnswer[j]+")").css("background-color","lightgreen");
+                    }
+                    $("#answer").text("Incorect").addClass("red")
+                        .animateAnswer()
+                        .removeClass('lightgreen');
+                    break;
                 }
             }
+            else {
+                console.log("evry selected")
+                console.log(plainVal)
+                for(var q = 0; q <= plainVal.length; q++){
+                    $(".answer-options:eq("+q+")").css("background-color","red");
+
+                }
+                for(var q = 0; q < defaultAnswerLength; q++){
+
+                    $(".answer-options:eq("+defaultAnswer[q]+")").css("background-color","lightgreen");
+                }
+                $("#answer").text("Incorect").addClass("red")
+                    .animateAnswer()
+                    .removeClass('lightgreen');
+                break;
+            }
+
         }
-        if (plainVal[count].answer.length == countCheckBoxAnswers) {
-            $("#answer").text("Success").addClass("lightgreen")
-                .animateAnswer()
-                .removeClass("red");
-            answersCount++;
-        }
-        else {
-            $("#answer").text("Incorect").addClass("red")
-                .animateAnswer()
-                .removeClass('lightgreen');
-        }
-        // console.log('chexbox answers: ' + countCheckBoxAnswers);
+
+
         $("#submit").addClass("hidden");
         $("#next").removeClass("hidden");
+        $(".radio-gap").attr("disabled",true);
     }
+
     else {
         $("#answer").text("You must enter a value!").addClass("red")
             .fadeIn(500)

@@ -430,7 +430,7 @@
         "question": "Define Regression Testing?",
         "options": [
             "Making sure that software error (bug) was fixed while making changes to the code.",
-            "Retesting fixed bug reports by executing steps-to-reproduce.",
+            "Detect software failures so that maximum number of bugs may be discovered and corrected.",
             "Making sure that no new errors were introduced while making changes to the code."
         ],
         "answer": 2
@@ -439,11 +439,11 @@
         "id": 35,
         "category": "testingTypes",
         "radio": true,
-        "question": "What is Ad hoc testing?",
+        "question": "Describe Ad hoc testing?",
         "options": [
-            "Superficial form of User Acceptance Testing",
+            "Always performed by skilled testers",
             "Monkey testing - random use of software functionality.",
-            "Simultaneously executing tests and learning the application."
+            "Is not structured and hence defects found using this method may be harder to reproduce."
         ],
         "answer": 2
     },
@@ -516,5 +516,113 @@
             "Document that describes the objectives, scope, approach, and focus of a software testing effort."
         ],
         "answer": 0
-    }
+    },
+    {
+      "id": 41,
+      "category": "testingTypes",
+      "radio": false,
+      "question": "What is Static Testing?",
+      "options": [
+        "Testing an application with a given set of test cases, if available.",
+        "Involves manual or automated reviews of the documents.",
+        "Also called as Non-execution technique or verification testing",
+        "This testing is also called as Execution technique or validation testing."
+      ],
+      "answer": [1,2]
+    },
+    {
+      "id": 42,
+      "category": "testingTypes",
+      "radio": false,
+      "question": "What is Dynamic Testing?",
+      "options": [
+        "Testing an application with a given set of test cases, if available.",
+        "Involves manual or automated reviews of the documents.",
+        "Executes the software and validates the output with the expected outcome.",
+        "This testing is also called as Execution technique or validation testing.",
+        "Also called as Non-execution technique or verification testing."
+      ],
+      "answer": [0,2,3]
+    },
+    {
+      "id": 43,
+      "category": "testingTypes",
+      "radio": false,
+      "question": "What is Manual Testing?",
+      "options": [
+        "Tester plays the role of an end user.",
+        "Manually testing software for defects.",
+        "Execute pre-scripted tests on a software application before it is released into production.",
+        "Also called as Non-execution technique or verification testing."
+      ],
+      "answer": [0,1]
+    },
+    {
+      "id": 44,
+      "category": "testingTypes",
+      "radio": false,
+      "question": "Static Testing Techniques?",
+      "options": [
+        "Informal Reviews.",
+        "System Testing.",
+        "Technical Reviews.",
+        "Walkthrough.",
+        "Inspection",
+        "Integration Testing",
+        "Static code Review"
+      ],
+      "answer": [0,2,3,4,6]
+    },
+    {
+      "id": 45,
+      "category": "testingTypes",
+      "radio": true,
+      "question": "Non-Functional Testing answer the question..",
+      "options": [
+        "How the system works?",
+        "What the system does?"
+      ],
+      "answer": [0]
+    },
+    {
+      "id": 46,
+      "category": "testingTypes",
+      "radio": true,
+      "question": "Functional Testing answer the question..",
+      "options": [
+        "How the system works?",
+        "What the system does?"
+      ],
+      "answer": [1]
+    },
+    {
+      "id": 47,
+      "category": "testingTypes",
+      "radio": false,
+      "question": "Functional Testing Types?",
+      "options": [
+        "Unit Testing.",
+        "Smoke/Sanity Testing.",
+        "Performance Testing.",
+        "Usability Testing.",
+        "Volume Testing",
+        "Integration Testing"
+      ],
+      "answer": [0,1,5]
+    },
+  {
+    "id": 48,
+    "category": "testingTypes",
+    "radio": false,
+    "question": "What is Ad-hoc Testing?",
+    "options": [
+      "Begins with the exploring the application while learning.",
+      "Begins with learning application first and then work with actual testing process.",
+      "Documentation is not a basic need.",
+      "Documentation is mandatory.",
+      "It is about the learning of the application.",
+      "Always needed to be done by expert."
+    ],
+    "answer": [1,2]
+  }
 ]

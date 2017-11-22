@@ -402,10 +402,13 @@ color: white;
             text-align: center;
             font-weight: 600;
         }
-        
+
         .radio-gap {
             position: absolute;
             left: -15px;
+        }
+        .answer-options{
+            padding-left: 5px;
         }
         
         .center {
