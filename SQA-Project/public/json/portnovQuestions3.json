@@ -14,7 +14,7 @@
     {
         "id": 2,
         "title": " What is Software Quality Assurance? ",
-        "content": " Software QA is the process of monitoring and improving all activities associated with software development, from requirements gathering, design and reviews to coding, testing and implementation. ",
+        "content": " Software QA is the process of monitoring and improving all activities associated with software development, from requirements gathering, design, and reviews to coding, testing and implementation. ",
         "category": "qaBasics"
     },
     {
@@ -128,13 +128,13 @@
     {
         "id": 21,
         "title": " What is Positive Testing? ",
-        "content": " Aimed at showing that software handles properly situations in which user acts as expected (verification). Positive testing runs to verify that a software works as expected when user conducts a correct actions. ",
+        "content": " Aimed at showing that software handles properly situations in which user acts as expected (verification). Positive testing runs to verify that a software works as expected when the user conducts correct actions. ",
         "category": "testingTypes"
     },
     {
         "id": 22,
         "title": " What is Negative Testing? ",
-        "content": " Aimed at showing that software handles properly situations in which user acts not as user is supposed to act. Negative testing runs to verify that a software handles exceptions properly (invalid actions, inputs, settings.) ",
+        "content": " Aimed at showing that software handles properly situations in which user acts not as a user is supposed to act. Negative testing runs to verify that a software handles exceptions properly (invalid actions, inputs, settings.) ",
         "category": "testingTypes"
     },
     {
@@ -146,7 +146,7 @@
     {
         "id": 24,
         "title": " What is Exploratory Testing? ",
-        "content": " Exploratory testing is when the tester explores  an application. No requirements. Tester, based on experience and creativity, learns things and generates new tests to run. Black box testing. Manual testing. ",
+        "content": " Exploratory testing is when the tester explores an application. No requirements. Tester, based on experience and creativity, learns things and generates new tests to run. Black box testing. Manual testing. ",
         "category": "testingTypes"
     },
     {
@@ -170,7 +170,7 @@
     {
         "id": 28,
         "title": " What is System Testing? ",
-        "content": " System testing is conducted on complete system to evaluate it's compliance with the requirements. System testing is a black box testing. You need to know the design or logic. ",
+        "content": " System testing is conducted on a complete system to evaluate its compliance with the requirements. System testing is a black box testing. You need to know the design or logic. ",
         "category": "testingTypes"
     },
     {
@@ -188,7 +188,7 @@
     {
         "id": 31,
         "title": " What is Release/Build Acceptance Testing? ",
-        "content": " When Release Engineer (developer) says that new release is done, QA should make sure it's good enough to be accepted for testing, so the QA team can move from previous release to the new one. ",
+        "content": " When Release Engineer (developer) says that new release is done, QA should make sure it's good enough to be accepted for testing, so the QA team can move from the previous release to the new one. ",
         "category": "testingTypes"
     },
     {
@@ -236,7 +236,7 @@
     {
         "id": 39,
         "title": " What is Beta Testing? ",
-        "content": " Beta testing takes place at customers' sites, and involves testing by a group of customers who use the system at their own locations and provide feedback, before the system is released to other customers. ",
+        "content": " Beta testing takes place at customers' sites, and involves testing by a group of customers who use the system at their own locations and provide feedback before the system is released to other customers. ",
         "category": "testingTypes"
     },
     {
@@ -260,7 +260,7 @@
     {
         "id": 43,
         "title": " What is Recoverability Testing? ",
-        "content": " Recoverability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How it will recover directly affected data? ",
+        "content": " Recoverability testing is conducted to verify that if the system fails: How it will re-establish a specified level of performance? How will it recover directly affected data? ",
         "category": "testingTypes"
     },
     {
@@ -464,7 +464,7 @@
     {
         "id": 77,
         "title": " When have you done enough testing? ",
-        "content": " When testing process comes to the point at which additional tests will not significantly change quality of the software. ",
+        "content": " When testing process comes to the point at which additional tests will not significantly change the quality of the software. ",
         "category": "documentation"
     },
     {
@@ -673,8 +673,8 @@
     },
     {
         "id": 112,
-        "title": " Most common Android Version? ",
-        "content": " 2.3.3 - 2.3.7 Gingerbread (release date: 02-2011) - 33.0%;</br> 4.1 - 4.2 Jelly Bean (release date: 07-2012/11-2012) - 45.0% ",
+        "title": "What is OWASP? ",
+        "content": "The Open Web Application Security project is an online community which creates freely-available articles, methodologies, documentation, tools, and technologies in the field of Web App Security.",
         "category": "mobile"
     },
     {
@@ -733,50 +733,188 @@
     },
     {
         "id": 122,
-        "title": " What is Native app? ",
-        "content": " Native app is the one that is specifically designed to run on a device�s operating system and machine firmware, and typically needs to be adapted for different devices. ",
+        "title": " What is a Native app? ",
+        "content": " Native app is the one that is specifically designed to run on a device's operating system and machine firmware, and typically needs to be adapted for different devices. ",
         "category": "mobile"
     },
     {
         "id": 123,
-        "title": " How to make screenshot on iPhone (iOS device)? ",
-        "content": " Press the Home and Sleep buttons at the same time. ",
+        "title": "How to make screenshot on iPhone (iOS device)?",
+        "content": "Press the Home and Sleep buttons at the same time.",
         "category": "mobile"
     },
     {
         "id": 124,
-        "title": " How to make screenshot on Android? ",
-        "content": " Press and hold the Volume Down and Power buttons at the same time (for Android 4.0 or later). ",
+        "title": "How to make screenshot on Android?",
+        "content": "Press and hold the Volume Down and Power buttons at the same time (for Android 4.0 or later).",
         "category": "mobile"
     },
     {
         "id": 125,
-        "title": " How to find crash logs for iOS? ",
-        "content": " Sync your iOS device with iTunes. For Windows 7,8: ",
+        "title": "How to find crash logs for iOS?",
+        "content": "Sync your iOS device with iTunes. For Windows 7,8:",
         "category": "mobile"
     },
     {
         "id": 126,
-        "title": " How to find crash logs for Android? ",
-        "content": " Run Eclipse, go to Window -> Show View ? Other , then select LogCat. ",
+        "title": "How to find crash logs for Android?",
+        "content": "Run Eclipse, go to Window -> Show View ? Other , then select LogCat.",
         "category": "mobile"
     },
     {
         "id": 127,
-        "title": " How to kill process on Android? ",
-        "content": " Tap and Hold Home Button � Task Manager window appears;</br> Tap Active Application � View Active Applications  � Exit / End  it individually or Exit / End all. ",
+        "title": "How to kill process on Android? ",
+        "content": "Tap and Hold Home Button</br>Task Manager window appears;</br> Tap Active Application  View Active Applications  Exit / End  it individually or Exit / End all. ",
         "category": "mobile"
     },
     {
         "id": 128,
-        "title": " How to kill process on iOS? ",
-        "content": " Double tap the home button to bring up the multi-tasking view;</br> Swipe the app upwards to close. ",
+        "title": "How to kill process on iOS? ",
+        "content": "Double tap the home button to bring up the multi-tasking view;</br> Swipe the app upwards to close. ",
         "category": "mobile"
     },
     {
         "id": 129,
-        "title": " What is the difference between Mobile Testing and Mobile Application Testing? ",
-        "content": " TestingMobile Testing means the complete testing of mobile in System level + Application level;</br> Mobile Application testing deals with only the features and multimedia part. ",
+        "title": "What is the difference between Mobile Testing and Mobile Application Testing? ",
+        "content": "TestingMobile Testing means the complete testing of mobile in System level + Application level;</br> Mobile Application testing deals with only the features and multimedia part. ",
         "category": "mobile"
+    },
+    {
+        "id": 130,
+        "title": "What is a Cell?",
+        "content": "A base station (transmitter) having a number of RF channels is called a cell. Each cell covers a limited number of mobile subscribers within the cell boundaries (Coverage area).",
+        "category": "mobile"
+    },
+    {
+        "id": 131,
+        "title": "What is a Base Transceiver Station (BTS)?",
+        "content": "It is actually the antenna that you see installed on top of the tower. The BTS is the Mobile Phone’s access point to the network. It is responsible for carrying out radio communications between the network and the Mobile Phone.",
+        "category": "mobile"
+    },
+    {
+        "id": 132,
+        "title": "What is a Base Station Controller (BSC)?",
+        "content": "A base station controller (BSC) is a critical mobile network component that controls one or more base transceiver stations (BTS), also known as base stations or cell sites. Key BSC functions include radio network management (such as radio frequency control), BTS handover management and call setup.",
+        "category": "mobile"
+    },
+    {
+        "id": 133,
+        "title": "What is a Mobile Switching Center?",
+        "content": "The MSC is the heart of the GSM network. It handles call routing, call setup, and basic switching functions. An MSC handles multiple BSCs and also interfaces with other MSC's and registers.",
+        "category": "mobile"
+    },
+    {
+        "id": 134,
+        "title": "What is GSM Standard?",
+        "content": "GSM (Global System for Mobile communication) digitizes and compresses data, then sends it down a channel with two other streams of user data, each in its own time slot. It operates at either the 900 MHz or 1800 MHz frequency band. Key features of GSM is the Subscriber Identity Module, commonly known as a SIM card.",
+        "category": "mobile"
+    },
+    {
+        "id": 135,
+        "title": "What is SIM card?",
+        "content": "The SIM(Subscriber Identity Module) is a detachable smart card containing the user's subscription information and phone book. This allows the user to retain his or her information after switching handsets.SIM card identifies the user on the network and could be used as a storage.",
+        "category": "mobile"
+    },
+    {
+        "id": 136,
+        "title": "What is CDMA Standard?",
+        "content": "CDMA(Code Division Multiple Access)Five times up of GSM capacity. More secure –used by the military.CDMA phones are locked to a carrier and cannot roam internationally as extensively as GSM phones nor can they transmit voice and data at the same time like GSM handsets.",
+        "category": "mobile"
+    },
+    {
+        "id": 137,
+        "title": "What is LTE",
+        "content": "LTE(Long Term Evolution) is a 4G wireless communications standard developed by the 3rd Generation Partnership Project (3GPP) that are designed to provide up to 10x the speeds of 3G networks for mobile devices such as SmartPhones, Tablets, NetBooks, Notebooks and Wireless Hotspots.",
+        "category": "mobile"
+    },
+    {
+        "id": 138,
+        "title": "What is satellite navigation?",
+        "content": "Satellite navigation (satnav) means using a portable radio receiver to pick up speed-of-light signals from orbiting satellites so you can figure out your position, speed, and local time.",
+        "category": "mobile"
+    },
+    {
+        "id": 139,
+        "title": "What is Rooting?",
+        "content": "<b>Rooting</b> is a term that applies to <b>android</b> mobile devices.It means giving yourself root permissions on your phone. It’s similar running programs as administrators in Windows or running a command with sudo in Linux. With a rooted phone, you can run apps that require access to certain system settings, as well as flash custom ROMs to your phone, which add all sorts of extra features.",
+        "category": "mobile"
+    },
+    {
+        "id": 140,
+        "title": "What is GPS?",
+        "content": "The best-known satnav system, the Navstar Global Positioning System(GPS), uses about 24 active satellites (including backups). Day and night, 365 days a year, they travel around Earth once every 12 hours on orbital planes inclined at 55 degrees to the equator.",
+        "category": "mobile"
+    },
+    {
+        "id": 141,
+        "title": "What is MOBILE BROADBAND?",
+        "content": "MOBILE BROADBAND is the marketing term for wireless Internet access through a portable modem, mobile phone, USB wireless modem, tablet or other mobile devices.",
+        "category": "mobile"
+    },
+    {
+        "id": 142,
+        "title": "Define Android Arhitecture components?",
+        "content": "Linux kernel,</br>Libraries,</br>Android Runtime,</br>Application Framework,</br>Applications",
+        "category": "mobile"
+    },
+    {
+        "id": 143,
+        "title": "Define IOS Arhitecture components?",
+        "content": "Coca Touch Layer,</br>Media Layer,</br>Core Sevice Layer,</br>Core OS Layer,</br>iPhone Hardware",
+        "category": "mobile"
+    },
+    {
+        "id": 144,
+        "title": "What is Tethering?",
+        "content": "Refers to connecting one device, such as a smartphone or a tablet, to another, such as a laptop, to be able to share the internet connection (3G/4G data connection) of the former with the latter, when a WiFi connection is unavailable. Types of tethering: USB, Bluetooth, WiFI.",
+        "category": "mobile"
+    },
+    {
+        "id": 145,
+        "title": "What is Mobile OS?",
+        "content": "A mobile operating system, also called a mobile OS, is an operating system that is specifically designed to run on mobile devices such as mobile phones, smartphones, PDAs, tablet computers and other handheld devices.",
+        "category": "mobile"
+    },
+    {
+        "id": 146,
+        "title": "What is ADB in Android Studio?",
+        "content": "Android Debug Bridge (adb) is a versatile command line tool that lets you communicate with an emulator instance or connected Android-powered device.",
+        "category": "mobile"
+    },
+    {
+        "id": 147,
+        "title": "What is ADB Logcats?",
+        "content": "Logcat is a command-line tool that dumps a log of system messages, including stack traces when the device throws an error and messages that you have written from your app with the Log class.",
+        "category": "mobile"
+    },
+    {
+        "id": 148,
+        "title": "What is Test Fairy?",
+        "content": "Test Fairy is an app that is extremely easy to operate. To get started, you just need to upload your app to the platform. Then, by incorporating the essential hooks, Test Fairy packages the app and share it with beta testers as a native app, web app or via an email.",
+        "category": "mobile"
+    },
+    {
+        "id": 149,
+        "title": "What is Mobile device fragmentation?",
+        "content": "Mobile device fragmentation is a phenomenon that occurs when some mobile users are running older versions of an operating system, while other users are running newer versions.",
+        "category": "mobile"
+    },
+    {
+        "id": 150,
+        "title": "What are the challenges in Mobile Device Testing?",
+        "content": "Screen Size,</br>Connection Types,</br>Different OS versions,</br>Power Consumption and battery life,<br>Usability,<br>Internationalisation",
+        "category": "mobile"
+    },
+    {
+        "id": 151,
+        "title": "Types of Mobile App Testing?",
+        "content": "Functional Testing,</br>Performance Testing,</br>Memory Leakage Testing,</br>Interrupt Testing,</br>Usability Testing,</br>Installation Testing,</br>Operational Testing,</br>Security Testing",
+        "category": "mobile"
+    },
+    {
+        "id": 152,
+        "title": "Smoke VS Sanity Testing?",
+        "content": "<b>Smoke Testing</b> is performed to ascertain that the critical functionalities of the program is working fine.<b>Sanity Testing</b> is done to check the new functionality / bugs have been fixed",
+        "category": "testingTypes"
     }
 ]

@@ -1,0 +1,655 @@
+[
+    {
+        "id": 1,
+        "category": "sql",
+        "radio": true,
+        "question": "Database (dB) is an organized collection of data!",
+        "options": [
+            "true",
+            "false"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 2,
+        "category": "sql",
+        "radio": false,
+        "question": "Database advantages?",
+        "options": [
+            "Control of data accuracy.",
+            "Easy maintenance.",
+            "Data Security.",
+            "Data manipulation (sort, retrieve, update…).",
+            "Cheap cost.",
+            "Simple structure.",
+            "Data consistency."
+        ],
+        "answer": [0,2,3,6]
+    },
+    {
+        "id": 3,
+        "category": "sql",
+        "radio": false,
+        "question": "Database disadvantages?",
+        "options": [
+            "Control of data accuracy.",
+            "Complex maintenance.",
+            "Data Security.",
+            "Data manipulation (sort, retrieve, update…).",
+            "Cost.",
+            "Complex structure.",
+            "Data consistency."
+        ],
+        "answer": [1,4,5]
+    },  {
+        "id": 4,
+        "category": "sql",
+        "radio": false,
+        "question": "Relational databases",
+        "options": [
+            "Use JSON objects to store information",
+            "Use tables to store information.",
+            "It allows you to easily find specific information.",
+            "Storing records in the same collection that have different fields or attributes.",
+            "Use schemas, tables, fields, records, queries, reports."
+        ],
+        "answer": [1,2,4]
+    }, {
+        "id": 5,
+        "category": "sql",
+        "radio": true,
+        "question": "What is Database Schema?",
+        "options": [
+            "It is a database storage simplest unit",
+            "Set of data elements (values) that is organized using columns (fields) and rows (records).",
+            "Logical container for database objects (tables, views, triggers) that user creates."
+        ],
+        "answer": 2
+    },{
+        "id": 6,
+        "category": "sql",
+        "radio": true,
+        "question": "DBMS (Database Management System) is a software that controls the organization, storage, retrieval, security and integrity of data in a database!",
+        "options": [
+            "true",
+            "false"
+        ],
+        "answer": 0
+    },{
+        "id": 7,
+        "category": "sql",
+        "radio": false,
+        "question": "DBMS (Database Management System) vendors are..",
+        "options": [
+            "Oracle",
+            "Microsoft",
+            "MongoDB Inc",
+            "IBM"
+        ],
+        "answer": [0,1,3]
+    },
+    {
+        "id": 7,
+        "category": "sql",
+        "radio": false,
+        "question": "Popular Relational Databases",
+        "options": [
+            "MySql",
+            "Cassandra",
+            "Oracle",
+            "SQL Server",
+            "MongoDB"
+        ],
+        "answer": [0,2,3]
+    },  {
+        "id": 8,
+        "category": "sql",
+        "radio": false,
+        "question": "How a tester can use SQL?",
+        "options": [
+            "Getting data for testing",
+            "To find data",
+            "Create complex queries that can be used by developers",
+            "To manipulate test data for specific tests",
+            "Grey Box testing",
+            "Testers are not permitted to use SQL"
+         
+        ],
+        "answer": [0,1,3,4]
+    },
+    {
+        "id": 9,
+        "category": "sql",
+        "radio": true,
+        "question": "What is PRIMARY KEY (PK)?",
+        "options": [
+            "Is a combination of columns that are used to establish a relationship between the tables",
+            "A unique identifier of every record in a table"
+         
+        ],
+        "answer": 1
+    }, 
+    {
+        "id": 10,
+        "category": "sql",
+        "radio": true,
+        "question": "What is Database Normalization?",
+        "options": [
+            "Is a combination of columns that are used to establish a relationship between the tables",
+            "Process of dividing large tables into smaller tables and defining relationships between them"
+         
+        ],
+        "answer": 1
+    }, {
+        "id": 11,
+        "category": "sql",
+        "radio": true,
+        "question": "How to get the unique first names of people?",
+        "options": [
+            "SELECT DIST FIRST_NAME FROM PEOPLE",
+            "SELECT UNIQUE FIRST_NAME FROM PEOPLE",
+            "SELECT SINGLE FIRST_NAME FROM PEOPLE"
+         
+        ],
+        "answer": 1
+    },{
+        "id": 12,
+        "category": "sql",
+        "radio": true,
+        "question": "SQL is case-sensitive!",
+        "options": [
+            "true",
+            "false"
+         
+        ],
+        "answer": 1
+    },{
+        "id": 13,
+        "category": "sql",
+        "radio": true,
+        "question": "Commands to populate data in tables!",
+        "options": [
+            "CREATE, ALTER, DROP, DESC",
+            "INSERT, DELETE, UPDATE, TRUNCATE"
+         
+        ],
+        "answer": 1
+    },{
+        "id": 14,
+        "category": "sql",
+        "radio": true,
+        "question": "Commands to modify, create, delete tables!",
+        "options": [
+            "CREATE, ALTER, DROP, DESC",
+            "INSERT, DELETE, UPDATE, TRUNCATE"
+         
+        ],
+        "answer": 0
+    },
+    {
+        "id": 15,
+        "category": "sql",
+        "radio": true,
+        "question": "How to add column <b>FIRST_NAME</b> in table <b>PEOPLE</b>?",
+        "options": [
+            "ALTER TABLE PEOPLE ADD FIRST_NAME VARCHAR(225)",
+            "ALTER TABLE PEOPLE ADD COLUMN FIRST_NAME",
+            "CREATE TABLE PEOPLE ADD COLUMN FIRST_NAME"
+         
+        ],
+        "answer": 0
+    },
+    {
+        "id": 16,
+        "category": "sql",
+        "radio": true,
+        "question": "How to <b>remove</b> column <b>FIRST_NAME</b> from table <b>PEOPLE</b>?",
+        "options": [
+            "ALTER TABLE PEOPLE REMOVE COLUMN FIRST_NAME",
+            "ALTER TABLE PEOPLE DROP COLUMN FIRST_NAME",
+            "REMOVE COLUMN FIRST_NAME FROM TABLE PEOPLE"
+         
+        ],
+        "answer": 1
+    },
+    {
+        "id": 17,
+        "category": "sql",
+        "radio": true,
+        "question": "How to <b>change</b> the data type to varchar(25) on column <b>FIRST_NAME</b> from table <b>PEOPLE</b>?",
+        "options": [
+            "ALTER TABLE PEOPLE MODIFY COLUMN FIRST_NAME VARCHAR(25)",
+            "CHANGE TABLE PEOPLE MODIFY COLUMN FIRST_NAME VARCHAR(25)",
+            "ALTER TABLE PEOPLE MODIFY FIRST_NAME VARCHAR(25)"
+         
+        ],
+        "answer": 2
+    },
+    {
+        "id": 18,
+        "category": "sql",
+        "radio": true,
+        "question": "How to change the zip code to <b>95112</b> for city <b>San Jose</b> from table People?",
+        "options": [
+            "ALTER TABLE PEOPLE UPDATE ZIP = 95112 WHERE CITY = 'San Jose'",
+            "MODIFY PEOPLE SET ZIP = 95112 WHERE CITY = 'San Jose'",
+            "UPDATE PEOPLE SET ZIP = 95112 WHERE CITY = 'San Jose'"
+         
+        ],
+        "answer": 0
+    },{
+        "id": 19,
+        "category": "sql",
+        "radio": true,
+        "question": "How to add <b>Jhon as first name</b> to table <b>PEOPLE</b> with id 2?",
+        "options": [
+            "UPDATE PEOPLE SET FIRST_NAME = 'Jhon' WHERE ID = 2",
+            "MODIFY PEOPLE SET FIRST_NAME = 'Jhon' WHERE ID = 2",
+            "ALTER TABLE PEOPLE MODIFY FIRST_NAME ='Jhon' WHERE ID = 2"
+         
+        ],
+        "answer": 0
+    },
+    {
+        "id": 20,
+        "category": "sql",
+        "radio": true,
+        "question": "Create Table Person with Property first name",
+        "options": [
+            "CREATE TABLE PERSON FIRST_NAME VARCHAR(25)",
+            "CREATE TABLE PERSON(FIRST_NAME VARCHAR(25))",
+            "CREATE TABLE PERSON(FIRST_NAME = 'Json')"
+         
+        ],
+        "answer": 1
+    }, {
+        "id": 21,
+        "category": "sql",
+        "radio": true,
+        "question": "How to add column Age to table Person?",
+        "options": [
+            "ALTER TABLE PERSON ADD COLUMN AGE INT",
+            "ALTER TABLE PERSON ADD AGE",
+            "ALTER TABLE PERSON ADD AGE INT"
+         
+        ],
+        "answer": 2
+    },{
+        "id": 22,
+        "category": "sql",
+        "radio": true,
+        "question": "How to check if table <b>person</b> exist?",
+        "options": [
+            "SELECT * FROM PERSON",
+            "VERIFY PERSON",
+            "DESCRIBE PERSON"
+         
+        ],
+        "answer": 2
+    },{
+        "id": 23,
+        "category": "sql",
+        "radio": true,
+        "question": "How to <b>remove</b> table <b>person</b> from the database?",
+        "options": [
+            "DELETE TABLE PERSON",
+            "DROP TABLE PERSON",
+            "REMOVE TABLE PERSON"
+         
+        ],
+        "answer": 1
+    },{
+        "id": 24,
+        "category": "sql",
+        "radio": true,
+        "question": "How to create column last name for table person?",
+        "options": [
+            "ALTER TABLE PERSON ADD LAST_NAME VARCHAR(25)",
+            "ALTER TABLE PERSON CREATE LAST_NAME VARCHAR(25)",
+            "ALTER TABLE PERSON ADD COLUMN LAST_NAME VARCHAR(25)"
+         
+        ],
+        "answer": 0
+    },{
+        "id": 25,
+        "category": "sql",
+        "radio": true,
+        "question": "How to <b>rename</b> column middle name to last name from table person?",
+        "options": [
+            "ALTER TABLE PERSON RENAME 'MIDDLE_NAME' 'LAST_NAME'",
+            "ALTER TABLE PERSON RENAME MIDDLE_NAME TO LAST_NAME",
+            "RENAME MIDDLE_NAME LAST_NAME FROM TABLE PERSON"
+         
+        ],
+        "answer": 1
+    },
+    {
+        "id": 26,
+        "category": "sql",
+        "radio": true,
+        "question": "How to <b>rename</b> column age to years old from table person?",
+        "options": [
+            "ALTER TABLE PERSON RENAME 'AGE' 'YEARS_OLD'",
+            "RENAME AGE YEARS_OLD FROM TABLE PERSON",
+            "ALTER TABLE PERSON RENAME AGE TO YEARS_OLD"
+         
+        ],
+        "answer": 2
+    },
+    {
+        "id": 27,
+        "category": "sql",
+        "radio": true,
+        "question": "How to remove column age from table person?",
+        "options": [
+            "ALTER TABLE PERSON DROP COLUMN AGE",
+            "ALTER TABLE PERSON DROP AGE",
+            "ALTER TABLE PERSON DELETE COLUMN AGE"
+         
+        ],
+        "answer": 0
+    },
+    {
+        "id": 28,
+        "category": "sql",
+        "radio": true,
+        "question": "How to delete all records with city San Jose?",
+        "options": [
+            "ALTER TABLE PERSON WHERE CITY_NAME = 'San Jose'",
+            "DELETE FROM PERSON WHERE CITY_NAME = 'San Jose'",
+            "DROP FROM PERSON WHERE CITY_NAME = 'San Jose'"
+         
+        ],
+        "answer": 1
+    },
+    {
+        "id": 29,
+        "category": "sql",
+        "radio": true,
+        "question": "How to <b>delete all the data</b> from table person?",
+        "options": [
+            "DROP TABLE PERSON",
+            "DELETE * FROM PERSON",
+            "TRUNCATE TABLE PERSON"
+         
+        ],
+        "answer": 2
+    },
+    {
+        "id": 30,
+        "category": "sql",
+        "radio": true,
+        "question": "What is a record?",
+        "options": [
+            "Returned information to the specified query",
+            "Represents a single structured data set in the table",
+            "Request to the database to retrieve information"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 31,
+        "category": "sql",
+        "radio": true,
+        "question": "Add first name Michael to person with id 23?",
+        "options": [
+            "CREATE PERSON SET FIRST_NAME = 'Michael' WHERE ID = 23",
+            "MODIFY PERSON SET FIRST_NAME = 'Michael' WHERE ID = 23",
+            "UPDATE PERSON SET FIRST_NAME = 'Michael' WHERE ID = 23"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 32,
+        "category": "sql",
+        "radio": true,
+        "question": "Read all Persons whose age is between 18 and 21?",
+        "options": [
+            "SELECT * FROM PERSON WHERE AGE IN 18 AND 21",
+            "SELECT * FROM PERSON WHERE AGE BETWEEN 18 AND 21",
+            "SELECT * FROM PERSON WHERE AGE BETWEEN 18 OR 21"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 33,
+        "category": "sql",
+        "radio": false,
+        "question": "Read all Persons whose age is 18, 26, 33?",
+        "options": [
+            "SELECT * FROM PERSON WHERE AGE IN(18, 26, 33)",
+            "SELECT * FROM PERSON WHERE AGE = 18 AND AGE = 26 AND AGE = 33",
+            "SELECT * FROM PERSON WHERE AGE = 18 OR AGE = 26 OR AGE = 33"
+        ],
+        "answer": [0,2]
+    },
+    {
+        "id": 34,
+        "category": "sql",
+        "radio": true,
+        "question": "Read all Persons whose first name starts with Nas?",
+        "options": [
+            "SELECT * FROM PERSON WHERE FIRST_NAME LIKE '%Nas'",
+            "SELECT * FROM PERSON WHERE FIRST_NAME LIKE 'Nas%'",
+            "SELECT * FROM PERSON WHERE FIRST_NAME LIKE '%Nas%'"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 35,
+        "category": "sql",
+        "radio": true,
+        "question": "Read all Persons whose first name does not contains 'na'?",
+        "options": [
+            "SELECT * FROM PERSON WHERE FIRST_NAME <> '%na%')",
+            "SELECT * FROM PERSON WHERE FIRST_NAME != '%na%')",
+            "SELECT * FROM PERSON WHERE FIRST_NAME NOT LIKE '%na%')"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 36,
+        "category": "sql",
+        "radio": true,
+        "question": "How many people work in each department?",
+        "options": [
+            "SELECT DETPARTMEN_ID, COUNT(PERSON_ID) FROM PERSONS GROUP BY DEPARTMENT_ID",
+            "SELECT DETPARTMEN_ID, SUM(*) FROM PERSONS GROUP BY DEPARTMENT_ID",
+            "SELECT DETPARTMEN_ID, COUNT(PERSON_ID) FROM PERSONS FILTER BY DEPARTMENT_ID"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 37,
+        "category": "sql",
+        "radio": true,
+        "question": "Order people by last name.",
+        "options": [
+            "SELECT * FROM PEOPLES SORT BY LAST_NAME",
+            "SELECT * FROM PEOPLES ORDER BY LAST_NAME DESC",
+            "SELECT * FROM PEOPLES ORDER BY LAST_NAME ASC"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 38,
+        "category": "sql",
+        "radio": true,
+        "question": "Get the total salary for each department.",
+        "options": [
+            "SELECT DEPARTMENT_ID COUNT(SALARY) FROM PEOPLES GROUP BY DEPARTMENT_ID",
+            "SELECT DEPARTMENT_ID SUM(SALARY) FROM PEOPLES GROUP BY DEPARTMENT_ID",
+            "SELECT DEPARTMENT_ID SUM(SALARY) FROM PEOPLES ORDER BY DEPARTMENT_ID"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 39,
+        "category": "sql",
+        "radio": true,
+        "question": "How to show all the tables in the database?",
+        "options": [
+            "SELECT * FROM ALL_TABLES",
+            "SELECT * FROM ALL TABLES",
+            "SELECT * FROM TABLES"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 40,
+        "category": "sql",
+        "radio": true,
+        "question": "Show the departments that maximum salary is > $10000",
+        "options": [
+            "SELECT DEPARTMENT_ID, MAX(SALARY) FROM PEOPLES ORDER BY DEPARTMENT_ID HAVING MAX(SALARY) > 10000",
+            "SELECT DEPARTMENT_ID, MAX(SALARY) FROM PEOPLES GROUP BY DEPARTMENT_ID WHERE MAX(SALARY) > 10000",
+            "SELECT DEPARTMENT_ID, MAX(SALARY) FROM PEOPLES GROUP BY DEPARTMENT_ID HAVING MAX(SALARY) > 10000"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 41,
+        "category": "sql",
+        "radio": false,
+        "question": "Show all the people from department 20 with first name John",
+        "options": [
+            "SELECT * FROM PEOPLE WHERE DEPARTMENT_ID = 20 AND FIRST_NAME LIKE 'John'",
+            "SELECT * FROM PEOPLE WHERE DEPARTMENT_ID = 20 AND FIRST_NAME = 'John'",
+            "SELECT * FROM PEOPLE WHERE DEPARTMENT_ID = 20 AND FIRST_NAME IS 'John'"
+        ],
+        "answer": [0,1]
+    },
+    {
+        "id": 42,
+        "category": "sql",
+        "radio": true,
+        "question": "Select all people with the same last name",
+        "options": [
+            "SELECT P1.FIRST_NAME, P1.LAST_NAME, COUNT(P1.FIRST_NAME) FROM PEOPLES P1, PEOPLES P2 WHERE P1.LAST_NAME = P2.LAST_NAME GROUP BY P1.FIRST_NAME, P2.LAST_NAME HAVING COUNT(P1.FIRST_NAME)>1",
+            "SELECT P1.FIRST_NAME, P1.LAST_NAME, COUNT(P1.FIRST_NAME) FROM PEOPLES P1, PEOPLES P2 WHERE P1.LAST_NAME = P2.LAST_NAME GROUP BY P1.FIRST_NAME, P1.LAST_NAME HAVING COUNT(P1.FIRST_NAME)>1"
+        ],
+        "answer": 1
+    }
+    ,
+    {
+        "id": 43,
+        "category": "sql",
+        "radio": true,
+        "question": "Describe CREATE",
+        "options": [
+            "Creates a table (index, view) in a database.",
+            "Creates a table (rows, columns) in a database.",
+            "Create new instances of a database."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 44,
+        "category": "sql",
+        "radio": true,
+        "question": "Describe DROP",
+        "options": [
+            "Deletes a row (index, view).",
+            "Deletes a column (index, view).",
+            "Deletes a table (index, view)."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 45,
+        "category": "sql",
+        "radio": true,
+        "question": "Describe TRUNCATE",
+        "options": [
+            "Deletes the table and all the data.",
+            "Deletes data in the table, but not table itself.",
+            "Deletes record from a table (all records, if there is nowhere)"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 46,
+        "category": "sql",
+        "radio": true,
+        "question": "Describe UPDATE",
+        "options": [
+            "Used to add, delete, or modify columns in an existing table.",
+            "Inserts record into a table (don’t violate constraints)",
+            "Modifies record in a table (no primary keys update)"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 47,
+        "category": "sql",
+        "radio": false,
+        "question": "What is Constraint?",
+        "options": [
+            "SQL constraints are used to specify rules for the data in a table.",
+            "Constraints are used to limit the type of data that can go into a table.",
+            "Example CREATE, UPDATE, DELETE, TRUNCATE",
+            "Example NOT NULL, UNIQUE, PRIMARY KEY"
+        ],
+        "answer": [0,1,3]
+    },
+    {
+        "id": 48,
+        "category": "sql",
+        "radio": true,
+        "question": "What is an aggregate function?",
+        "options": [
+            "Summarize the results of a particular column of selected data",
+            "Aggregate function is used to specify rules for the data in a table.",
+            "Retrieves data from one or more dB tables or views. Most often used statement"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 49,
+        "category": "sql",
+        "radio": true,
+        "question": "What is a join?",
+        "options": [
+            "Summarize the results of a particular column of selected data",
+            "Process of retrieve pieces of data from different tables.",
+            "Retrieves data from one or more dB tables or views. Most often used statement"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 50,
+        "category": "sql",
+        "radio": true,
+        "question": "What is a inner join?",
+        "options": [
+            "Includes rows even if they don’t have related rows in joined table.",
+            "Process of retrieve pieces of data from different tables.",
+            "Displays only rows that matched in both joined tables."
+        ],
+        "answer": 2
+    },
+    {
+        "id": 51,
+        "category": "sql",
+        "radio": true,
+        "question": "What is a outer join?",
+        "options": [
+            "Includes rows even if they don’t have related rows in joined table.",
+            "Process of retrieve pieces of data from different tables.",
+            "Displays only rows that matched in both joined tables."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 53,
+        "category": "sql",
+        "radio": true,
+        "question": "What is a cross join?",
+        "options": [
+            "Includes rows even if they don’t have related rows in joined table.",
+            "Includes one row for each possible pairing of rows from two tables",
+            "Displays only rows that matched in both joined tables."
+        ],
+        "answer": 1
+    }
+]

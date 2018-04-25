@@ -1,0 +1,757 @@
+[
+    {
+        "id": 1,
+        "category": "unix",
+        "radio": true,
+        "question": "How to create folder <b>Animals</b>?",
+        "options": [
+            "makedir Animals",
+            "mkdeer Animals",
+            "Animals mkdir",
+            "mkdir Animals"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 2,
+        "category": "unix",
+        "radio": false,
+        "question": "How to display the content of a file <b>Notes</b>",
+        "options": [
+            "cat notes",
+            "cat Notes.",
+            "less Notes",
+            "view Notes",
+            "display Notes"
+        ],
+        "answer": [1,2]
+    },
+    {
+        "id": 3,
+        "category": "unix",
+        "radio": true,
+        "question": "How to open img file kitty.jpeg on <b>Mac OS</b>",
+        "options": [
+            "cat kitty.jpeg",
+            "jpeg kitty.jpeg",
+            "open kitty.jpeg"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 4,
+        "category": "unix",
+        "radio": true,
+        "question": "How to see all the files, folders and sub-folders inside a folder?",
+        "options": [
+            "ls -R",
+            "ls -all",
+            "ls -r"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 5,
+        "category": "unix",
+        "radio": true,
+        "question": "You are in folder <b>demo</b>. How to copy files <b>cat.jpg</b> and <b>dog.jpg</b> to <b>demo/animals</b>?",
+        "options": [
+            "cp cat.jpg dog.jpg animals",
+            "cp cat.jpg, dog.jpg animals",
+            "cp cat.jpg dog.jpg /animals"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 6,
+        "category": "unix",
+        "radio": false,
+        "question": "How to show hidden directories?",
+        "options": [
+            "ls -all",
+            "ls -a",
+            "ls -l",
+            "show -all"
+        ],
+        "answer": [0,1]
+    },
+    {
+        "id": 7,
+        "category": "unix",
+        "radio": false,
+        "question": "How to copy everything from dir1 to dir2?",
+        "options": [
+            "cp -a dir1 dir2",
+            "cp -all dir1 dir2",
+            "cp --recursive dir1 dir2",
+            "cp -r dir1 dir2"
+        ],
+        "answer": [2,3]
+    },
+    {
+        "id": 8,
+        "category": "unix",
+        "radio": true,
+        "question": "How to move everything from current dir1 to dir2?",
+        "options": [
+            "mv * dir2",
+            "mv -all dir2",
+            "mv dir2 execute"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 9,
+        "category": "unix",
+        "radio": true,
+        "question": "How to delete directory <b>dir1</b> with all the files",
+        "options": [
+            "rm * dir1",
+            "rm dir1",
+            "rm -r dir1",
+            "rmdir dir1"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 10,
+        "category": "unix",
+        "radio": true,
+        "question": "How to get warning message for every item in <b>dir1</b> when we delete directory <b>dir1</b>?",
+        "options": [
+            "rm -w dir1",
+            "rm -i dir1",
+            "rmdir dir1",
+            "rm --safe dir1",
+            "execute dir1"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 11,
+        "category": "unix",
+        "radio": true,
+        "question": "How to find all the files that contains the word <b>cat</b>?",
+        "options": [
+            "find cat",
+            "find -f cat",
+            "ls -a cat",
+            "ls *cat*"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 12,
+        "category": "unix",
+        "radio": false,
+        "question": "How to create file cats.txt?",
+        "options": [
+            "create cats.txt",
+            "touch cats.txt",
+            "mv cats.txt",
+            "cat > cats.txt"
+        ],
+        "answer": [1,3]
+    },
+    {
+        "id": 13,
+        "category": "unix",
+        "radio": true,
+        "question": "How to move all the images to folder pictures?",
+        "options": [
+            "mv *jpg pictures",
+            "mv -all .jpg to pictures",
+            "mv jpg* pictures"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 14,
+        "category": "unix",
+        "radio": true,
+        "question": "How to show all the directories that starts with <b>D</b> and end with <b>s</b>",
+        "options": [
+            "show -a D*s",
+            "ls D*s",
+            "ls -d D*s"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 15,
+        "category": "unix",
+        "radio": false,
+        "question": "How to remove just <b>pic1.jpg</b> and <b>pic3.jpg</b> from files <b>pic1.jpg, pic2.jpg, pic3.jpg, pic4.jpg etc..</b>?",
+        "options": [
+            "rm pic1 pic3",
+            "rm pic1.jpg pic3.jpg",
+            "rm pic[1,3].jpg"
+        ],
+        "answer": [1,2]
+    },
+    {
+        "id": 16,
+        "category": "unix",
+        "radio": true,
+        "question": "How to remove all pictures <b>from pic7.jpg to pic27.jpg</b>?",
+        "options": [
+            "rm pic7 pic27 -a",
+            "rm from pic1.jpg to pic27.jpg",
+            "rm pic[7-27].jpg"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 16,
+        "category": "unix",
+        "radio": true,
+        "question": "What the command <b>touch {a,b}{1,2,3}{.txt,.jpg}</b> will do?",
+        "options": [
+            "create 12 files a1.txt, a2.txt, a3.txt, a1.jpg, a2.jpg etc..",
+            "edit 12 files a1.txt, a2.txt, a3.txt, a1.jpg, a2.jpg etc.."
+        ],
+        "answer": 0
+    },
+    {
+        "id": 17,
+        "category": "unix",
+        "radio": true,
+        "question": "How to get the <b>count of all lines</b> from <b>myFile.txt</b>?",
+        "options": [
+            "ls -l myFile.txt",
+            "wc -l myFile.txt",
+            "get -l myFile.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 18,
+        "category": "unix",
+        "radio": true,
+        "question": "How to get the <b>count of all words</b> from myFile.txt?",
+        "options": [
+            "ls -wc myFile.txt",
+            "wc -l myFile.txt",
+            "get -words myFile.txt",
+            "wc -w myFile.txt"
+        ],
+        "answer": 3
+    },
+    {
+        "id": 19,
+        "category": "unix",
+        "radio": true,
+        "question": "Unix commands are case-sensitive!",
+        "options": [
+            "true",
+            "false"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 20,
+        "category": "unix",
+        "radio": true,
+        "question": "Unix options often begin with '-'(minus sign).",
+        "options": [
+            "true",
+            "false"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 21,
+        "category": "unix",
+        "radio": true,
+        "question": "How to display the full path from the current directory?",
+        "options": [
+            "ls -p",
+            "wc -pwd",
+            "pdw",
+            "ls *"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 22,
+        "category": "unix",
+        "radio": true,
+        "question": "How to display the last 15 lines from file <b>rally</b>?",
+        "options": [
+            "grep rally -15 tail",
+            "cat rally -15 tail",
+            "tail -15 rally",
+            "-15 tai rally"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 23,
+        "category": "unix",
+        "radio": false,
+        "question": "How to change current directory to Home?",
+        "options": [
+            "ls -h",
+            "cd",
+            "pdw home",
+            "cd ~"
+        ],
+        "answer": [1,3]
+    },
+    {
+        "id": 24,
+        "category": "unix",
+        "radio": true,
+        "question": "Describe the command <b>ls -r</b>?",
+        "options": [
+            "list the content in the root directory",
+            "list the content with all the relations",
+            "list the content in reverse order"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 25,
+        "category": "unix",
+        "radio": true,
+        "question": "How to show all the lines from file <b>alice.txt</b> with the corresponding line number?",
+        "options": [
+            "ls alice.txt *",
+            "ls alice.txt -a",
+            "ls alice.txt -b"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 26,
+        "category": "unix",
+        "radio": true,
+        "question": "Describe the command <b>cat dogs.txt > animals.txt</b>?",
+        "options": [
+            "Cats and dogs files will combine to animals.txt",
+            "Redirecting the content from dogs file to animals.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 27,
+        "category": "unix",
+        "radio": true,
+        "question": "How to delete an empty directory <b>Animals</b>?",
+        "options": [
+            "rmdir Animals",
+            "rm Animals",
+            "rm -a Animals"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 28,
+        "category": "unix",
+        "radio": true,
+        "question": "Describe the command <b>ls > file.txt</b>?",
+        "options": [
+            "Will list everything from file.txt",
+            "Will write everything to file.txt",
+            "rm -a Animals"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 29,
+        "category": "unix",
+        "radio": true,
+        "question": "How to append <b>apples</b> to <b>fruits.txt</b> list?",
+        "options": [
+            "cat >> fruits.txt (Press Enter type <b>apple</b> and <b>ctrl+d</b> to exit)",
+            "ls >> fruits.txt (Press Enter type <b>apple</b> and <b>ctrl+d</b> to exit)"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 30,
+        "category": "unix",
+        "radio": true,
+        "question": "How to add text <b>carrots</b> to <b>veggies.txt</b> list?",
+        "options": [
+            "cat carrots >> veggies.txt",
+            "ls carrots >> veggies.txt",
+            "echo carrots >> veggies.txt",
+            "touch carrots >> veggies.txt"
+
+        ],
+        "answer": 2
+    },
+    {
+        "id": 31,
+        "category": "unix",
+        "radio": true,
+        "question": "Find all movies from year 1984 from file <b>movies.txt</b>?",
+        "options": [
+            "grep 1984 movies.txt",
+            "find 1984 movies.txt",
+            "cat 1984 movies.txt",
+            "touch movies.txt 1984"
+
+        ],
+        "answer": 0
+    },
+    {
+        "id": 32,
+        "category": "unix",
+        "radio": true,
+        "question": "Describe the command <b>ls | sort</b>?",
+        "options": [
+            "Sort and list all files from the current folder.",
+            "Sort files that contain | from the current folder"
+
+        ],
+        "answer": 0
+    },
+    {
+        "id": 33,
+        "category": "unix",
+        "radio": true,
+        "question": "How to get the number of files in directory <b>home</b>?",
+        "options": [
+            "ls -b home",
+            "ls -n home",
+            "ls | home wc -l"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 34,
+        "category": "unix",
+        "radio": true,
+        "question": "How to rename file <b>animals.txt</b> to <b>cats.txt</b>",
+        "options": [
+            "mv animals.txt cats.txt",
+            "rm animals.txt cats.txt",
+            "cat animals.txt > cats.txt"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 35,
+        "category": "unix",
+        "radio": true,
+        "question": "Get all the lines that contain <b>sammy</b> from <b>cat.txt</b> and <b>dogs.txt</b> and write the result to file <b>sammyName.txt</b>",
+        "options": [
+            "grep sammy cat.txt dog.txt -n sammyName.txt",
+            "cat sammy cat.txt dog.txt > sammyName.txt",
+            "grep sammy cat.txt dog.txt > sammyName.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 36,
+        "category": "unix",
+        "radio": true,
+        "question": "How to move files <b>cats</b> and <b>dogs</b> to directory <b>Animals</b>",
+        "options": [
+            "mv cats dogs Animals",
+            "rm cats dogs Animals",
+            "ls cats dogs Animals"
+        ],
+        "answer": 0 
+    },
+    {
+        "id": 37,
+        "category": "unix",
+        "radio": true,
+        "question": "The <b>kernel</b> is the heart of the operating system. It is a set of computer programs that allocate the system resources and coordinate all the details of the computer's internals.",
+        "options": [
+            "true",
+            "false"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 38,
+        "category": "unix",
+        "radio": false,
+        "question": "How to clear the screen?",
+        "options": [
+            "clear",
+            "cls",
+            "Ctrl+L",
+            "Ctrl+C"
+
+        ],
+        "answer": [0,2]
+    },
+    {
+        "id": 39,
+        "category": "unix",
+        "radio": true,
+        "question": "How exit file?",
+        "options": [
+            "clear",
+            "Ctrl+D",
+            "Ctrl+L",
+            "Ctrl+C"
+
+        ],
+        "answer": 1
+    },
+    {
+        "id": 40,
+        "category": "unix",
+        "radio": true,
+        "question": "How end process?",
+        "options": [
+            "Ctrl+P",
+            "Ctrl+D",
+            "Ctrl+L",
+            "Ctrl+E",
+            "Ctrl+C"
+
+        ],
+        "answer": 4
+    },
+    {
+        "id": 41,
+        "category": "unix",
+        "radio": true,
+        "question": "How to delete rest of a line?",
+        "options": [
+            "clear",
+            "Ctrl+D",
+            "Ctrl+K",
+            "Ctrl+E"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 42,
+        "category": "unix",
+        "radio": true,
+        "question": "Print every line of the document <b>cars</b> that contains <b>Honda</b>.",
+        "options": [
+            "ls Honda cars",
+            "cat Honda cars",
+            "grep -i honda cars"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 43,
+        "category": "unix",
+        "radio": true,
+        "question": "Print number of lines that contains <b>Saab</b> in the document <b>cars</b>.",
+        "options": [
+            "grep -i Saab cars",
+            "grep -ci saab cars",
+            "grep -v Saab cars"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 44,
+        "category": "unix",
+        "radio": true,
+        "question": "How to get help for command <b>grep</b>?",
+        "options": [
+            "man grep",
+            "cmd grep",
+            "men grep",
+            "help grep"
+        ],
+        "answer": 0
+    },
+    {
+        "id": 45,
+        "category": "unix",
+        "radio": false,
+        "question": "Remove all the group permissions for file <b>cats.txt</b>",
+        "options": [
+            "chmod g-rwx cats.txt",
+            "chmod o-x cats.txt",
+            "chmod 010 cats,txt",
+            "chmod 707 cats.txt"
+        ],
+        "answer": [0,3]
+    },
+    {
+        "id": 46,
+        "category": "unix",
+        "radio": false,
+        "question": "Allow all the group permissions for file <b>cats.txt</b>",
+        "options": [
+            "chmod g+rwx cats.txt",
+            "chmod g-rmx cats.txt",
+            "chmod 070 cats,txt",
+            "chmod 707 cats.txt"
+        ],
+        "answer": [0,2]
+    },
+    {
+        "id": 47,
+        "category": "unix",
+        "radio": false,
+        "question": "Allow all the owner permissions for file <b>nasko.txt</b>",
+        "options": [
+            "chmod 017 nasko.txt",
+            "chmod 710 nasko.txt",
+            "chmod 717 nasko.txt",
+            "chmod 177 nasko.txt"
+        ],
+        "answer": [1,2]
+    },
+    {
+        "id": 48,
+        "category": "unix",
+        "radio": true,
+        "question": "Allow read owner permissions for file <b>nasko.txt</b>",
+        "options": [
+            "chown o+r nasko.txt",
+            "chown g+r nasko.txt",
+            "chmod o+r nasko.txt",
+            "chmod g+r nasko.txt"
+        ],
+        "answer": 2
+    },
+    {
+        "id": 49,
+        "category": "unix",
+        "radio": true,
+        "question": "Change owner of the file <b>nasko.txt</b> from <b>jhon to sammy</b>.",
+        "options": [
+            "chown jhon sammy nasko.txt",
+            "chown sammy nasko.txt",
+            "change o+rwx nasko.txt"
+        ],
+        "answer": 1
+    },
+    {
+        "id": 50,
+        "category": "unix",
+        "radio": true,
+        "question": "List the <b>number of all lines</b> that contain the word oscar from movies.",
+        "options": [
+            "grep -ciw Oscar movies",
+            "grep -nw oscar movies",
+            "grep -cwn Oscar movies"
+        ],
+        "answer": 0
+    },
+    {
+      "id": 51,
+      "category": "unix",
+      "radio": true,
+      "question": "You are in the folder <b>demo</b>. How to copy file <b>alex.txt</b> from <b>demo/books/alex.txt</b> to folder <b>demo</b>?",
+      "options": [
+        "cp alex.txt to demo",
+        "cp demo/books/alex.txt .",
+        "cp books/alex.txt ."
+      ],
+      "answer": 2
+    },
+    {
+      "id": 52,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe the command <b>ls -al</b>?",
+      "options": [
+        "list with long format and show hidden files",
+        "list all files with lower case names",
+        "list all the files that start with al"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 53,
+      "category": "unix",
+      "radio": true,
+      "question": "How to list only the first 10 lines from file <b>alice.txt</b>?",
+      "options": [
+        "ls alice.txt -10",
+        "head -10 alice.txt",
+        "alice.txt limit 10"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 54,
+      "category": "unix",
+      "radio": true,
+      "question": "<b>The Shell</b>",
+      "options": [
+        "It is a set of computer programs that allocate the system resources and coordinate all the details of the computer's internals.",
+        "Translates commands entered by the user and converts them into a language that is understood by the kernel."
+      ],
+      "answer": 1
+    },
+    {
+      "id": 55,
+      "category": "unix",
+      "radio": true,
+      "question": "In <b>UNIX</b> all the files must have extensions.",
+      "options": [
+        "true",
+        "false"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 56,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe <b>ls -t</b>",
+      "options": [
+        "sorted list by time & date",
+        "list all subdirectories",
+        "list with long format"
+      ],
+      "answer": 0
+    },
+    {
+      "id": 57,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe <b>ls *</b>",
+      "options": [
+        "sorted list by time & date",
+        "list all subdirectories",
+        "list with long format"
+      ],
+      "answer": 1
+    },
+    {
+      "id": 58,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe command <b>cat</b>?",
+      "options": [
+        "edit the content  of a file",
+        "list the content  of a file",
+        "display the content  of a file"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 59,
+      "category": "unix",
+      "radio": true,
+      "question": "How to copy <b>file1</b> and call it <b>file2</b>?",
+      "options": [
+        "touch file1 file2",
+        "mv file1 file2",
+        "cp file1 file2"
+      ],
+      "answer": 2
+    },
+    {
+      "id": 60,
+      "category": "unix",
+      "radio": true,
+      "question": "Describe <b>grep -w</b>?",
+      "options": [
+        "Checking for full words, not for sub-strings",
+        "Checking for sub-strings, not for full words",
+        "Case insensitive search"
+      ],
+      "answer": 0
+    }
+]

@@ -1,18 +1,20 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var port = process.env.PORT || 3000;
-var homeRouter = require('./src/routes/homeRouter');
-var sqaQuestions2 = require('./public/json/portnovQuestions2');
-var questionRouter = require('./src/routes/questionRouter')(sqaQuestions2);
+var port = process.env.PORT || 8000;
 
+var sqaQuestions2 = require('../public/json/portnovQuestions3');
+var questionRouter = require('./routes/questionRouter')(sqaQuestions2);
 var bodyParser = require('body-parser');
+var favicon = require('serve-favicon')
 
-var rootPath = path.normalize(__dirname + '/');
+var rootPath = path.normalize(__dirname+'/../');
+
+app.use(express.static(path.join( rootPath,'public')));
+app.use(favicon(path.join(rootPath,'public','img','favicon.ico')));
+app.set('views', rootPath+ '/src/views');
+
 app.use(bodyParser.urlencoded({ extended: false }));
-
-app.use(express.static(rootPath + 'public'));
-app.set('views', path.join(rootPath + 'src/views'));
 
 // var fs = require('fs');
 // fs.readFile('./public/json/portnovQuestions2.json', function (err, content) {
@@ -30,7 +32,7 @@ app.set('views', path.join(rootPath + 'src/views'));
 //         if (err) throw err;
 //     })
 // })
-var detailQuestions = require('./public/json/fullQuestions');
+var detailQuestions = require('../public/json/fullQuestions');
 function getDetailCategory(allQuestions, category) {
     var tempArr = [];
     for (var i = 0; i < allQuestions.length; i += 1) {
@@ -67,25 +69,37 @@ function getRandomQuestions(arr, target) {
 }
 app.set('view engine', 'ejs');
 
-app.set('views', './src/views');
+app.set('views', 'src/views');
+
 app.get('/', function (req, res) {
     var allQuestions = detailQuestions;
     var testingTypes = getDetailCategory(allQuestions, 'testingTypes');
     var randomTestingTypes = getRandomQuestions(testingTypes, 3);
     var documentation = getDetailCategory(allQuestions, 'documentation');
     var randomDocumentation = getRandomQuestions(documentation, 3);
-    console.log(randomDocumentation);
     res.render('index', {
-        title: "Index",
+        title: "Home",
         testingTypes: randomTestingTypes,
         documentation: randomDocumentation
     });
 });
 
-//app.use('/',homeRouter);
-
 app.get('/sqa-test', function (req, res) {
-    res.render('sqaTest');
+    res.render('sqaTest',{
+        title:'SQA Test'
+    });
+});
+
+app.get('/bash-test',function(req, res){
+    res.render('bashTest',{
+        title:'Comman Line Test'
+    })
+});
+
+app.get('/sql-test',function(req, res){
+    res.render('sqlTest',{
+        title:'SQL Test'
+    })
 });
 
 app.use('/Questions', questionRouter);
@@ -93,15 +107,3 @@ app.use('/Questions', questionRouter);
 app.listen(port, function (err) {
     console.log('Running on port ', port);
 });
-
-
-// function getCategory(val) {
-//     var tempQuestions = sqaQuestions2;
-//     var finalQuestions = [];
-//     for (var i = 0; i < tempQuestions.length; i += 1) {
-
-//         if (tempQuestions[i].category == val) {
-//             finalQuestions.push(tempQuestions[i]);
-//         }
-//     }
-//     return finalQuestions;

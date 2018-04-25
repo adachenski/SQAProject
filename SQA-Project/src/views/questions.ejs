@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/normalize.css">
+
     <link rel="stylesheet" href="../css/sqa.css">
-    <link rel="stylesheet" href="../css/modern-business.css">
-    <link rel="stylesheet" href="../css/pushy.css">
-    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../css/normalize.css">
+
     <link rel="stylesheet" href="../css/demo.css">
 
+    <link rel="stylesheet" href="../css/pushy.css">
+
+    <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/modern-business.css">
     <script src="../lib/jquery/dist/jquery.js"></script>
-    <script src="../lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script> 
+
     <title>
         <%=title%>
     </title>
@@ -24,18 +27,19 @@
         function populateAcordeon(val, count) {
 
             var panelDiv = $("<div/>", {
-                "class": "panel panel-default"
+                "class": "card"
             });
             var panelHeadingDiv = $("<div/>", {
 
-                "class": "panel-heading"
+                "class": "card-header"
             }).appendTo(panelDiv);
 
-            var panelTitleH4 = $("<h4/>", {
-                "class": "panel-title"
+            var panelTitleH4 = $("<h5/>", {
+                "class": "mb-0"
             }).appendTo(panelHeadingDiv);
 
             var anchor = $("<a/>", {
+                "class": "btn-link",
                 "data-toggle": "collapse",
                 "data-parent": "#accordion",
                 "href": "#nas" + count
@@ -47,12 +51,14 @@
 
             var panelCollapse = $('<div/>', {
                 "id": "nas" + count,
-                "class": "panel-collapse collapse"
+                "class": "collapse",
+                "aria-labelledby":"headingOne",
+                "data-parent":"#accordion"
             }).appendTo(panelDiv);
 
             var panelBody = $('<div/>', {
-                "class": "panel-body",
-                "html": val.content + "<div>More info <a href='/questions/" + count + "'>here</a>.</div>"
+                "class": "card-body",
+                "html": val.content + "<div><b>More info <b><a href='/questions/" + count + "'>here</a>.</div>"
             }).appendTo(panelCollapse);
 
             panelDiv.appendTo("#accordion");
@@ -67,8 +73,6 @@
             if (currentRandom > 0) {
                 $("#subTitle").html(currentRandom + " random questions");
             }
-
-
 
             var randomTarget = $("#random").val();
 
@@ -112,6 +116,9 @@
 
                     }
                 }
+                if(randomTarget==0){
+                    randomArr = finalQuestions;
+                }
                 return randomArr;
             })();
 
@@ -126,7 +133,14 @@
 
             $.getJSON("json/portnovQuestions3.json", function (data) {
                 items = data;
-                populateHtml(items).allCategory;
+                //populateHtml(items).allCategory;
+                var x = populateHtml(items).randomQuestions;
+                $("#accordion").html("");
+                var count = 0;
+                $.each(x, function (key, val) {
+                    populateAcordeon(val, count)
+                    count++;
+                });
             });
 
             $('#category').on('change', function () {
@@ -153,8 +167,8 @@
         <div>
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-3 col-lg-4"></div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
+                    <div class="col-sm-2 col-lg-3"></div>
+                    <div class="col-xs-12 col-sm-8 col-lg-6">
                         <h2 class="playfair" id="headerTitle" style="color:#464646">
                             <%=title%>
                         </h2>
@@ -169,25 +183,26 @@
                             <option value="mobile">Mobile</option>
                         </select>
                             <select class="input-sm" name="random" id="random">
-                            <option value="0">All</option>
+
                             <option value="3">3</option>
                             <option value="4">4</option>
                             <option value="5">5</option>
                             <option value="6">6</option>
                             <option value="7">7</option>
+                            <option value="0">All</option>
                         </select>
                         </h4>
                     </div>
-                    <div class="col-sm-3 col-lg-4"></div>
+                    <div class="col-sm-2 col-lg-3"></div>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-3 col-lg-4"></div>
-                    <div class="col-xs-12 col-sm-6 col-lg-4">
-                        <div class="panel-group" id="accordion">
+                    <div class="col-sm-2 col-lg-3"></div>
+                    <div class="col-xs-12 col-sm-8 col-lg-6">
+                        <div  id="accordion">
                         </div>
                     </div>
-                    <div class="col-sm-3 col-lg-4"></div>
+                    <div class="col-sm-2 col-lg-3"></div>
                 </div>
             </div>
         </div>

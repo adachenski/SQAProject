@@ -1,169 +1,137 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
     <meta name="Software Quality Ashurance Interview Questions" content="Software Quality Ashurance Interview Questions">
     <meta name="Atanas Dachenski" content="Software Quality Ashurance Interview Questions">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link rel="stylesheet" href="/css/sqa.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/demo.css">
+    <link rel="stylesheet" href="/css/pushy.css">
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <!--<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />-->
+    <link rel="stylesheet" href="/css/modern-business.css">
 
-
-    <link rel="stylesheet" href="css/sqa.css">
-    <link rel="stylesheet" href="css/normalize.css">
-
-    <link rel="stylesheet" href="css/demo.css">
-
-    <link rel="stylesheet" href="css/pushy.css">
-
-    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/modern-business.css">
-    <script src="lib/jquery/dist/jquery.js"></script>
-    <!--<script src="js/popper.min.js"></script>-->
-    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+    <script src="/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <title>
+        <%=title%>
+    </title>
     <style>
-        .card-img-top {
-            width: 100%;
-        }
-        
-        .img-fluid {
-            width: 100%;
-        }
+        /*.col-xs-6 {*/
+            /*width: 48vw;*/
+        /*}*/
     </style>
-
-    <title>Document</title>
 </head>
-<style>
-    .main-logo {
-        position: absolute;
-        top: 10px;
-        right: 7px;
-    }
-</style>
 
 <body>
     <% include ./navigation.ejs %>
         <!--<div class="top-gap"></div>-->
-        <div class="visible-xs" style="background-color:#464646;">
+        <div class="d-block d-sm-none" style="background-color:#464646;">
             <div class="container">
                 <div class="row first-row">
-                    <div class="col-xs-9 playfair">
+                    <div class="col-9 playfair">
                         <h4>SQA</h4>
                         <h3 style="font-size:1.5em"> Interview Questions</h3>
                         <h4>& Tests</h4>
                     </div>
-                    <div class="col-xs-3">
-                        <img src="../img/logo2.png" class="main-logo" alt="QA Logo">
+                    <div class="col-3">
+                        <img src="../img/Logo2.png" class="main-logo" alt="QA Logo">
                     </div>
                 </div>
                 <div class="row">
-                    <a href="sqa-test">
-                        <div class="col-xs-6 cell-container main-background">
-                            <div>SQA Test</div>
-                            <img src="../img/test.png" style="width:65%" alt="Test">
+                    <a class="col-6" href="/sqa-test">
+                        <div class="cell-container cell-dementions main-background">
+                            <div>New</div>
+                            <img class="shake" src="../img/test.png"  alt="Test">
+                            <div class="mobile-text">SQA Test</div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="col-xs-6 cell-container main-background">
-                            <div>Technical Test</div>
-                            <img src="../img/technical3.png" style="width:65%" alt="Technical Test">
+                    <a class="col-6" href="bash-test">
+                        <div class="cell-container cell-dementions main-background">
+                            <img src="../img/terminal.png"  alt="Technical Test">
+                            <div class="mobile-text">Linux/Unix Test</div>
                         </div>
                     </a>
-                    <a href="questions">
-                        <div class="col-xs-6 cell-container main-background">
-                            <div>Questions</div>
-                            <img src="../img/technical.png" style="width:65%" alt="Questions">
+                </div>
+                <div class="row">
+                    <a class="col-6" href="/questions">
+                        <div class="cell-container cell-dementions main-background">
+                            <img src="../img/technical.png" alt="Questions">
+                            <div class="mobile-text">Questions</div>
                         </div>
                     </a>
-                    <a href="#">
-                        <div class="col-xs-6 cell-container main-background">
-                            <div>Add Question</div>
-                            <img src="../img/team-icon.gif" style="width:65%" alt="Question">
+                    <a class="col-6" id="add-question" href="/sql-test">
+                        <div class="cell-container main-background">
+
+                            <img src="../img/sql1.png" style="width:65%" alt="Question">
+                            <div class="mobile-text">SQL Test</div>
                         </div>
                     </a>
-                    <style>
-                        .main-headers {
-                            padding: 0px 0px 10px 0px;
-                           
-                            background-color: darkslategrey;
-                            color: white;
-                         
-                            letter-spacing: 1.5px;
-                            color: #2AAA3D;
-                            text-shadow: 1px 1px 1px white;
-                        }
-                    </style>
-                    <div class="col-xs-12 main-headers">
-                        <h3 class="center playfair ">Types of Testing</h3>
                     </div>
-                    <% for(var i = 0; i < 2; i+=1){%>
-                        <a href="questions/<%=testingTypes[i].referToId%>">
-                            <div class="col-xs-6 cell-container main-background">
-                                <div>
-                                    <%=testingTypes[i].title%>
-                                </div>
+
+
+                    <div class="row main-headers">
+                        <h3 class="col-12  center playfair ">Types of Testing</h3>
+                    </div>
+                <div class="row">
+                    <% for(var i = 0; i < documentation.length; i+=1){%>
+                        <a class="col-6" id="test-types-<%=i%>" href="questions/<%=testingTypes[i].referToId%>">
+                            <div class="cell-container main-background">
                                 <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
+                                <div class="animated mobile-text">
+                                    <%=testingTypes[i].title%>
+
+                                        <div>
+                                            <img src="../img/tTypes.png" alt="testing types">
+                                        </div>
+
+                                </div>
+                                <div class="tTypes-text animated2">
+                                        <%=testingTypes[i].title%>
+                                    </div>
+
                             </div>
                         </a>
                         <%}%>
+                </div>
+                <div class="col-12 main-headers">
+                    <h3 class="center playfair">Documentation</h3>
+                </div>
+                 <div class="row">
+                    <% for(var i = 0; i < documentation.length; i+=1){%>
+                        <a class="col-6" id="documentation-<%=i%>" href="questions/<%=documentation[i].referToId%>">
+                            <div class="cell-container main-background">
 
-                            <div class="col-xs-12 main-headers">
-                                <h3 class="center playfair">Documentation</h3>
+                                <img src="../img/document.png" alt="Functional_testing">
+                                <div class="mobile-text">
+                                    <%=documentation[i].title%>
+                                </div>
                             </div>
-                            <% for(var i = 0; i < 2; i+=1){%>
-                                <a href="questions/<%=documentation[i].referToId%>">
-                                    <div class="col-xs-6 cell-container main-background">
-                                        <div>
-                                            <%=documentation[i].title%>
-                                        </div>
-                                        <img src="../img/document.png" style="width:65%" alt="Functional_testing">
-                                    </div>
-                                </a>
-                                <%}%>
+                        </a>
+                    <%}%>
+                </div>
                 </div>
             </div>
         </div>
 
-        <script>
-            // $(window).on('load', function () {
-            //     var allQuestions = [];
-            //     $.getJSON('json/fullQuestions.json', function (data) {
-
-            //         allQuestions = data;
-            //         var testingTypes = getDetailCategory(allQuestions, 'testingTypes');
-            //         console.log(testingTypes);
-
-            //     });
-
-            //     function getDetailCategory(allQuestions, category) {
-            //         var tempArr = [];
-            //         for (var i = 0; i < allQuestions.length; i += 1) {
-            //             if (allQuestions[i].category == category) {
-            //                 tempArr.push(allQuestions[i])
-            //             }
-            //         }
-            //         return tempArr
-
-            //     };
-
-
-
-            // });
-        </script>
-
         <!-- second view -->
-        <div class="container hidden-xs">
+        <div class="container d-none d-sm-block">
 
             <h1 class="my-4">SQA Interview Questions and Test</h1>
 
             <!-- Marketing Icons Section -->
             <div class="row">
-                <div class="col-lg-4">
-                    <div class="card">
-                        <h4 class="card-header">Questions Jquery</h4>
-                        <div class="card-block">
+                <div class="col-lg-4 mb-4">
+                    <div class="card h-100">
+                        <h4 class="card-header">Questions</h4>
+                        <div class="card-body">
                             <p class="card-text">Here you can play with all the questions fast and reliable without to have reloading the page
                                 every time.</p>
                         </div>
@@ -177,8 +145,8 @@
                         <h4 class="card-header">Test</h4>
                         <div class="card-body">
                             <p class="card-text">
-                                You can take a Software Quality Ashurance test to check if you are redy for real interview. So far we have over 100 test
-                                question from witch you will randomly pick-up 10 every time you take in the test.</p>
+                                You can take a Software Quality Assurance test to check if you are ready for the real interview. So far we have over 100
+                                test question from which you will randomly pick-up 10 every time you take the test.</p>
                         </div>
                         <div class="card-footer">
                             <a href="sqa-test" class="btn btn-primary">Start</a>
@@ -198,10 +166,19 @@
                 </div>
             </div>
             <!-- /.row -->
-
+            <style>
+                .card-body {
+                    height: 100px;
+                    word-break: keep-all;
+                    overflow: hidden;
+                }
+            </style>
             <!-- Portfolio Section -->
-            <h2>Today's learning</h2>
-            <h3>Types of testing</h3>
+            <div class="row">
+                <div class="col-12">
+                    <h2>Today's learning (Types of testing)</h2>
+                </div>
+            </div>
             <div class="row">
                 <% for(var i = 0; i < testingTypes.length; i+=1){%>
                     <div class="col-lg-4 col-sm-6">
@@ -215,113 +192,80 @@
                                         <%= testingTypes[i].title%>
                                     </a>
                                 </h4>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi
-                                    sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt,
-                                    illum tempora ex quae? Nihil, dolorem!</p>
+                                <p class="card-text">
+                                    <%-testingTypes[i].content%>
+                                </p>
                             </div>
                         </div>
                     </div>
                     <%}%>
-
-                        <!--<div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#">Project Two</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque
-                                urna varius vitae.</p>
-                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4 col-sm-6 portfolio-item">
-                    <div class="card h-100">
-                        <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                        <div class="card-body">
-                            <h4 class="card-title"><a href="#">Project Three</a></h4>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos quisquam, error quod sed cumque,
-                                odio distinctio velit nostrum temporibus necessitatibus et facere atque iure perspiciatis
-                                mollitia recusandae vero vel quam!</p>
-                        </div>
-                    </div>
-                </div>-->
-                        <div class="col-xs-12">
-                            <h3>Documentation</h3>
-                        </div>
-
-                        <div class="col-lg-4 col-sm-6 portfolio-item">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title"><a href="#">Project Four</a></h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
-                                        pellentesque urna varius vitae.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 portfolio-item">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title"><a href="#">Project Five</a></h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida
-                                        pellentesque urna varius vitae.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-sm-6 portfolio-item">
-                            <div class="card h-100">
-                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-                                <div class="card-body">
-                                    <h4 class="card-title"><a href="#">Project Six</a></h4>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit
-                                        ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates,
-                                        nemo repellat fugiat excepturi! Nemo, esse.</p>
-                                </div>
-                            </div>
-                        </div>
-            </div>
-            <!-- /.row -->
-
-            <!-- Features Section -->
             <div class="row">
-                <div class="col-lg-6">
-                    <h2>Modern Business Features</h2>
-                    <p>The Modern Business template by Start Bootstrap includes:</p>
-                    <ul>
-                        <li><strong>Bootstrap v4</strong>
-                        </li>
-                        <li>jQuery</li>
-                        <li>Font Awesome</li>
-                        <li>Working contact form with validation</li>
-                        <li>Unstyled page elements for easy customization</li>
-                    </ul>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit,
-                        quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus
-                        unde.
-                    </p>
-                </div>
-                <div class="col-lg-6">
-                    <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
+                <div class="col-12">
+                    <h2>Documentation</h2>
                 </div>
             </div>
-            <!-- /.row -->
-
-            <hr>
-
-            <!-- Call to Action Section -->
-            <div class="row mb-4">
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti
-                        beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
-                </div>
-                <div class="col-md-4">
-                    <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
-                </div>
+                <div class="row">
+                        <% for(var i = 0; i < documentation.length; i+=1){%>
+                            <div class="col-lg-4 col-sm-6">
+                                <div class="card">
+                                    <a href="/questions/<%=documentation[i].referToId%>" "><img class="card-img-top " src="../img/documents.jpg " alt=" "></a>
+                                        <div class="card-body ">
+                                            <h4 class="card-title ">
+                                                <a href="/questions/<%=documentation[i].referToId%>">
+                                    <%= documentation[i].title%>
+                                        </a>
+                                        </h4>
+                                        <p class="card-text">
+                                            <%-documentation[i].content%>
+                                        </p>
+                                </div>
+                            </div>
             </div>
+            <%}%>
 
         </div>
-        <script src="js/pushy.min.js"></script>
+        <!-- /.row -->
 
+        <!-- Features Section -->
+        <div class="row">
+            <div class="col-lg-6">
+                <h2>Modern Business Features</h2>
+                <p>The Modern Business template by Start Bootstrap includes:</p>
+                <ul>
+                    <li><strong>Bootstrap v4</strong>
+                    </li>
+                    <li>jQuery</li>
+                    <li>Font Awesome</li>
+                    <li>Working contact form with validation</li>
+                    <li>Unstyled page elements for easy customization</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit,
+                    quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus
+                    unde.
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img class="img-fluid rounded" src="../img/testing-mobile-app.png" alt="">
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Call to Action Section -->
+        <div class="row mb-4">
+            <div class="col-md-8">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti
+                    beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-lg btn-secondary btn-block" href="#">Back to Top</a>
+            </div>
+        </div>
+
+        </div>
+        <script src="../js/pushy.min.js"></script>
 </body>
 
 </html>

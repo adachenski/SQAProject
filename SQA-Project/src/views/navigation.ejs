@@ -1,36 +1,36 @@
-
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/> 
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-
-<link rel="stylesheet" href="css/modern-business.css">
-<div class="visible-xs" style="width:100%;height:55px; z-index:100; top:0;background-color:#000; color: white; position:fixed;">
+<link rel="shortcut icon" href="./favicon.ico">
+<link rel="stylesheet" href="../css/modern-business.css">
+<div class="d-block d-sm-none" style="width:100%;height:55px; z-index:100; top:0;background-color:#000; color: white; position:fixed;">
     <div class="row" style="padding-top:7px;">
         <!--<div class="col-xs-1"></div>-->
-        <div style="padding-right: 5px; padding-left: 25px; " class="col-xs-2">
+        <div style="padding-right: 5px; padding-left: 25px; " class="col-2">
             <h6>
                 <span style="float:right; font-size:0.7em">powerd</span>
                 <span style="float:right;font-size:0.7em; clear:both">by</span>
             </h6>
         </div>
-        <div style="padding-left:5px; border-left:1px solid white;" class="col-xs-8">
-            <h4>Portnov Computer School</h4>
+        <div style="padding-left:5px; border-left:1px solid white;" class="col-8">
+            <h4>People</h4>
         </div>
-        <div class="col-xs-2">
-            <button style="margin-top:10px;margin-bottom:20px;margin-right:10px;border: 1px solid white; float:right" class="menu-btn">&#9776;</button>
+        <div class="col-2">
+            <button style="margin-top:10px;margin-bottom:20px;margin-right:10px; float:right" class="menu-btn">&#9776;</button>
         </div>
     </div>
 </div>
 <!--<button style="position: fixed;width:40px;height:40px; border-radius:50%; top:11%; right:10px; z-index:100" class="menu-btn">&#9776;</button>-->
-<div class="site-overlay visible-xs"></div>
-<nav class="pushy pushy-left visible-xs" data-focus="#first-link">
+<div class="site-overlay d-block d-sm-none"></div>
+<nav class="pushy pushy-left d-block d-sm-none" data-focus="#first-link">
     <div class="pushy-content">
         <ul>
             <li class="pushy-link"><a href="/">HOME</a></li>
-
             <li class="pushy-submenu">
                 <button id="first-link">TEST</button>
                 <ul>
-                    <li class="pushy-link"><a href="/sqa-test">SQA</a></li>
-                    <li class="pushy-link"><a href="/">Technical</a></li>
+                    <li class="pushy-link"><a href="/sqa-test">Quality Assurance</a></li>
+                    <li class="pushy-link"><a href="/sql-test">SQL</a></li>
+                    <li class="pushy-link"><a href="/bash-test">Linux/Unix</a></li>
                 </ul>
             </li>
             <li class="pushy-link"><a href="/questions">Questions</a></li>
@@ -42,63 +42,41 @@
 
 <!-- Site Overlay -->
 
-<nav class="navbar navbar-inverse navbar-fixed-top visible-sm visible-md visible-lg visible-xl">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top d-none d-sm-block ">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+            <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
                 aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-            <a class="navbar-brand" href="#">
-                <img src="../img/logo2.png" style="height:100%" alt="">
+            <a class="navbar-brand" style="padding:5px 15px;" href="/">
+                <img src="../img/technical.png" style="width:40px" alt="Logo QA">
             </a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul class="navbar-nav mr-auto">
                 <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tests <span class="caret"></span></a>
+                <li class="nav-item dropdown open">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Tests <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="/sqa-test">SQA</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Technical</a></li>
+                        <li class="dropdown-item"><a href="/sqa-test">Quality Assurance</a></li>
+
+                        <li class="dropdown-item" class="dropdown-item"><a href="/sql-test">SQL</a></li>
+
+                        <li class="dropdown-item"><a href="/bash-test">Linux/Unix</a></li>
                     </ul>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Questions <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/questions/qaBasics">SQA Basics</a></li>
-                        <li><a href="/questions/qaBasics/random">SQA Basics 5 Random</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/questions/testingTypes">Testing Types</a></li>
-                        <li><a href="/questions/testingTypes/random">Testing Types 5 Random</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/questions/bugs">Bugs</a></li>
-                        <li><a href="/questions/bugs/random">Bugs 5 Random</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/questions/documentation">Documentation</a></li>
-                        <li><a href="/questions/documentation/random">Documentation 5 Random</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="/questions">Questions</a></li>
-                        <li><a href="/questions/technical/random">Technical 5 Random</a></li>
-                    </ul>
-                </li>
+                 <li class="nav-item"><a class="nav-link" href="/questions">Questions</a></li>
             </ul>
-            <!--<form class="navbar-form navbar-left">
-        <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
-        </div>
-        <button type="submit" class="btn btn-default">Submit</button>
-      </form>-->
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="/">Home</a></li>
-                <li><a href="#">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
