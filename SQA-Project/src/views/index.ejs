@@ -37,8 +37,8 @@
             <div class="container">
                 <div class="row first-row">
                     <div class="col-9 playfair">
-                        <h4>SQA</h4>
-                        <h3 style="font-size:1.5em"> Interview Questions</h3>
+                        <h3>Quality Assurance</h3>
+                        <h4 class="shake"> Interview Questions</h4>
                         <h4>& Tests</h4>
                     </div>
                     <div class="col-3">
@@ -48,8 +48,8 @@
                 <div class="row">
                     <a class="col-6" href="/sqa-test">
                         <div class="cell-container cell-dementions main-background">
-                            <div>New</div>
-                            <img class="shake" src="../img/test.png"  alt="Test">
+                            <div style="padding-left: 10px">New</div>
+                            <img src="../img/test.png"  alt="Test">
                             <div class="mobile-text">SQA Test</div>
                         </div>
                     </a>
@@ -70,7 +70,7 @@
                     <a class="col-6" id="add-question" href="/sql-test">
                         <div class="cell-container main-background">
 
-                            <img src="../img/sql1.png" style="width:65%" alt="Question">
+                            <img src="../img/sql1.png" alt="Question">
                             <div class="mobile-text">SQL Test</div>
                         </div>
                     </a>
@@ -84,7 +84,7 @@
                     <% for(var i = 0; i < documentation.length; i+=1){%>
                         <a class="col-6" id="test-types-<%=i%>" href="questions/<%=testingTypes[i].referToId%>">
                             <div class="cell-container main-background">
-                                <img src="../img/Functional-Testing.png" style="width:65%" alt="Functional_testing">
+                                <img src="../img/Functional-Testing.png" alt="Functional_testing">
                                 <div class="animated mobile-text">
                                     <%=testingTypes[i].title%>
 
@@ -101,8 +101,9 @@
                         </a>
                         <%}%>
                 </div>
-                <div class="col-12 main-headers">
-                    <h3 class="center playfair">Documentation</h3>
+
+                <div class="row main-headers">
+                    <h3 class="col-12 center playfair">Documentation</h3>
                 </div>
                  <div class="row">
                     <% for(var i = 0; i < documentation.length; i+=1){%>

@@ -34,7 +34,7 @@
                 "class": "card-header"
             }).appendTo(panelDiv);
 
-            var panelTitleH4 = $("<h5/>", {
+            var panelTitleH4 = $("<h6/>", {
                 "class": "mb-0"
             }).appendTo(panelHeadingDiv);
 
@@ -113,7 +113,6 @@
                             randomArr.push(randQuestion);
                             found = false;
                         }
-
                     }
                 }
                 if(randomTarget==0){
@@ -133,34 +132,32 @@
 
             $.getJSON("json/portnovQuestions3.json", function (data) {
                 items = data;
-                //populateHtml(items).allCategory;
-                var x = populateHtml(items).randomQuestions;
-                $("#accordion").html("");
-                var count = 0;
-                $.each(x, function (key, val) {
-                    populateAcordeon(val, count)
-                    count++;
-                });
+                var initialData = populateHtml(items).randomQuestions;
+                getRandomQuestions(initialData);
             });
 
             $('#category').on('change', function () {
 
-                $("#accordion").html("");
-                $("#random").val(0);
-                $("#subTitle").html("All questions");
-                populateHtml(items).allCategory;
+                var changeOnCategory = populateHtml(items).randomQuestions;
+                getRandomQuestions(changeOnCategory);
+
             });
 
             $("#random").on('change', function () {
-                var x = populateHtml(items).randomQuestions;
-                $("#accordion").html("");
-                var count = 0;
-                $.each(x, function (key, val) {
-                    populateAcordeon(val, count)
-                    count++;
-                });
+                var changeOnValue = populateHtml(items).randomQuestions;
+                getRandomQuestions(changeOnValue);
             })
         });
+
+        function getRandomQuestions(data){
+
+            $("#accordion").html("");
+            var count = 0;
+            $.each(data, function (key, val) {
+                populateAcordeon(val, count)
+                count++;
+            });
+        }
     </script>
 
     <% include ./navigation.ejs %>
@@ -169,12 +166,13 @@
                 <div class="row">
                     <div class="col-sm-2 col-lg-3"></div>
                     <div class="col-xs-12 col-sm-8 col-lg-6">
+
                         <h2 class="playfair" id="headerTitle" style="color:#464646">
                             <%=title%>
                         </h2>
                         <h4 class="playfair" id="subTitle">All questions</h4>
                         <h4>
-                            <select class="input-sm" name="category" id="category">
+                            <select class="form-control-sm" name="category" id="category">
                             <option value="qaBasics">SQA Basics</option>
                             <option value="testingTypes">Testing Types</option>
                             <option value="bugs">Bugs</option>
@@ -182,13 +180,10 @@
                             <option value="technical">Technical</option>
                             <option value="mobile">Mobile</option>
                         </select>
-                            <select class="input-sm" name="random" id="random">
-
-                            <option value="3">3</option>
-                            <option value="4">4</option>
+                            <select class="form-control-sm" name="random" id="random">
                             <option value="5">5</option>
-                            <option value="6">6</option>
                             <option value="7">7</option>
+                            <option value="10">10</option>
                             <option value="0">All</option>
                         </select>
                         </h4>
@@ -201,6 +196,14 @@
                     <div class="col-xs-12 col-sm-8 col-lg-6">
                         <div  id="accordion">
                         </div>
+                    </div>
+                    <div class="col-sm-2 col-lg-3"></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2 col-lg-3"></div>
+                    <div class="col-xs-12 col-sm-8 col-lg-6 center sqa-btn">
+                        <hr/>
+                        <div class="playfair" >Interview Questions for interns</div>
                     </div>
                     <div class="col-sm-2 col-lg-3"></div>
                 </div>

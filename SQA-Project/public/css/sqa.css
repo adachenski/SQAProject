@@ -25,11 +25,11 @@
 }
 
 .mobile-text {
+    color: #ffffff;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 30px;
-    background: black;
     opacity: 0.5;
     position: relative;
     clear: both;
@@ -68,6 +68,8 @@
       }
 }
 .animated {
+    background: linear-gradient(#70e1f5,#ffd194);
+    color: #000000 !important;
     -webkit-animation: mymove 17s;
     /*-webkit-animation-timing-function: ease-in;*/
     /* Safari 4.0 - 8.0 */
@@ -243,7 +245,7 @@
     width: 100%;
     height: 30px;
     background: #803F3F;
-    
+    color: #ffffff;
     position: relative;
     clear: both;
     display: inline-block;
@@ -267,12 +269,15 @@
 }
 
 .main-headers {
-    padding: 0px 0px 10px 0px;
+   height: 3.5em;
     background-color: darkslategrey;
-    color: white;
+    /*color: white;*/
     letter-spacing: 1.5px;
     color: #2AAA3D;
     text-shadow: 1px 1px 1px white;
+}
+.main-headers h3{
+    padding-top: 0.3em;
 }
 
 .playfair{
@@ -284,29 +289,33 @@
 }
 .first-row{
  background-color:darkslategrey;
-color: white;
+color: darkgreen;
    height: 100px;
    letter-spacing: 1.5px;
-   color: #2AAA3D;
+   /*color: #2AAA3D;*/
     text-shadow: 1px 1px 1px white;
 
 }
-.first-row h4:first-child{
- position: absolute;
- top:10px;
- transform: rotate(12deg);
+.playfair h4:first-of-type{
+    line-height: 70%;
+    font-size: 1.1em;
+    text-align: right;
+ /*position: absolute;*/
+ /*top:10px;*/
+ /*transform: rotate(12deg);*/
 }
-.first-row h3{
-  
- position: absolute;
-   top:20px;
+.playfair h3{
+font-size: 1.3em;
+ /*position: absolute;*/
+   /*top:20px;*/
 
 }
-.first-row h4:last-child{
-    position: absolute;
-    left: 70px;
-    top: 55px;
-    transform: rotate(-9deg)
+.playfair h4:last-child{
+    font-size: 1.2em;
+    /*position: absolute;*/
+    /*left: 70px;*/
+    /*top: 55px;*/
+    /*transform: rotate(-9deg)*/
 }
  .questions-background{
      background:-webkit-linear-gradient(#E6E6FA,#87CEEB,#4682B4);
@@ -351,18 +360,18 @@ color: white;
     }
 
     .cell-container div{
-        position: absolute;
-            padding: 3px;
-    font-weight: 100;
+    position: absolute;
+
+    font-weight: 300;
     color: white;
-    text-shadow: 2px 2px black;
+    /*text-shadow: 2px 2px black;*/
     font-size: 1.1em;
   
         
     }
     .cell-container img{
          padding-top: 5vw;
-         width: 65%;
+         width: 55%;
     }
     .getFive{
         margin-top:5px; 
@@ -420,3 +429,7 @@ color: white;
         .sqa-btn{
             margin-bottom: 30px;
         }
+        h6> a > div{
+           color: #000000;
+        }
+
