@@ -914,7 +914,7 @@
     {
         "id": 152,
         "title": "Smoke VS Sanity Testing?",
-        "content": "<b>Smoke Testing</b> is performed to ascertain that the critical functionalities of the program is working fine.<b>Sanity Testing</b> is done to check the new functionality / bugs have been fixed",
+        "content": "<b>Smoke Testing</b> is performed to ascertain that the critical functionality of the program is working fine.<b>Sanity Testing</b> is done to check the new functionality / bugs have been fixed",
         "category": "testingTypes"
     }
 ]

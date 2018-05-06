@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../css/pushy.css">
 
     <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />
+    <!--<link rel="stylesheet" href="../lib/font-awesome/css/font-awesome.min.css" />-->
     <link rel="stylesheet" href="../css/modern-business.css">
     <script src="../lib/jquery/dist/jquery.js"></script>
     <!--<script src="js/popper.min.js"></script>-->
@@ -27,22 +27,22 @@
     <% include ./navigation.ejs %>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 playfair">
-                    <h2 style="text-align:center">
+                <div class="col-12 playfair">
+                    <h2 style="padding-top:15px;text-align:center">
                         <%=questions.title%>
                     </h2>
                 </div>
-                <div class="col-xs-12 col-sm-3 col-lg-2">
-                    <h4 class="playfair"><b>Portnov Defenition</b></h4>
+                <div class="col-12 col-sm-3 col-lg-2">
+                    <h4 class="playfair"><b>Short Definition</b></h4>
                     <div>
                         <%-questions.content%>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-9 col-lg-8">
+                <div class="col-12 col-sm-9 col-lg-8">
                     <h4 class="playfair"><b>Extra Information</b></h4>
-                    <h3>
-                        <%-details.title%>
-                    </h3>
+                    <!--<h3>-->
+                        <!--<%-details.title%>-->
+                    <!--</h3>-->
 
                     <div>
                         <%-details.content%>
